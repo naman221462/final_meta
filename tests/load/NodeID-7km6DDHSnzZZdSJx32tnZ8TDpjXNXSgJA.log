@@ -1,0 +1,951 @@
+[08-22|11:49:15.262] INFO controller/controller.go:91 loaded config {"contents": {"preferredBlocksPerSecond":2,"gossipInterval":1000000000,"gossipMaxSize":2044723,"gossipProposerDiff":3,"gossipProposerDepth":2,"buildProposerDiff":2,"verifyTimeout":10,"traceEnabled":false,"traceSampleRate":0,"continuousProfilerDir":"","streamingBacklogSize":1024,"mempoolSize":500000,"mempoolPayerSize":500000,"mempoolExemptPayers":null,"mempoolVerifyBalances":true,"trackedPairs":null,"testMode":true,"logLevel":"INFO","parallelism":4,"stateSyncServerDelay":0}}
+[08-22|11:49:15.262] INFO vm/warp_manager.go:70 starting warp manager
+[08-22|11:49:15.262] INFO controller/controller.go:100 loaded genesis {"genesis": {"hrp":"token","maxBlockTxs":20000,"maxBlockUnits":1800000,"baseUnits":48,"validityWindow":100000,"minUnitPrice":1,"unitPriceChangeDenominator":48,"windowTargetUnits":1000000000,"minBlockCost":0,"blockCostChangeDenominator":48,"windowTargetBlocks":1000000000,"warpBaseFee":1024,"warpFeePerSigner":128,"customAllocation":[{"address":"token17ejchu9anl78ege0wdv6whte2ltn70kjvjxujz0rw0zctz43h57sfjcfuj","balance":18446744073709551615}]}}
+[08-22|11:49:15.304] INFO controller/controller.go:151 running build and gossip in test mode
+[08-22|11:49:15.306] INFO vm/vm.go:288 initialized vm from genesis {"block": "C5Rbx19YJj3oMU3bFcfzxFnVZRMq2WhAhkajS9gzhwEfZBbEu"}
+[08-22|11:49:15.308] INFO vm/vm.go:337 state sync client ready
+[08-22|11:49:15.308] INFO vm/vm.go:343 validity window ready
+[08-22|11:49:15.308] INFO vm/vm.go:349 node is now ready {"synced": false}
+[08-22|11:49:20.261] INFO chain/builder.go:277 built block {"hght": 1, "attempted": 3814, "added": 3813, "mempool size": 6187, "mempool lock wait": "5.445µs", "context": false, "state changes": 3814, "state operations": 11439}
+[08-22|11:49:20.261] INFO chain/block.go:330 skipping verification, already processed {"height": 1, "blkID": "24BubhLUVK5yCiuPyWvZDH6nUUqpaEL1SmLbKfXKn62xUWbL9f"}
+[08-22|11:49:20.263] INFO vm/resolutions.go:116 verified block {"blkID": "24BubhLUVK5yCiuPyWvZDH6nUUqpaEL1SmLbKfXKn62xUWbL9f", "height": 1, "txs": 3813, "state ready": true}
+[08-22|11:49:20.301] INFO vm/resolutions.go:262 accepted block {"blkID": "24BubhLUVK5yCiuPyWvZDH6nUUqpaEL1SmLbKfXKn62xUWbL9f", "height": 1, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:49:20.325] INFO vm/resolutions.go:203 block processed {"blkID": "24BubhLUVK5yCiuPyWvZDH6nUUqpaEL1SmLbKfXKn62xUWbL9f", "height": 1}
+[08-22|11:49:21.504] INFO chain/builder.go:277 built block {"hght": 2, "attempted": 3814, "added": 3813, "mempool size": 2374, "mempool lock wait": "10.487µs", "context": false, "state changes": 3814, "state operations": 11439}
+[08-22|11:49:21.504] INFO chain/block.go:330 skipping verification, already processed {"height": 2, "blkID": "2VpVieyfaVnceFFBkmNZNHSKvNGK46T14wpzogs7KyU1ErqF3z"}
+[08-22|11:49:21.505] INFO vm/resolutions.go:116 verified block {"blkID": "2VpVieyfaVnceFFBkmNZNHSKvNGK46T14wpzogs7KyU1ErqF3z", "height": 2, "txs": 3813, "state ready": true}
+[08-22|11:49:21.534] INFO vm/resolutions.go:262 accepted block {"blkID": "2VpVieyfaVnceFFBkmNZNHSKvNGK46T14wpzogs7KyU1ErqF3z", "height": 2, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:49:21.547] INFO vm/resolutions.go:203 block processed {"blkID": "2VpVieyfaVnceFFBkmNZNHSKvNGK46T14wpzogs7KyU1ErqF3z", "height": 2}
+[08-22|11:49:23.027] INFO chain/builder.go:277 built block {"hght": 3, "attempted": 2374, "added": 2374, "mempool size": 0, "mempool lock wait": "14.555µs", "context": false, "state changes": 2375, "state operations": 7122}
+[08-22|11:49:23.027] INFO chain/block.go:330 skipping verification, already processed {"height": 3, "blkID": "S1hV18MXRVA6SPEYdGWb2enSBdGewATGKWgpLEuKAML8JGRq5"}
+[08-22|11:49:23.029] INFO vm/resolutions.go:116 verified block {"blkID": "S1hV18MXRVA6SPEYdGWb2enSBdGewATGKWgpLEuKAML8JGRq5", "height": 3, "txs": 2374, "state ready": true}
+[08-22|11:49:23.088] INFO vm/resolutions.go:262 accepted block {"blkID": "S1hV18MXRVA6SPEYdGWb2enSBdGewATGKWgpLEuKAML8JGRq5", "height": 3, "txs": 2374, "size": 527312, "units": 1120528, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:49:23.117] INFO vm/resolutions.go:203 block processed {"blkID": "S1hV18MXRVA6SPEYdGWb2enSBdGewATGKWgpLEuKAML8JGRq5", "height": 3}
+[08-22|11:51:05.315] INFO chain/builder.go:277 built block {"hght": 4, "attempted": 3814, "added": 3813, "mempool size": 496187, "mempool lock wait": "9.906µs", "context": false, "state changes": 5294, "state operations": 11439}
+[08-22|11:51:05.318] INFO chain/block.go:330 skipping verification, already processed {"height": 4, "blkID": "2QFWKDNkQxjR2Brtkp9mHfKfM6A8C5Dx4SdUyw2hYBha1zDcvX"}
+[08-22|11:51:05.322] INFO vm/resolutions.go:116 verified block {"blkID": "2QFWKDNkQxjR2Brtkp9mHfKfM6A8C5Dx4SdUyw2hYBha1zDcvX", "height": 4, "txs": 3813, "state ready": true}
+[08-22|11:51:05.601] INFO vm/resolutions.go:262 accepted block {"blkID": "2QFWKDNkQxjR2Brtkp9mHfKfM6A8C5Dx4SdUyw2hYBha1zDcvX", "height": 4, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:05.664] INFO vm/resolutions.go:203 block processed {"blkID": "2QFWKDNkQxjR2Brtkp9mHfKfM6A8C5Dx4SdUyw2hYBha1zDcvX", "height": 4}
+[08-22|11:51:06.067] INFO chain/builder.go:277 built block {"hght": 5, "attempted": 3814, "added": 3813, "mempool size": 492374, "mempool lock wait": "10.752µs", "context": false, "state changes": 5418, "state operations": 11439}
+[08-22|11:51:06.067] INFO chain/block.go:330 skipping verification, already processed {"height": 5, "blkID": "aaYTyE61L4VuAAw387fKErmDkeLpVt3ohd9CmJ9PTeNkrhQFA"}
+[08-22|11:51:06.075] INFO vm/resolutions.go:116 verified block {"blkID": "aaYTyE61L4VuAAw387fKErmDkeLpVt3ohd9CmJ9PTeNkrhQFA", "height": 5, "txs": 3813, "state ready": true}
+[08-22|11:51:06.257] INFO vm/resolutions.go:262 accepted block {"blkID": "aaYTyE61L4VuAAw387fKErmDkeLpVt3ohd9CmJ9PTeNkrhQFA", "height": 5, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:06.311] INFO vm/resolutions.go:203 block processed {"blkID": "aaYTyE61L4VuAAw387fKErmDkeLpVt3ohd9CmJ9PTeNkrhQFA", "height": 5}
+[08-22|11:51:06.473] INFO chain/builder.go:277 built block {"hght": 6, "attempted": 3814, "added": 3813, "mempool size": 488561, "mempool lock wait": "13.483µs", "context": false, "state changes": 5328, "state operations": 11439}
+[08-22|11:51:06.473] INFO chain/block.go:330 skipping verification, already processed {"height": 6, "blkID": "2UWD1fZNkKcDxFfksdW4dMtCwS1NyLtAhoTpwjgsNauGYSfzEf"}
+[08-22|11:51:06.478] INFO vm/resolutions.go:116 verified block {"blkID": "2UWD1fZNkKcDxFfksdW4dMtCwS1NyLtAhoTpwjgsNauGYSfzEf", "height": 6, "txs": 3813, "state ready": true}
+[08-22|11:51:06.518] INFO vm/resolutions.go:262 accepted block {"blkID": "2UWD1fZNkKcDxFfksdW4dMtCwS1NyLtAhoTpwjgsNauGYSfzEf", "height": 6, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:06.546] INFO vm/resolutions.go:203 block processed {"blkID": "2UWD1fZNkKcDxFfksdW4dMtCwS1NyLtAhoTpwjgsNauGYSfzEf", "height": 6}
+[08-22|11:51:06.804] INFO chain/builder.go:277 built block {"hght": 7, "attempted": 3814, "added": 3813, "mempool size": 484748, "mempool lock wait": "9.931µs", "context": false, "state changes": 5345, "state operations": 11439}
+[08-22|11:51:06.804] INFO chain/block.go:330 skipping verification, already processed {"height": 7, "blkID": "2seGXM6aSjn81pLpXhjG4niQKo5G2zkr5CsdHZxbibNYirKXqZ"}
+[08-22|11:51:06.809] INFO vm/resolutions.go:116 verified block {"blkID": "2seGXM6aSjn81pLpXhjG4niQKo5G2zkr5CsdHZxbibNYirKXqZ", "height": 7, "txs": 3813, "state ready": true}
+[08-22|11:51:06.860] INFO vm/resolutions.go:262 accepted block {"blkID": "2seGXM6aSjn81pLpXhjG4niQKo5G2zkr5CsdHZxbibNYirKXqZ", "height": 7, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:06.874] INFO vm/resolutions.go:203 block processed {"blkID": "2seGXM6aSjn81pLpXhjG4niQKo5G2zkr5CsdHZxbibNYirKXqZ", "height": 7}
+[08-22|11:51:07.144] INFO chain/builder.go:277 built block {"hght": 8, "attempted": 3814, "added": 3813, "mempool size": 480935, "mempool lock wait": "9.049µs", "context": false, "state changes": 5315, "state operations": 11439}
+[08-22|11:51:07.144] INFO chain/block.go:330 skipping verification, already processed {"height": 8, "blkID": "2ZvjSSoVihEavewDjm3twon3mX9dLij9pyBpgrkGRP9Vg4ckWY"}
+[08-22|11:51:07.149] INFO vm/resolutions.go:116 verified block {"blkID": "2ZvjSSoVihEavewDjm3twon3mX9dLij9pyBpgrkGRP9Vg4ckWY", "height": 8, "txs": 3813, "state ready": true}
+[08-22|11:51:07.257] INFO vm/resolutions.go:262 accepted block {"blkID": "2ZvjSSoVihEavewDjm3twon3mX9dLij9pyBpgrkGRP9Vg4ckWY", "height": 8, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:07.305] INFO vm/resolutions.go:203 block processed {"blkID": "2ZvjSSoVihEavewDjm3twon3mX9dLij9pyBpgrkGRP9Vg4ckWY", "height": 8}
+[08-22|11:51:07.551] INFO chain/builder.go:277 built block {"hght": 9, "attempted": 3814, "added": 3813, "mempool size": 477122, "mempool lock wait": "11.915µs", "context": false, "state changes": 5359, "state operations": 11439}
+[08-22|11:51:07.551] INFO chain/block.go:330 skipping verification, already processed {"height": 9, "blkID": "2tV6ZQRJVds6SkCAwpd781gJJ3VFBgvt8uMoibUkRVE256LrAd"}
+[08-22|11:51:07.557] INFO vm/resolutions.go:116 verified block {"blkID": "2tV6ZQRJVds6SkCAwpd781gJJ3VFBgvt8uMoibUkRVE256LrAd", "height": 9, "txs": 3813, "state ready": true}
+[08-22|11:51:07.598] INFO vm/resolutions.go:262 accepted block {"blkID": "2tV6ZQRJVds6SkCAwpd781gJJ3VFBgvt8uMoibUkRVE256LrAd", "height": 9, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:07.626] INFO vm/resolutions.go:203 block processed {"blkID": "2tV6ZQRJVds6SkCAwpd781gJJ3VFBgvt8uMoibUkRVE256LrAd", "height": 9}
+[08-22|11:51:07.859] INFO chain/builder.go:277 built block {"hght": 10, "attempted": 3814, "added": 3813, "mempool size": 473309, "mempool lock wait": "14.141µs", "context": false, "state changes": 5317, "state operations": 11439}
+[08-22|11:51:07.860] INFO chain/block.go:330 skipping verification, already processed {"height": 10, "blkID": "2utaKjeRDRdrbHUR8gHQthNaKjCATyjxuFx6URBvN6WTrHqaxh"}
+[08-22|11:51:07.869] INFO vm/resolutions.go:116 verified block {"blkID": "2utaKjeRDRdrbHUR8gHQthNaKjCATyjxuFx6URBvN6WTrHqaxh", "height": 10, "txs": 3813, "state ready": true}
+[08-22|11:51:08.795] INFO vm/resolutions.go:262 accepted block {"blkID": "2utaKjeRDRdrbHUR8gHQthNaKjCATyjxuFx6URBvN6WTrHqaxh", "height": 10, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:08.822] INFO vm/resolutions.go:203 block processed {"blkID": "2utaKjeRDRdrbHUR8gHQthNaKjCATyjxuFx6URBvN6WTrHqaxh", "height": 10}
+[08-22|11:51:09.354] INFO chain/builder.go:277 built block {"hght": 11, "attempted": 3814, "added": 3813, "mempool size": 469496, "mempool lock wait": "35.947µs", "context": false, "state changes": 5336, "state operations": 11439}
+[08-22|11:51:09.355] INFO chain/block.go:330 skipping verification, already processed {"height": 11, "blkID": "25TivSHRCXDcbj2s7XNCPy21XC4Jyhki1ZHKfxqqPZjAujsPnH"}
+[08-22|11:51:09.364] INFO vm/resolutions.go:116 verified block {"blkID": "25TivSHRCXDcbj2s7XNCPy21XC4Jyhki1ZHKfxqqPZjAujsPnH", "height": 11, "txs": 3813, "state ready": true}
+[08-22|11:51:09.477] INFO vm/resolutions.go:262 accepted block {"blkID": "25TivSHRCXDcbj2s7XNCPy21XC4Jyhki1ZHKfxqqPZjAujsPnH", "height": 11, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:09.777] INFO vm/resolutions.go:203 block processed {"blkID": "25TivSHRCXDcbj2s7XNCPy21XC4Jyhki1ZHKfxqqPZjAujsPnH", "height": 11}
+[08-22|11:51:10.172] INFO chain/builder.go:277 built block {"hght": 12, "attempted": 3814, "added": 3813, "mempool size": 465683, "mempool lock wait": "44.623µs", "context": false, "state changes": 5377, "state operations": 11439}
+[08-22|11:51:10.173] INFO chain/block.go:330 skipping verification, already processed {"height": 12, "blkID": "2MSsVgLN544NCTEJdLWbWVQFpCvbKZbNgfJGm5KmMF7qiCh5b8"}
+[08-22|11:51:10.179] INFO vm/resolutions.go:116 verified block {"blkID": "2MSsVgLN544NCTEJdLWbWVQFpCvbKZbNgfJGm5KmMF7qiCh5b8", "height": 12, "txs": 3813, "state ready": true}
+[08-22|11:51:10.229] INFO vm/resolutions.go:262 accepted block {"blkID": "2MSsVgLN544NCTEJdLWbWVQFpCvbKZbNgfJGm5KmMF7qiCh5b8", "height": 12, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:10.256] INFO vm/resolutions.go:203 block processed {"blkID": "2MSsVgLN544NCTEJdLWbWVQFpCvbKZbNgfJGm5KmMF7qiCh5b8", "height": 12}
+[08-22|11:51:10.379] INFO chain/builder.go:277 built block {"hght": 13, "attempted": 3814, "added": 3813, "mempool size": 461870, "mempool lock wait": "87.856µs", "context": false, "state changes": 5316, "state operations": 11439}
+[08-22|11:51:10.379] INFO chain/block.go:330 skipping verification, already processed {"height": 13, "blkID": "244yyoFnfsAJnsJnLLvdzqbrVNu29nZ4Hri3Yt3LV1BU23GajC"}
+[08-22|11:51:10.383] INFO vm/resolutions.go:116 verified block {"blkID": "244yyoFnfsAJnsJnLLvdzqbrVNu29nZ4Hri3Yt3LV1BU23GajC", "height": 13, "txs": 3813, "state ready": true}
+[08-22|11:51:10.419] INFO vm/resolutions.go:262 accepted block {"blkID": "244yyoFnfsAJnsJnLLvdzqbrVNu29nZ4Hri3Yt3LV1BU23GajC", "height": 13, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:10.430] INFO vm/resolutions.go:203 block processed {"blkID": "244yyoFnfsAJnsJnLLvdzqbrVNu29nZ4Hri3Yt3LV1BU23GajC", "height": 13}
+[08-22|11:51:10.556] INFO chain/builder.go:277 built block {"hght": 14, "attempted": 3814, "added": 3813, "mempool size": 458057, "mempool lock wait": "13.771µs", "context": false, "state changes": 5330, "state operations": 11439}
+[08-22|11:51:10.556] INFO chain/block.go:330 skipping verification, already processed {"height": 14, "blkID": "2rS2zUdTt1h1VH7yibJ55LrpiCimWrRV9prK9tZH96iKuMr6u5"}
+[08-22|11:51:10.562] INFO vm/resolutions.go:116 verified block {"blkID": "2rS2zUdTt1h1VH7yibJ55LrpiCimWrRV9prK9tZH96iKuMr6u5", "height": 14, "txs": 3813, "state ready": true}
+[08-22|11:51:10.738] INFO vm/resolutions.go:262 accepted block {"blkID": "2rS2zUdTt1h1VH7yibJ55LrpiCimWrRV9prK9tZH96iKuMr6u5", "height": 14, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:11.260] INFO vm/resolutions.go:203 block processed {"blkID": "2rS2zUdTt1h1VH7yibJ55LrpiCimWrRV9prK9tZH96iKuMr6u5", "height": 14}
+[08-22|11:51:11.526] INFO chain/builder.go:277 built block {"hght": 15, "attempted": 3814, "added": 3813, "mempool size": 454244, "mempool lock wait": "15.549µs", "context": false, "state changes": 5322, "state operations": 11439}
+[08-22|11:51:11.526] INFO chain/block.go:330 skipping verification, already processed {"height": 15, "blkID": "Q74VSbqiAEarXfr1Uk8xfbdxhiLBFv6eDeXJXow4KEsYiXzgV"}
+[08-22|11:51:11.531] INFO vm/resolutions.go:116 verified block {"blkID": "Q74VSbqiAEarXfr1Uk8xfbdxhiLBFv6eDeXJXow4KEsYiXzgV", "height": 15, "txs": 3813, "state ready": true}
+[08-22|11:51:11.594] INFO vm/resolutions.go:262 accepted block {"blkID": "Q74VSbqiAEarXfr1Uk8xfbdxhiLBFv6eDeXJXow4KEsYiXzgV", "height": 15, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:11.624] INFO vm/resolutions.go:203 block processed {"blkID": "Q74VSbqiAEarXfr1Uk8xfbdxhiLBFv6eDeXJXow4KEsYiXzgV", "height": 15}
+[08-22|11:51:11.869] INFO chain/builder.go:277 built block {"hght": 16, "attempted": 3814, "added": 3813, "mempool size": 450431, "mempool lock wait": "14.964µs", "context": false, "state changes": 5394, "state operations": 11439}
+[08-22|11:51:11.869] INFO chain/block.go:330 skipping verification, already processed {"height": 16, "blkID": "2VWU9VyVaUG6BendzQ4eQtQmSfPMjHoz7SKHPRvEWvC5YpXkMy"}
+[08-22|11:51:11.876] INFO vm/resolutions.go:116 verified block {"blkID": "2VWU9VyVaUG6BendzQ4eQtQmSfPMjHoz7SKHPRvEWvC5YpXkMy", "height": 16, "txs": 3813, "state ready": true}
+[08-22|11:51:11.963] INFO vm/resolutions.go:262 accepted block {"blkID": "2VWU9VyVaUG6BendzQ4eQtQmSfPMjHoz7SKHPRvEWvC5YpXkMy", "height": 16, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:11.984] INFO vm/resolutions.go:203 block processed {"blkID": "2VWU9VyVaUG6BendzQ4eQtQmSfPMjHoz7SKHPRvEWvC5YpXkMy", "height": 16}
+[08-22|11:51:12.191] INFO chain/builder.go:277 built block {"hght": 17, "attempted": 3814, "added": 3813, "mempool size": 446618, "mempool lock wait": "14.485µs", "context": false, "state changes": 5317, "state operations": 11439}
+[08-22|11:51:12.191] INFO chain/block.go:330 skipping verification, already processed {"height": 17, "blkID": "2VUPVbuJemr56uRPEhU9PNVHp2i8gAq1uFET62uapFc9e4UVP4"}
+[08-22|11:51:12.198] INFO vm/resolutions.go:116 verified block {"blkID": "2VUPVbuJemr56uRPEhU9PNVHp2i8gAq1uFET62uapFc9e4UVP4", "height": 17, "txs": 3813, "state ready": true}
+[08-22|11:51:12.260] INFO vm/resolutions.go:262 accepted block {"blkID": "2VUPVbuJemr56uRPEhU9PNVHp2i8gAq1uFET62uapFc9e4UVP4", "height": 17, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:12.271] INFO vm/resolutions.go:203 block processed {"blkID": "2VUPVbuJemr56uRPEhU9PNVHp2i8gAq1uFET62uapFc9e4UVP4", "height": 17}
+[08-22|11:51:12.526] INFO chain/builder.go:277 built block {"hght": 18, "attempted": 3814, "added": 3813, "mempool size": 442805, "mempool lock wait": "15.06µs", "context": false, "state changes": 5360, "state operations": 11439}
+[08-22|11:51:12.526] INFO chain/block.go:330 skipping verification, already processed {"height": 18, "blkID": "CA2WZh9YzDPTUzSwDSJ3PDvTnXvPMPgJNaedoxHThWVGcQ6u7"}
+[08-22|11:51:12.531] INFO vm/resolutions.go:116 verified block {"blkID": "CA2WZh9YzDPTUzSwDSJ3PDvTnXvPMPgJNaedoxHThWVGcQ6u7", "height": 18, "txs": 3813, "state ready": true}
+[08-22|11:51:12.562] INFO vm/resolutions.go:262 accepted block {"blkID": "CA2WZh9YzDPTUzSwDSJ3PDvTnXvPMPgJNaedoxHThWVGcQ6u7", "height": 18, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:12.569] INFO vm/resolutions.go:203 block processed {"blkID": "CA2WZh9YzDPTUzSwDSJ3PDvTnXvPMPgJNaedoxHThWVGcQ6u7", "height": 18}
+[08-22|11:51:12.763] INFO chain/builder.go:277 built block {"hght": 19, "attempted": 3814, "added": 3813, "mempool size": 438992, "mempool lock wait": "16.781µs", "context": false, "state changes": 5353, "state operations": 11439}
+[08-22|11:51:12.763] INFO chain/block.go:330 skipping verification, already processed {"height": 19, "blkID": "2Jqg2ZEh4e2qJ8dicXWnPwgJ7gGjgexWPNUfxMovBdwoDoimoP"}
+[08-22|11:51:12.773] INFO vm/resolutions.go:116 verified block {"blkID": "2Jqg2ZEh4e2qJ8dicXWnPwgJ7gGjgexWPNUfxMovBdwoDoimoP", "height": 19, "txs": 3813, "state ready": true}
+[08-22|11:51:12.809] INFO vm/resolutions.go:262 accepted block {"blkID": "2Jqg2ZEh4e2qJ8dicXWnPwgJ7gGjgexWPNUfxMovBdwoDoimoP", "height": 19, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:12.814] INFO vm/resolutions.go:203 block processed {"blkID": "2Jqg2ZEh4e2qJ8dicXWnPwgJ7gGjgexWPNUfxMovBdwoDoimoP", "height": 19}
+[08-22|11:51:12.948] INFO chain/builder.go:277 built block {"hght": 20, "attempted": 3814, "added": 3813, "mempool size": 435179, "mempool lock wait": "13.874µs", "context": false, "state changes": 5327, "state operations": 11439}
+[08-22|11:51:12.948] INFO chain/block.go:330 skipping verification, already processed {"height": 20, "blkID": "2Wo3oUZ9X2SJWa4v36gRMaoveCxRPzPWDdeY7CmggeVnoHtwv6"}
+[08-22|11:51:12.955] INFO vm/resolutions.go:116 verified block {"blkID": "2Wo3oUZ9X2SJWa4v36gRMaoveCxRPzPWDdeY7CmggeVnoHtwv6", "height": 20, "txs": 3813, "state ready": true}
+[08-22|11:51:12.995] INFO vm/resolutions.go:262 accepted block {"blkID": "2Wo3oUZ9X2SJWa4v36gRMaoveCxRPzPWDdeY7CmggeVnoHtwv6", "height": 20, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:13.002] INFO vm/resolutions.go:203 block processed {"blkID": "2Wo3oUZ9X2SJWa4v36gRMaoveCxRPzPWDdeY7CmggeVnoHtwv6", "height": 20}
+[08-22|11:51:13.150] INFO chain/builder.go:277 built block {"hght": 21, "attempted": 3814, "added": 3813, "mempool size": 431366, "mempool lock wait": "13.057µs", "context": false, "state changes": 5352, "state operations": 11439}
+[08-22|11:51:13.150] INFO chain/block.go:330 skipping verification, already processed {"height": 21, "blkID": "zoQeVNh38vi1ZBE9RcCfVMqBgd23e6iYf3UTZT47kMkBVhdGZ"}
+[08-22|11:51:13.156] INFO vm/resolutions.go:116 verified block {"blkID": "zoQeVNh38vi1ZBE9RcCfVMqBgd23e6iYf3UTZT47kMkBVhdGZ", "height": 21, "txs": 3813, "state ready": true}
+[08-22|11:51:13.188] INFO vm/resolutions.go:262 accepted block {"blkID": "zoQeVNh38vi1ZBE9RcCfVMqBgd23e6iYf3UTZT47kMkBVhdGZ", "height": 21, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:13.201] INFO vm/resolutions.go:203 block processed {"blkID": "zoQeVNh38vi1ZBE9RcCfVMqBgd23e6iYf3UTZT47kMkBVhdGZ", "height": 21}
+[08-22|11:51:13.334] INFO chain/builder.go:277 built block {"hght": 22, "attempted": 3814, "added": 3813, "mempool size": 427553, "mempool lock wait": "11.818µs", "context": false, "state changes": 5322, "state operations": 11439}
+[08-22|11:51:13.334] INFO chain/block.go:330 skipping verification, already processed {"height": 22, "blkID": "2PDhe4s5Kjc4gS5Y1eg96SBavwb1Ry5wQdZacc54UAS3SEX7v7"}
+[08-22|11:51:13.338] INFO vm/resolutions.go:116 verified block {"blkID": "2PDhe4s5Kjc4gS5Y1eg96SBavwb1Ry5wQdZacc54UAS3SEX7v7", "height": 22, "txs": 3813, "state ready": true}
+[08-22|11:51:13.367] INFO vm/resolutions.go:262 accepted block {"blkID": "2PDhe4s5Kjc4gS5Y1eg96SBavwb1Ry5wQdZacc54UAS3SEX7v7", "height": 22, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:13.374] INFO vm/resolutions.go:203 block processed {"blkID": "2PDhe4s5Kjc4gS5Y1eg96SBavwb1Ry5wQdZacc54UAS3SEX7v7", "height": 22}
+[08-22|11:51:13.492] INFO chain/builder.go:277 built block {"hght": 23, "attempted": 3814, "added": 3813, "mempool size": 423740, "mempool lock wait": "12.014µs", "context": false, "state changes": 5357, "state operations": 11439}
+[08-22|11:51:13.492] INFO chain/block.go:330 skipping verification, already processed {"height": 23, "blkID": "23T65f95VRR2MH7gSQxGCikebkrekJ7m8PhDQBbxS4XSdoAvFU"}
+[08-22|11:51:13.496] INFO vm/resolutions.go:116 verified block {"blkID": "23T65f95VRR2MH7gSQxGCikebkrekJ7m8PhDQBbxS4XSdoAvFU", "height": 23, "txs": 3813, "state ready": true}
+[08-22|11:51:13.530] INFO vm/resolutions.go:262 accepted block {"blkID": "23T65f95VRR2MH7gSQxGCikebkrekJ7m8PhDQBbxS4XSdoAvFU", "height": 23, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:13.536] INFO vm/resolutions.go:203 block processed {"blkID": "23T65f95VRR2MH7gSQxGCikebkrekJ7m8PhDQBbxS4XSdoAvFU", "height": 23}
+[08-22|11:51:13.645] INFO chain/builder.go:277 built block {"hght": 24, "attempted": 3814, "added": 3813, "mempool size": 419927, "mempool lock wait": "11.303µs", "context": false, "state changes": 5372, "state operations": 11439}
+[08-22|11:51:13.645] INFO chain/block.go:330 skipping verification, already processed {"height": 24, "blkID": "2UfKsefBjD4bBa8sFx4yUzpG8H7zmXtbJ1NYyGbGSWstFXVJhN"}
+[08-22|11:51:13.649] INFO vm/resolutions.go:116 verified block {"blkID": "2UfKsefBjD4bBa8sFx4yUzpG8H7zmXtbJ1NYyGbGSWstFXVJhN", "height": 24, "txs": 3813, "state ready": true}
+[08-22|11:51:13.679] INFO vm/resolutions.go:262 accepted block {"blkID": "2UfKsefBjD4bBa8sFx4yUzpG8H7zmXtbJ1NYyGbGSWstFXVJhN", "height": 24, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:13.687] INFO vm/resolutions.go:203 block processed {"blkID": "2UfKsefBjD4bBa8sFx4yUzpG8H7zmXtbJ1NYyGbGSWstFXVJhN", "height": 24}
+[08-22|11:51:13.896] INFO chain/builder.go:277 built block {"hght": 25, "attempted": 3814, "added": 3813, "mempool size": 416114, "mempool lock wait": "14.784µs", "context": false, "state changes": 5309, "state operations": 11439}
+[08-22|11:51:13.896] INFO chain/block.go:330 skipping verification, already processed {"height": 25, "blkID": "2FJ5yxrwCGverqLR6Q2MMXBHVBoo8szNgsaWRZ9iSgR8GQTmer"}
+[08-22|11:51:13.902] INFO vm/resolutions.go:116 verified block {"blkID": "2FJ5yxrwCGverqLR6Q2MMXBHVBoo8szNgsaWRZ9iSgR8GQTmer", "height": 25, "txs": 3813, "state ready": true}
+[08-22|11:51:14.019] INFO vm/resolutions.go:262 accepted block {"blkID": "2FJ5yxrwCGverqLR6Q2MMXBHVBoo8szNgsaWRZ9iSgR8GQTmer", "height": 25, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:14.039] INFO vm/resolutions.go:203 block processed {"blkID": "2FJ5yxrwCGverqLR6Q2MMXBHVBoo8szNgsaWRZ9iSgR8GQTmer", "height": 25}
+[08-22|11:51:14.185] INFO chain/builder.go:277 built block {"hght": 26, "attempted": 3814, "added": 3813, "mempool size": 412301, "mempool lock wait": "14.637µs", "context": false, "state changes": 5308, "state operations": 11439}
+[08-22|11:51:14.185] INFO chain/block.go:330 skipping verification, already processed {"height": 26, "blkID": "daYo3He6YPfrGbuvgiAoLX378sH3QqHxtUY5kLJPjiwwz9NvN"}
+[08-22|11:51:14.189] INFO vm/resolutions.go:116 verified block {"blkID": "daYo3He6YPfrGbuvgiAoLX378sH3QqHxtUY5kLJPjiwwz9NvN", "height": 26, "txs": 3813, "state ready": true}
+[08-22|11:51:14.234] INFO vm/resolutions.go:262 accepted block {"blkID": "daYo3He6YPfrGbuvgiAoLX378sH3QqHxtUY5kLJPjiwwz9NvN", "height": 26, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:14.257] INFO vm/resolutions.go:203 block processed {"blkID": "daYo3He6YPfrGbuvgiAoLX378sH3QqHxtUY5kLJPjiwwz9NvN", "height": 26}
+[08-22|11:51:14.359] INFO chain/builder.go:277 built block {"hght": 27, "attempted": 3814, "added": 3813, "mempool size": 408488, "mempool lock wait": "10.29µs", "context": false, "state changes": 5334, "state operations": 11439}
+[08-22|11:51:14.359] INFO chain/block.go:330 skipping verification, already processed {"height": 27, "blkID": "2QPNq1stvEvwFWJRuDaMRofRuaoXaFPXvcvk3grUfEGzyGbh31"}
+[08-22|11:51:14.364] INFO vm/resolutions.go:116 verified block {"blkID": "2QPNq1stvEvwFWJRuDaMRofRuaoXaFPXvcvk3grUfEGzyGbh31", "height": 27, "txs": 3813, "state ready": true}
+[08-22|11:51:14.392] INFO vm/resolutions.go:262 accepted block {"blkID": "2QPNq1stvEvwFWJRuDaMRofRuaoXaFPXvcvk3grUfEGzyGbh31", "height": 27, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:14.401] INFO vm/resolutions.go:203 block processed {"blkID": "2QPNq1stvEvwFWJRuDaMRofRuaoXaFPXvcvk3grUfEGzyGbh31", "height": 27}
+[08-22|11:51:14.582] INFO chain/builder.go:277 built block {"hght": 28, "attempted": 3814, "added": 3813, "mempool size": 404675, "mempool lock wait": "7.086µs", "context": false, "state changes": 5421, "state operations": 11439}
+[08-22|11:51:14.582] INFO chain/block.go:330 skipping verification, already processed {"height": 28, "blkID": "fMeZJ9RUp5U541t8ksEKg3azf7RVrgNTQdUKajP9s1oKCyUpw"}
+[08-22|11:51:14.591] INFO vm/resolutions.go:116 verified block {"blkID": "fMeZJ9RUp5U541t8ksEKg3azf7RVrgNTQdUKajP9s1oKCyUpw", "height": 28, "txs": 3813, "state ready": true}
+[08-22|11:51:14.629] INFO vm/resolutions.go:262 accepted block {"blkID": "fMeZJ9RUp5U541t8ksEKg3azf7RVrgNTQdUKajP9s1oKCyUpw", "height": 28, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:14.650] INFO vm/resolutions.go:203 block processed {"blkID": "fMeZJ9RUp5U541t8ksEKg3azf7RVrgNTQdUKajP9s1oKCyUpw", "height": 28}
+[08-22|11:51:14.925] INFO chain/builder.go:277 built block {"hght": 29, "attempted": 3814, "added": 3813, "mempool size": 400862, "mempool lock wait": "8.605µs", "context": false, "state changes": 5302, "state operations": 11439}
+[08-22|11:51:14.925] INFO chain/block.go:330 skipping verification, already processed {"height": 29, "blkID": "Z9ZLQu1E9SnHV89Z5xvFsNcj5xkD8YF3kjLz2JLmCWS2r4gFq"}
+[08-22|11:51:14.934] INFO vm/resolutions.go:116 verified block {"blkID": "Z9ZLQu1E9SnHV89Z5xvFsNcj5xkD8YF3kjLz2JLmCWS2r4gFq", "height": 29, "txs": 3813, "state ready": true}
+[08-22|11:51:15.046] INFO vm/resolutions.go:262 accepted block {"blkID": "Z9ZLQu1E9SnHV89Z5xvFsNcj5xkD8YF3kjLz2JLmCWS2r4gFq", "height": 29, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:15.100] INFO vm/resolutions.go:203 block processed {"blkID": "Z9ZLQu1E9SnHV89Z5xvFsNcj5xkD8YF3kjLz2JLmCWS2r4gFq", "height": 29}
+[08-22|11:51:16.070] INFO chain/builder.go:277 built block {"hght": 30, "attempted": 3814, "added": 3813, "mempool size": 397049, "mempool lock wait": "11.057µs", "context": false, "state changes": 5323, "state operations": 11439}
+[08-22|11:51:16.071] INFO chain/block.go:330 skipping verification, already processed {"height": 30, "blkID": "o53tRbhcRGGtVGHaZYKTyUe1HtX8UnarbGPH2dKHbHasYGqmu"}
+[08-22|11:51:16.108] INFO vm/resolutions.go:116 verified block {"blkID": "o53tRbhcRGGtVGHaZYKTyUe1HtX8UnarbGPH2dKHbHasYGqmu", "height": 30, "txs": 3813, "state ready": true}
+[08-22|11:51:16.236] INFO vm/resolutions.go:262 accepted block {"blkID": "o53tRbhcRGGtVGHaZYKTyUe1HtX8UnarbGPH2dKHbHasYGqmu", "height": 30, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:16.257] INFO vm/resolutions.go:203 block processed {"blkID": "o53tRbhcRGGtVGHaZYKTyUe1HtX8UnarbGPH2dKHbHasYGqmu", "height": 30}
+[08-22|11:51:16.420] INFO chain/builder.go:277 built block {"hght": 31, "attempted": 3814, "added": 3813, "mempool size": 393236, "mempool lock wait": "12.635µs", "context": false, "state changes": 5269, "state operations": 11439}
+[08-22|11:51:16.420] INFO chain/block.go:330 skipping verification, already processed {"height": 31, "blkID": "43Qn8yu8vAXCCX4zXCqTKweP14mbBe32RQKBCvmD6x33HZ4Mv"}
+[08-22|11:51:16.424] INFO vm/resolutions.go:116 verified block {"blkID": "43Qn8yu8vAXCCX4zXCqTKweP14mbBe32RQKBCvmD6x33HZ4Mv", "height": 31, "txs": 3813, "state ready": true}
+[08-22|11:51:16.453] INFO vm/resolutions.go:262 accepted block {"blkID": "43Qn8yu8vAXCCX4zXCqTKweP14mbBe32RQKBCvmD6x33HZ4Mv", "height": 31, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:16.460] INFO vm/resolutions.go:203 block processed {"blkID": "43Qn8yu8vAXCCX4zXCqTKweP14mbBe32RQKBCvmD6x33HZ4Mv", "height": 31}
+[08-22|11:51:16.598] INFO chain/builder.go:277 built block {"hght": 32, "attempted": 3814, "added": 3813, "mempool size": 389423, "mempool lock wait": "9.263µs", "context": false, "state changes": 5298, "state operations": 11439}
+[08-22|11:51:16.598] INFO chain/block.go:330 skipping verification, already processed {"height": 32, "blkID": "cyvSkXu4TfAcVwvxstreqQdhYKcQNo5JKjAhGHrs7oXU8iaNd"}
+[08-22|11:51:16.602] INFO vm/resolutions.go:116 verified block {"blkID": "cyvSkXu4TfAcVwvxstreqQdhYKcQNo5JKjAhGHrs7oXU8iaNd", "height": 32, "txs": 3813, "state ready": true}
+[08-22|11:51:16.627] INFO vm/resolutions.go:262 accepted block {"blkID": "cyvSkXu4TfAcVwvxstreqQdhYKcQNo5JKjAhGHrs7oXU8iaNd", "height": 32, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:16.636] INFO vm/resolutions.go:203 block processed {"blkID": "cyvSkXu4TfAcVwvxstreqQdhYKcQNo5JKjAhGHrs7oXU8iaNd", "height": 32}
+[08-22|11:51:16.787] INFO chain/builder.go:277 built block {"hght": 33, "attempted": 3814, "added": 3813, "mempool size": 385610, "mempool lock wait": "13.673µs", "context": false, "state changes": 5334, "state operations": 11439}
+[08-22|11:51:16.788] INFO chain/block.go:330 skipping verification, already processed {"height": 33, "blkID": "2QbbFXmnrWtJ6PdyZzJgmTKoKUchWhjEfb3LgxhLtGy9stjVUE"}
+[08-22|11:51:16.792] INFO vm/resolutions.go:116 verified block {"blkID": "2QbbFXmnrWtJ6PdyZzJgmTKoKUchWhjEfb3LgxhLtGy9stjVUE", "height": 33, "txs": 3813, "state ready": true}
+[08-22|11:51:16.850] INFO vm/resolutions.go:262 accepted block {"blkID": "2QbbFXmnrWtJ6PdyZzJgmTKoKUchWhjEfb3LgxhLtGy9stjVUE", "height": 33, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:16.868] INFO vm/resolutions.go:203 block processed {"blkID": "2QbbFXmnrWtJ6PdyZzJgmTKoKUchWhjEfb3LgxhLtGy9stjVUE", "height": 33}
+[08-22|11:51:17.045] INFO chain/builder.go:277 built block {"hght": 34, "attempted": 3814, "added": 3813, "mempool size": 381797, "mempool lock wait": "11.56µs", "context": false, "state changes": 5310, "state operations": 11439}
+[08-22|11:51:17.046] INFO chain/block.go:330 skipping verification, already processed {"height": 34, "blkID": "ifgEDoQHDRjN2nFRpD8jSRazYsrJmNxbtUXYKDERhwLMrYvWw"}
+[08-22|11:51:17.050] INFO vm/resolutions.go:116 verified block {"blkID": "ifgEDoQHDRjN2nFRpD8jSRazYsrJmNxbtUXYKDERhwLMrYvWw", "height": 34, "txs": 3813, "state ready": true}
+[08-22|11:51:17.077] INFO vm/resolutions.go:262 accepted block {"blkID": "ifgEDoQHDRjN2nFRpD8jSRazYsrJmNxbtUXYKDERhwLMrYvWw", "height": 34, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:17.087] INFO vm/resolutions.go:203 block processed {"blkID": "ifgEDoQHDRjN2nFRpD8jSRazYsrJmNxbtUXYKDERhwLMrYvWw", "height": 34}
+[08-22|11:51:17.197] INFO chain/builder.go:277 built block {"hght": 35, "attempted": 3814, "added": 3813, "mempool size": 377984, "mempool lock wait": "11.207µs", "context": false, "state changes": 5332, "state operations": 11439}
+[08-22|11:51:17.197] INFO chain/block.go:330 skipping verification, already processed {"height": 35, "blkID": "DH4d2bXKz4VdSPGBjoxK2cqPLbGEQ41psJdREPJ4F4dk7rskx"}
+[08-22|11:51:17.208] INFO vm/resolutions.go:116 verified block {"blkID": "DH4d2bXKz4VdSPGBjoxK2cqPLbGEQ41psJdREPJ4F4dk7rskx", "height": 35, "txs": 3813, "state ready": true}
+[08-22|11:51:17.243] INFO vm/resolutions.go:262 accepted block {"blkID": "DH4d2bXKz4VdSPGBjoxK2cqPLbGEQ41psJdREPJ4F4dk7rskx", "height": 35, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:17.252] INFO vm/resolutions.go:203 block processed {"blkID": "DH4d2bXKz4VdSPGBjoxK2cqPLbGEQ41psJdREPJ4F4dk7rskx", "height": 35}
+[08-22|11:51:17.352] INFO chain/builder.go:277 built block {"hght": 36, "attempted": 3814, "added": 3813, "mempool size": 374171, "mempool lock wait": "10.045µs", "context": false, "state changes": 5358, "state operations": 11439}
+[08-22|11:51:17.352] INFO chain/block.go:330 skipping verification, already processed {"height": 36, "blkID": "2GnPcuRPjC88JcgNQZszycJUVhgavX1b6pRDZcdruvSdoLJqrN"}
+[08-22|11:51:17.356] INFO vm/resolutions.go:116 verified block {"blkID": "2GnPcuRPjC88JcgNQZszycJUVhgavX1b6pRDZcdruvSdoLJqrN", "height": 36, "txs": 3813, "state ready": true}
+[08-22|11:51:17.396] INFO vm/resolutions.go:262 accepted block {"blkID": "2GnPcuRPjC88JcgNQZszycJUVhgavX1b6pRDZcdruvSdoLJqrN", "height": 36, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:17.409] INFO vm/resolutions.go:203 block processed {"blkID": "2GnPcuRPjC88JcgNQZszycJUVhgavX1b6pRDZcdruvSdoLJqrN", "height": 36}
+[08-22|11:51:17.595] INFO chain/builder.go:277 built block {"hght": 37, "attempted": 3814, "added": 3813, "mempool size": 370358, "mempool lock wait": "21.464µs", "context": false, "state changes": 5326, "state operations": 11439}
+[08-22|11:51:17.596] INFO chain/block.go:330 skipping verification, already processed {"height": 37, "blkID": "24GVYDEKjSCgPTpk7gggQyPXq88hHVjR5LH4aQYpDQHfqRqEd3"}
+[08-22|11:51:17.601] INFO vm/resolutions.go:116 verified block {"blkID": "24GVYDEKjSCgPTpk7gggQyPXq88hHVjR5LH4aQYpDQHfqRqEd3", "height": 37, "txs": 3813, "state ready": true}
+[08-22|11:51:17.652] INFO vm/resolutions.go:262 accepted block {"blkID": "24GVYDEKjSCgPTpk7gggQyPXq88hHVjR5LH4aQYpDQHfqRqEd3", "height": 37, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:17.664] INFO vm/resolutions.go:203 block processed {"blkID": "24GVYDEKjSCgPTpk7gggQyPXq88hHVjR5LH4aQYpDQHfqRqEd3", "height": 37}
+[08-22|11:51:17.783] INFO chain/builder.go:277 built block {"hght": 38, "attempted": 3814, "added": 3813, "mempool size": 366545, "mempool lock wait": "14.672µs", "context": false, "state changes": 5281, "state operations": 11439}
+[08-22|11:51:17.783] INFO chain/block.go:330 skipping verification, already processed {"height": 38, "blkID": "RetwMyXcnJpQ2FWGydDXHHhpMpmKQF4oMKpUUtVm2aQ5xK45k"}
+[08-22|11:51:17.787] INFO vm/resolutions.go:116 verified block {"blkID": "RetwMyXcnJpQ2FWGydDXHHhpMpmKQF4oMKpUUtVm2aQ5xK45k", "height": 38, "txs": 3813, "state ready": true}
+[08-22|11:51:17.817] INFO vm/resolutions.go:262 accepted block {"blkID": "RetwMyXcnJpQ2FWGydDXHHhpMpmKQF4oMKpUUtVm2aQ5xK45k", "height": 38, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:17.828] INFO vm/resolutions.go:203 block processed {"blkID": "RetwMyXcnJpQ2FWGydDXHHhpMpmKQF4oMKpUUtVm2aQ5xK45k", "height": 38}
+[08-22|11:51:17.966] INFO chain/builder.go:277 built block {"hght": 39, "attempted": 3814, "added": 3813, "mempool size": 362732, "mempool lock wait": "12.986µs", "context": false, "state changes": 5317, "state operations": 11439}
+[08-22|11:51:17.966] INFO chain/block.go:330 skipping verification, already processed {"height": 39, "blkID": "vP62UxyEkFrvfoLm6FtHedfrrPyzhZPYN3EwY68nGWErwFyth"}
+[08-22|11:51:17.970] INFO vm/resolutions.go:116 verified block {"blkID": "vP62UxyEkFrvfoLm6FtHedfrrPyzhZPYN3EwY68nGWErwFyth", "height": 39, "txs": 3813, "state ready": true}
+[08-22|11:51:17.990] INFO vm/resolutions.go:262 accepted block {"blkID": "vP62UxyEkFrvfoLm6FtHedfrrPyzhZPYN3EwY68nGWErwFyth", "height": 39, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:17.994] INFO vm/resolutions.go:203 block processed {"blkID": "vP62UxyEkFrvfoLm6FtHedfrrPyzhZPYN3EwY68nGWErwFyth", "height": 39}
+[08-22|11:51:18.094] INFO chain/builder.go:277 built block {"hght": 40, "attempted": 3814, "added": 3813, "mempool size": 358919, "mempool lock wait": "8.96µs", "context": false, "state changes": 5388, "state operations": 11439}
+[08-22|11:51:18.094] INFO chain/block.go:330 skipping verification, already processed {"height": 40, "blkID": "2X6VPNWoxvzxo1YvieVKrd47DG8sM2LxvxpTqQY1G8FEmBn3MB"}
+[08-22|11:51:18.097] INFO vm/resolutions.go:116 verified block {"blkID": "2X6VPNWoxvzxo1YvieVKrd47DG8sM2LxvxpTqQY1G8FEmBn3MB", "height": 40, "txs": 3813, "state ready": true}
+[08-22|11:51:18.120] INFO vm/resolutions.go:262 accepted block {"blkID": "2X6VPNWoxvzxo1YvieVKrd47DG8sM2LxvxpTqQY1G8FEmBn3MB", "height": 40, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:18.124] INFO vm/resolutions.go:203 block processed {"blkID": "2X6VPNWoxvzxo1YvieVKrd47DG8sM2LxvxpTqQY1G8FEmBn3MB", "height": 40}
+[08-22|11:51:18.216] INFO chain/builder.go:277 built block {"hght": 41, "attempted": 3814, "added": 3813, "mempool size": 355106, "mempool lock wait": "8.781µs", "context": false, "state changes": 5339, "state operations": 11439}
+[08-22|11:51:18.216] INFO chain/block.go:330 skipping verification, already processed {"height": 41, "blkID": "KYwrK4XgHVxt8dzCmX2WakTwSF2U8sKoL3gt1gbRW7v4dHG1x"}
+[08-22|11:51:18.220] INFO vm/resolutions.go:116 verified block {"blkID": "KYwrK4XgHVxt8dzCmX2WakTwSF2U8sKoL3gt1gbRW7v4dHG1x", "height": 41, "txs": 3813, "state ready": true}
+[08-22|11:51:18.243] INFO vm/resolutions.go:262 accepted block {"blkID": "KYwrK4XgHVxt8dzCmX2WakTwSF2U8sKoL3gt1gbRW7v4dHG1x", "height": 41, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:18.250] INFO vm/resolutions.go:203 block processed {"blkID": "KYwrK4XgHVxt8dzCmX2WakTwSF2U8sKoL3gt1gbRW7v4dHG1x", "height": 41}
+[08-22|11:51:18.365] INFO chain/builder.go:277 built block {"hght": 42, "attempted": 3814, "added": 3813, "mempool size": 351293, "mempool lock wait": "10.124µs", "context": false, "state changes": 5338, "state operations": 11439}
+[08-22|11:51:18.366] INFO chain/block.go:330 skipping verification, already processed {"height": 42, "blkID": "3nEQXEZZ36uqGKnfWTx2wNwQxaXXXGG3rTUPd81AZe38Gqd9h"}
+[08-22|11:51:18.369] INFO vm/resolutions.go:116 verified block {"blkID": "3nEQXEZZ36uqGKnfWTx2wNwQxaXXXGG3rTUPd81AZe38Gqd9h", "height": 42, "txs": 3813, "state ready": true}
+[08-22|11:51:18.390] INFO vm/resolutions.go:262 accepted block {"blkID": "3nEQXEZZ36uqGKnfWTx2wNwQxaXXXGG3rTUPd81AZe38Gqd9h", "height": 42, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:18.394] INFO vm/resolutions.go:203 block processed {"blkID": "3nEQXEZZ36uqGKnfWTx2wNwQxaXXXGG3rTUPd81AZe38Gqd9h", "height": 42}
+[08-22|11:51:18.554] INFO chain/builder.go:277 built block {"hght": 43, "attempted": 3814, "added": 3813, "mempool size": 347480, "mempool lock wait": "8.467µs", "context": false, "state changes": 5362, "state operations": 11439}
+[08-22|11:51:18.554] INFO chain/block.go:330 skipping verification, already processed {"height": 43, "blkID": "NyBP63dfYyf22snkBynGmeMjdMV1o5Ca6a7DCENMf6ezdGD8X"}
+[08-22|11:51:18.558] INFO vm/resolutions.go:116 verified block {"blkID": "NyBP63dfYyf22snkBynGmeMjdMV1o5Ca6a7DCENMf6ezdGD8X", "height": 43, "txs": 3813, "state ready": true}
+[08-22|11:51:18.631] INFO vm/resolutions.go:262 accepted block {"blkID": "NyBP63dfYyf22snkBynGmeMjdMV1o5Ca6a7DCENMf6ezdGD8X", "height": 43, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:18.636] INFO vm/resolutions.go:203 block processed {"blkID": "NyBP63dfYyf22snkBynGmeMjdMV1o5Ca6a7DCENMf6ezdGD8X", "height": 43}
+[08-22|11:51:19.146] INFO chain/builder.go:277 built block {"hght": 44, "attempted": 3814, "added": 3813, "mempool size": 343667, "mempool lock wait": "10.016µs", "context": false, "state changes": 5329, "state operations": 11439}
+[08-22|11:51:19.146] INFO chain/block.go:330 skipping verification, already processed {"height": 44, "blkID": "GAQkJGuU2iPkQypwmkKMjjqrMgT56ZrX58nsvhmx6VUrKWh8v"}
+[08-22|11:51:19.154] INFO vm/resolutions.go:116 verified block {"blkID": "GAQkJGuU2iPkQypwmkKMjjqrMgT56ZrX58nsvhmx6VUrKWh8v", "height": 44, "txs": 3813, "state ready": true}
+[08-22|11:51:19.255] INFO vm/resolutions.go:262 accepted block {"blkID": "GAQkJGuU2iPkQypwmkKMjjqrMgT56ZrX58nsvhmx6VUrKWh8v", "height": 44, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:19.270] INFO vm/resolutions.go:203 block processed {"blkID": "GAQkJGuU2iPkQypwmkKMjjqrMgT56ZrX58nsvhmx6VUrKWh8v", "height": 44}
+[08-22|11:51:19.967] INFO chain/builder.go:277 built block {"hght": 45, "attempted": 3814, "added": 3813, "mempool size": 339854, "mempool lock wait": "11.907µs", "context": false, "state changes": 5370, "state operations": 11439}
+[08-22|11:51:19.967] INFO chain/block.go:330 skipping verification, already processed {"height": 45, "blkID": "2sQEoYaxvvRvNrJgCV2qLqwvp72JcMy2e7xyqgwuAZwNofEQnV"}
+[08-22|11:51:19.975] INFO vm/resolutions.go:116 verified block {"blkID": "2sQEoYaxvvRvNrJgCV2qLqwvp72JcMy2e7xyqgwuAZwNofEQnV", "height": 45, "txs": 3813, "state ready": true}
+[08-22|11:51:20.063] INFO vm/resolutions.go:262 accepted block {"blkID": "2sQEoYaxvvRvNrJgCV2qLqwvp72JcMy2e7xyqgwuAZwNofEQnV", "height": 45, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:20.088] INFO vm/resolutions.go:203 block processed {"blkID": "2sQEoYaxvvRvNrJgCV2qLqwvp72JcMy2e7xyqgwuAZwNofEQnV", "height": 45}
+[08-22|11:51:20.629] INFO chain/builder.go:277 built block {"hght": 46, "attempted": 3814, "added": 3813, "mempool size": 336041, "mempool lock wait": "10.268µs", "context": false, "state changes": 5342, "state operations": 11439}
+[08-22|11:51:20.629] INFO chain/block.go:330 skipping verification, already processed {"height": 46, "blkID": "87pVWc3xoW89S9NU2WAmWiwjnEoztSn1VPxbCDf5PrfW3dn55"}
+[08-22|11:51:20.636] INFO vm/resolutions.go:116 verified block {"blkID": "87pVWc3xoW89S9NU2WAmWiwjnEoztSn1VPxbCDf5PrfW3dn55", "height": 46, "txs": 3813, "state ready": true}
+[08-22|11:51:20.703] INFO vm/resolutions.go:262 accepted block {"blkID": "87pVWc3xoW89S9NU2WAmWiwjnEoztSn1VPxbCDf5PrfW3dn55", "height": 46, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:20.724] INFO vm/resolutions.go:203 block processed {"blkID": "87pVWc3xoW89S9NU2WAmWiwjnEoztSn1VPxbCDf5PrfW3dn55", "height": 46}
+[08-22|11:51:21.194] INFO chain/builder.go:277 built block {"hght": 47, "attempted": 3814, "added": 3813, "mempool size": 332228, "mempool lock wait": "7.265µs", "context": false, "state changes": 5331, "state operations": 11439}
+[08-22|11:51:21.194] INFO chain/block.go:330 skipping verification, already processed {"height": 47, "blkID": "23iGaUTJ2qQvTUsLfEgdR4okiFRTVunEbXWg8cy8UBZ5ULxg3g"}
+[08-22|11:51:21.200] INFO vm/resolutions.go:116 verified block {"blkID": "23iGaUTJ2qQvTUsLfEgdR4okiFRTVunEbXWg8cy8UBZ5ULxg3g", "height": 47, "txs": 3813, "state ready": true}
+[08-22|11:51:21.256] INFO vm/resolutions.go:262 accepted block {"blkID": "23iGaUTJ2qQvTUsLfEgdR4okiFRTVunEbXWg8cy8UBZ5ULxg3g", "height": 47, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:21.287] INFO vm/resolutions.go:203 block processed {"blkID": "23iGaUTJ2qQvTUsLfEgdR4okiFRTVunEbXWg8cy8UBZ5ULxg3g", "height": 47}
+[08-22|11:51:21.477] INFO chain/builder.go:277 built block {"hght": 48, "attempted": 3814, "added": 3813, "mempool size": 328415, "mempool lock wait": "15.654µs", "context": false, "state changes": 5367, "state operations": 11439}
+[08-22|11:51:21.477] INFO chain/block.go:330 skipping verification, already processed {"height": 48, "blkID": "2FByCxJzk62MiAvbDYKNwMCfxphYajdtZe6buGxUVCB1GE6tqZ"}
+[08-22|11:51:21.482] INFO vm/resolutions.go:116 verified block {"blkID": "2FByCxJzk62MiAvbDYKNwMCfxphYajdtZe6buGxUVCB1GE6tqZ", "height": 48, "txs": 3813, "state ready": true}
+[08-22|11:51:21.514] INFO vm/resolutions.go:262 accepted block {"blkID": "2FByCxJzk62MiAvbDYKNwMCfxphYajdtZe6buGxUVCB1GE6tqZ", "height": 48, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:21.528] INFO vm/resolutions.go:203 block processed {"blkID": "2FByCxJzk62MiAvbDYKNwMCfxphYajdtZe6buGxUVCB1GE6tqZ", "height": 48}
+[08-22|11:51:21.729] INFO chain/builder.go:277 built block {"hght": 49, "attempted": 3814, "added": 3813, "mempool size": 324602, "mempool lock wait": "6.85µs", "context": false, "state changes": 5305, "state operations": 11439}
+[08-22|11:51:21.729] INFO chain/block.go:330 skipping verification, already processed {"height": 49, "blkID": "UuzWLC3xdfmMBWPa9ZdgKiPZCtBDRZZcVsqJByZzNVAQiQtS"}
+[08-22|11:51:21.745] INFO vm/resolutions.go:116 verified block {"blkID": "UuzWLC3xdfmMBWPa9ZdgKiPZCtBDRZZcVsqJByZzNVAQiQtS", "height": 49, "txs": 3813, "state ready": true}
+[08-22|11:51:21.780] INFO vm/resolutions.go:262 accepted block {"blkID": "UuzWLC3xdfmMBWPa9ZdgKiPZCtBDRZZcVsqJByZzNVAQiQtS", "height": 49, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:21.789] INFO vm/resolutions.go:203 block processed {"blkID": "UuzWLC3xdfmMBWPa9ZdgKiPZCtBDRZZcVsqJByZzNVAQiQtS", "height": 49}
+[08-22|11:51:22.266] INFO chain/builder.go:277 built block {"hght": 50, "attempted": 3814, "added": 3813, "mempool size": 320789, "mempool lock wait": "10.051µs", "context": false, "state changes": 5358, "state operations": 11439}
+[08-22|11:51:22.268] INFO chain/block.go:330 skipping verification, already processed {"height": 50, "blkID": "248RmGzMEUKb9ryWdj2maBRAXe5dGVDdzUdJNdaMjQnUVf6nRc"}
+[08-22|11:51:22.280] INFO vm/resolutions.go:116 verified block {"blkID": "248RmGzMEUKb9ryWdj2maBRAXe5dGVDdzUdJNdaMjQnUVf6nRc", "height": 50, "txs": 3813, "state ready": true}
+[08-22|11:51:22.382] INFO vm/resolutions.go:262 accepted block {"blkID": "248RmGzMEUKb9ryWdj2maBRAXe5dGVDdzUdJNdaMjQnUVf6nRc", "height": 50, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:22.414] INFO vm/resolutions.go:203 block processed {"blkID": "248RmGzMEUKb9ryWdj2maBRAXe5dGVDdzUdJNdaMjQnUVf6nRc", "height": 50}
+[08-22|11:51:23.506] INFO chain/builder.go:277 built block {"hght": 51, "attempted": 3814, "added": 3813, "mempool size": 316976, "mempool lock wait": "15.735µs", "context": false, "state changes": 5314, "state operations": 11439}
+[08-22|11:51:23.649] INFO chain/block.go:330 skipping verification, already processed {"height": 51, "blkID": "CD9MDFcavM4V367gMdbxz1tGNevNEj8DLaMaeFfJSwsbcR6ki"}
+[08-22|11:51:23.903] INFO vm/resolutions.go:116 verified block {"blkID": "CD9MDFcavM4V367gMdbxz1tGNevNEj8DLaMaeFfJSwsbcR6ki", "height": 51, "txs": 3813, "state ready": true}
+[08-22|11:51:24.333] INFO vm/resolutions.go:262 accepted block {"blkID": "CD9MDFcavM4V367gMdbxz1tGNevNEj8DLaMaeFfJSwsbcR6ki", "height": 51, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:24.525] INFO vm/resolutions.go:203 block processed {"blkID": "CD9MDFcavM4V367gMdbxz1tGNevNEj8DLaMaeFfJSwsbcR6ki", "height": 51}
+[08-22|11:51:30.763] INFO chain/builder.go:277 built block {"hght": 52, "attempted": 3814, "added": 3813, "mempool size": 313163, "mempool lock wait": "13.885558ms", "context": false, "state changes": 5321, "state operations": 11439}
+[08-22|11:51:30.779] INFO chain/block.go:330 skipping verification, already processed {"height": 52, "blkID": "ULm3TKrZTqJT63cjkWeNbbvMEdms7weGDuxshboeiwGTxFDYQ"}
+[08-22|11:51:30.832] INFO vm/resolutions.go:116 verified block {"blkID": "ULm3TKrZTqJT63cjkWeNbbvMEdms7weGDuxshboeiwGTxFDYQ", "height": 52, "txs": 3813, "state ready": true}
+[08-22|11:51:31.293] INFO vm/resolutions.go:262 accepted block {"blkID": "ULm3TKrZTqJT63cjkWeNbbvMEdms7weGDuxshboeiwGTxFDYQ", "height": 52, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:31.377] INFO vm/resolutions.go:203 block processed {"blkID": "ULm3TKrZTqJT63cjkWeNbbvMEdms7weGDuxshboeiwGTxFDYQ", "height": 52}
+[08-22|11:51:32.783] INFO chain/builder.go:277 built block {"hght": 53, "attempted": 3814, "added": 3813, "mempool size": 309350, "mempool lock wait": "50.191235ms", "context": false, "state changes": 5374, "state operations": 11439}
+[08-22|11:51:32.796] INFO chain/block.go:330 skipping verification, already processed {"height": 53, "blkID": "aAB97spEyqjNi68NCL5yuy5cXcNpDUzZhv8DC4kp2mMHbr84P"}
+[08-22|11:51:32.819] INFO vm/resolutions.go:116 verified block {"blkID": "aAB97spEyqjNi68NCL5yuy5cXcNpDUzZhv8DC4kp2mMHbr84P", "height": 53, "txs": 3813, "state ready": true}
+[08-22|11:51:33.066] INFO vm/resolutions.go:262 accepted block {"blkID": "aAB97spEyqjNi68NCL5yuy5cXcNpDUzZhv8DC4kp2mMHbr84P", "height": 53, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:51:33.227] INFO vm/resolutions.go:203 block processed {"blkID": "aAB97spEyqjNi68NCL5yuy5cXcNpDUzZhv8DC4kp2mMHbr84P", "height": 53}
+[08-22|11:57:26.790] INFO chain/builder.go:277 built block {"hght": 54, "attempted": 3814, "added": 3813, "mempool size": 305537, "mempool lock wait": "1.791386ms", "context": false, "state changes": 5322, "state operations": 11439}
+[08-22|11:57:26.806] INFO chain/block.go:330 skipping verification, already processed {"height": 54, "blkID": "vaaXkkgFrtsVo8hGqHxu69iNJdhTwtMP6bJNoHW4EUsbNZetJ"}
+[08-22|11:57:27.615] INFO vm/resolutions.go:116 verified block {"blkID": "vaaXkkgFrtsVo8hGqHxu69iNJdhTwtMP6bJNoHW4EUsbNZetJ", "height": 54, "txs": 3813, "state ready": true}
+[08-22|11:57:27.927] INFO vm/resolutions.go:262 accepted block {"blkID": "vaaXkkgFrtsVo8hGqHxu69iNJdhTwtMP6bJNoHW4EUsbNZetJ", "height": 54, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:28.190] INFO vm/resolutions.go:203 block processed {"blkID": "vaaXkkgFrtsVo8hGqHxu69iNJdhTwtMP6bJNoHW4EUsbNZetJ", "height": 54}
+[08-22|11:57:33.124] INFO chain/builder.go:277 built block {"hght": 55, "attempted": 3814, "added": 3813, "mempool size": 301724, "mempool lock wait": "458.02µs", "context": false, "state changes": 5337, "state operations": 11439}
+[08-22|11:57:33.125] INFO chain/block.go:330 skipping verification, already processed {"height": 55, "blkID": "MhL3B7enSY8rWycd9w31YMEvfR2KuvTy9mhkB7to6qdRiNZv8"}
+[08-22|11:57:33.133] INFO vm/resolutions.go:116 verified block {"blkID": "MhL3B7enSY8rWycd9w31YMEvfR2KuvTy9mhkB7to6qdRiNZv8", "height": 55, "txs": 3813, "state ready": true}
+[08-22|11:57:33.713] INFO vm/resolutions.go:262 accepted block {"blkID": "MhL3B7enSY8rWycd9w31YMEvfR2KuvTy9mhkB7to6qdRiNZv8", "height": 55, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:33.932] INFO vm/resolutions.go:203 block processed {"blkID": "MhL3B7enSY8rWycd9w31YMEvfR2KuvTy9mhkB7to6qdRiNZv8", "height": 55}
+[08-22|11:57:38.593] INFO chain/builder.go:277 built block {"hght": 56, "attempted": 3814, "added": 3813, "mempool size": 297911, "mempool lock wait": "79.058µs", "context": false, "state changes": 5243, "state operations": 11439}
+[08-22|11:57:38.594] INFO chain/block.go:330 skipping verification, already processed {"height": 56, "blkID": "c3YYYwQ1CUjGzryAoPJ1AjWoEXjdpwZdZxPKuCcEh5LTrp4Sj"}
+[08-22|11:57:38.601] INFO vm/resolutions.go:116 verified block {"blkID": "c3YYYwQ1CUjGzryAoPJ1AjWoEXjdpwZdZxPKuCcEh5LTrp4Sj", "height": 56, "txs": 3813, "state ready": true}
+[08-22|11:57:38.886] INFO vm/resolutions.go:262 accepted block {"blkID": "c3YYYwQ1CUjGzryAoPJ1AjWoEXjdpwZdZxPKuCcEh5LTrp4Sj", "height": 56, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:39.087] INFO vm/resolutions.go:203 block processed {"blkID": "c3YYYwQ1CUjGzryAoPJ1AjWoEXjdpwZdZxPKuCcEh5LTrp4Sj", "height": 56}
+[08-22|11:57:42.886] INFO chain/builder.go:277 built block {"hght": 57, "attempted": 3814, "added": 3813, "mempool size": 294098, "mempool lock wait": "21.914µs", "context": false, "state changes": 5366, "state operations": 11439}
+[08-22|11:57:42.886] INFO chain/block.go:330 skipping verification, already processed {"height": 57, "blkID": "2tyqmiLL6LKuxcTTe8RSEdWjB4ip7AYwALiQJByc53GsNmRDtK"}
+[08-22|11:57:42.892] INFO vm/resolutions.go:116 verified block {"blkID": "2tyqmiLL6LKuxcTTe8RSEdWjB4ip7AYwALiQJByc53GsNmRDtK", "height": 57, "txs": 3813, "state ready": true}
+[08-22|11:57:43.278] INFO vm/resolutions.go:262 accepted block {"blkID": "2tyqmiLL6LKuxcTTe8RSEdWjB4ip7AYwALiQJByc53GsNmRDtK", "height": 57, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:43.410] INFO vm/resolutions.go:203 block processed {"blkID": "2tyqmiLL6LKuxcTTe8RSEdWjB4ip7AYwALiQJByc53GsNmRDtK", "height": 57}
+[08-22|11:57:47.749] INFO chain/builder.go:277 built block {"hght": 58, "attempted": 3814, "added": 3813, "mempool size": 290285, "mempool lock wait": "19.986µs", "context": false, "state changes": 5288, "state operations": 11439}
+[08-22|11:57:47.755] INFO chain/block.go:330 skipping verification, already processed {"height": 58, "blkID": "2MQs3sHJBYfW5UXBtNurn9q1sv6q4ZXRm1WG6oeiw5vzHeP25E"}
+[08-22|11:57:47.765] INFO vm/resolutions.go:116 verified block {"blkID": "2MQs3sHJBYfW5UXBtNurn9q1sv6q4ZXRm1WG6oeiw5vzHeP25E", "height": 58, "txs": 3813, "state ready": true}
+[08-22|11:57:48.151] INFO vm/resolutions.go:262 accepted block {"blkID": "2MQs3sHJBYfW5UXBtNurn9q1sv6q4ZXRm1WG6oeiw5vzHeP25E", "height": 58, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:48.407] INFO vm/resolutions.go:203 block processed {"blkID": "2MQs3sHJBYfW5UXBtNurn9q1sv6q4ZXRm1WG6oeiw5vzHeP25E", "height": 58}
+[08-22|11:57:51.613] INFO chain/builder.go:277 built block {"hght": 59, "attempted": 3814, "added": 3813, "mempool size": 286472, "mempool lock wait": "2.996301ms", "context": false, "state changes": 5329, "state operations": 11439}
+[08-22|11:57:51.622] INFO chain/block.go:330 skipping verification, already processed {"height": 59, "blkID": "2r5qYGPVFeNG3kDZHCRdj2bZ7ByhRu7H3MQ3WqP8VZGGaaxGyi"}
+[08-22|11:57:51.630] INFO vm/resolutions.go:116 verified block {"blkID": "2r5qYGPVFeNG3kDZHCRdj2bZ7ByhRu7H3MQ3WqP8VZGGaaxGyi", "height": 59, "txs": 3813, "state ready": true}
+[08-22|11:57:52.871] INFO vm/resolutions.go:262 accepted block {"blkID": "2r5qYGPVFeNG3kDZHCRdj2bZ7ByhRu7H3MQ3WqP8VZGGaaxGyi", "height": 59, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:53.068] INFO vm/resolutions.go:203 block processed {"blkID": "2r5qYGPVFeNG3kDZHCRdj2bZ7ByhRu7H3MQ3WqP8VZGGaaxGyi", "height": 59}
+[08-22|11:57:56.210] INFO chain/builder.go:277 built block {"hght": 60, "attempted": 3814, "added": 3813, "mempool size": 282659, "mempool lock wait": "3.45979ms", "context": false, "state changes": 5354, "state operations": 11439}
+[08-22|11:57:56.220] INFO chain/block.go:330 skipping verification, already processed {"height": 60, "blkID": "fmVjHP4SgTQqcroaZPk1jAMgPLypv1fSNsFDg5aXmZT5aQ26t"}
+[08-22|11:57:56.233] INFO vm/resolutions.go:116 verified block {"blkID": "fmVjHP4SgTQqcroaZPk1jAMgPLypv1fSNsFDg5aXmZT5aQ26t", "height": 60, "txs": 3813, "state ready": true}
+[08-22|11:57:56.887] INFO vm/resolutions.go:262 accepted block {"blkID": "fmVjHP4SgTQqcroaZPk1jAMgPLypv1fSNsFDg5aXmZT5aQ26t", "height": 60, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:57:57.227] INFO vm/resolutions.go:203 block processed {"blkID": "fmVjHP4SgTQqcroaZPk1jAMgPLypv1fSNsFDg5aXmZT5aQ26t", "height": 60}
+[08-22|11:57:59.730] INFO chain/builder.go:277 built block {"hght": 61, "attempted": 3814, "added": 3813, "mempool size": 278846, "mempool lock wait": "149.809µs", "context": false, "state changes": 5331, "state operations": 11439}
+[08-22|11:57:59.735] INFO chain/block.go:330 skipping verification, already processed {"height": 61, "blkID": "kYzUyniiB8xLmbSHTViAwDk6id9ZwgZfsgBuNUCReR5xWpwac"}
+[08-22|11:57:59.744] INFO vm/resolutions.go:116 verified block {"blkID": "kYzUyniiB8xLmbSHTViAwDk6id9ZwgZfsgBuNUCReR5xWpwac", "height": 61, "txs": 3813, "state ready": true}
+[08-22|11:58:00.049] INFO vm/resolutions.go:262 accepted block {"blkID": "kYzUyniiB8xLmbSHTViAwDk6id9ZwgZfsgBuNUCReR5xWpwac", "height": 61, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:58:00.439] INFO vm/resolutions.go:203 block processed {"blkID": "kYzUyniiB8xLmbSHTViAwDk6id9ZwgZfsgBuNUCReR5xWpwac", "height": 61}
+[08-22|11:58:03.575] INFO chain/builder.go:277 built block {"hght": 62, "attempted": 3814, "added": 3813, "mempool size": 275033, "mempool lock wait": "4.36975ms", "context": false, "state changes": 5302, "state operations": 11439}
+[08-22|11:58:03.584] INFO chain/block.go:330 skipping verification, already processed {"height": 62, "blkID": "2C4p7QYXjYuTtRaQccMJPFSVUDZfcJrvRwh2QQnCLmzXV6CBet"}
+[08-22|11:58:03.636] INFO vm/resolutions.go:116 verified block {"blkID": "2C4p7QYXjYuTtRaQccMJPFSVUDZfcJrvRwh2QQnCLmzXV6CBet", "height": 62, "txs": 3813, "state ready": true}
+[08-22|11:58:03.968] INFO vm/resolutions.go:262 accepted block {"blkID": "2C4p7QYXjYuTtRaQccMJPFSVUDZfcJrvRwh2QQnCLmzXV6CBet", "height": 62, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:58:04.154] INFO vm/resolutions.go:203 block processed {"blkID": "2C4p7QYXjYuTtRaQccMJPFSVUDZfcJrvRwh2QQnCLmzXV6CBet", "height": 62}
+[08-22|11:58:06.927] INFO chain/builder.go:277 built block {"hght": 63, "attempted": 3814, "added": 3813, "mempool size": 271220, "mempool lock wait": "4.480021ms", "context": false, "state changes": 5368, "state operations": 11439}
+[08-22|11:58:06.943] INFO chain/block.go:330 skipping verification, already processed {"height": 63, "blkID": "LErBaJvYEcnLvyLVqJb7vgLCBCxRnjeSuqCiv1tQJmf9DELfN"}
+[08-22|11:58:07.017] INFO vm/resolutions.go:116 verified block {"blkID": "LErBaJvYEcnLvyLVqJb7vgLCBCxRnjeSuqCiv1tQJmf9DELfN", "height": 63, "txs": 3813, "state ready": true}
+[08-22|11:58:07.419] INFO vm/resolutions.go:262 accepted block {"blkID": "LErBaJvYEcnLvyLVqJb7vgLCBCxRnjeSuqCiv1tQJmf9DELfN", "height": 63, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|11:58:07.612] INFO vm/resolutions.go:203 block processed {"blkID": "LErBaJvYEcnLvyLVqJb7vgLCBCxRnjeSuqCiv1tQJmf9DELfN", "height": 63}
+[08-22|11:58:11.242] INFO chain/builder.go:277 built block {"hght": 64, "attempted": 3814, "added": 3813, "mempool size": 267407, "mempool lock wait": "794.656µs", "context": false, "state changes": 5310, "state operations": 11439}
+[08-22|11:58:11.312] INFO chain/block.go:330 skipping verification, already processed {"height": 64, "blkID": "H92qkyecsz4Fe5jNAiS5qfJBV51XM1Cuw5PMcLsK2tarciXsN"}
+[08-22|11:58:12.421] INFO vm/resolutions.go:116 verified block {"blkID": "H92qkyecsz4Fe5jNAiS5qfJBV51XM1Cuw5PMcLsK2tarciXsN", "height": 64, "txs": 3813, "state ready": true}
+[08-22|12:03:15.379] INFO vm/resolutions.go:262 accepted block {"blkID": "H92qkyecsz4Fe5jNAiS5qfJBV51XM1Cuw5PMcLsK2tarciXsN", "height": 64, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:15.680] INFO vm/resolutions.go:203 block processed {"blkID": "H92qkyecsz4Fe5jNAiS5qfJBV51XM1Cuw5PMcLsK2tarciXsN", "height": 64}
+[08-22|12:03:18.656] INFO chain/builder.go:277 built block {"hght": 65, "attempted": 3814, "added": 3813, "mempool size": 263594, "mempool lock wait": "858.869µs", "context": false, "state changes": 5432, "state operations": 11439}
+[08-22|12:03:18.657] INFO chain/block.go:330 skipping verification, already processed {"height": 65, "blkID": "wYLbmVRR8kFN2N7XkTo9ZmxPTCkrWdAY5saxXzpNpYH2yrtws"}
+[08-22|12:03:18.665] INFO vm/resolutions.go:116 verified block {"blkID": "wYLbmVRR8kFN2N7XkTo9ZmxPTCkrWdAY5saxXzpNpYH2yrtws", "height": 65, "txs": 3813, "state ready": true}
+[08-22|12:03:18.940] INFO vm/resolutions.go:262 accepted block {"blkID": "wYLbmVRR8kFN2N7XkTo9ZmxPTCkrWdAY5saxXzpNpYH2yrtws", "height": 65, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:19.215] INFO vm/resolutions.go:203 block processed {"blkID": "wYLbmVRR8kFN2N7XkTo9ZmxPTCkrWdAY5saxXzpNpYH2yrtws", "height": 65}
+[08-22|12:03:22.128] INFO chain/builder.go:277 built block {"hght": 66, "attempted": 3814, "added": 3813, "mempool size": 259781, "mempool lock wait": "392.695µs", "context": false, "state changes": 5351, "state operations": 11439}
+[08-22|12:03:22.128] INFO chain/block.go:330 skipping verification, already processed {"height": 66, "blkID": "jv2tvuxb5s8ojoGyRxAMYZpnyGv9gBDP4HqANE35For26EBNu"}
+[08-22|12:03:22.143] INFO vm/resolutions.go:116 verified block {"blkID": "jv2tvuxb5s8ojoGyRxAMYZpnyGv9gBDP4HqANE35For26EBNu", "height": 66, "txs": 3813, "state ready": true}
+[08-22|12:03:23.069] INFO vm/resolutions.go:262 accepted block {"blkID": "jv2tvuxb5s8ojoGyRxAMYZpnyGv9gBDP4HqANE35For26EBNu", "height": 66, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:23.296] INFO vm/resolutions.go:203 block processed {"blkID": "jv2tvuxb5s8ojoGyRxAMYZpnyGv9gBDP4HqANE35For26EBNu", "height": 66}
+[08-22|12:03:26.122] INFO chain/builder.go:277 built block {"hght": 67, "attempted": 3814, "added": 3813, "mempool size": 255968, "mempool lock wait": "20.606µs", "context": false, "state changes": 5345, "state operations": 11439}
+[08-22|12:03:26.122] INFO chain/block.go:330 skipping verification, already processed {"height": 67, "blkID": "2GB7bY9nv8S5RFyonixd3U8g4mXNeYqEVdHmmHaNTpcX5TTK9b"}
+[08-22|12:03:26.131] INFO vm/resolutions.go:116 verified block {"blkID": "2GB7bY9nv8S5RFyonixd3U8g4mXNeYqEVdHmmHaNTpcX5TTK9b", "height": 67, "txs": 3813, "state ready": true}
+[08-22|12:03:26.432] INFO vm/resolutions.go:262 accepted block {"blkID": "2GB7bY9nv8S5RFyonixd3U8g4mXNeYqEVdHmmHaNTpcX5TTK9b", "height": 67, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:26.660] INFO vm/resolutions.go:203 block processed {"blkID": "2GB7bY9nv8S5RFyonixd3U8g4mXNeYqEVdHmmHaNTpcX5TTK9b", "height": 67}
+[08-22|12:03:30.061] INFO chain/builder.go:277 built block {"hght": 68, "attempted": 3814, "added": 3813, "mempool size": 252155, "mempool lock wait": "90.284µs", "context": false, "state changes": 5394, "state operations": 11439}
+[08-22|12:03:30.062] INFO chain/block.go:330 skipping verification, already processed {"height": 68, "blkID": "ELhnNgd432HM1zDke9JYDDaesCdPzPdmc6dxk1rZ58RgvkrrW"}
+[08-22|12:03:30.077] INFO vm/resolutions.go:116 verified block {"blkID": "ELhnNgd432HM1zDke9JYDDaesCdPzPdmc6dxk1rZ58RgvkrrW", "height": 68, "txs": 3813, "state ready": true}
+[08-22|12:03:30.390] INFO vm/resolutions.go:262 accepted block {"blkID": "ELhnNgd432HM1zDke9JYDDaesCdPzPdmc6dxk1rZ58RgvkrrW", "height": 68, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:30.654] INFO vm/resolutions.go:203 block processed {"blkID": "ELhnNgd432HM1zDke9JYDDaesCdPzPdmc6dxk1rZ58RgvkrrW", "height": 68}
+[08-22|12:03:34.910] INFO chain/builder.go:277 built block {"hght": 69, "attempted": 3814, "added": 3813, "mempool size": 248342, "mempool lock wait": "101.825µs", "context": false, "state changes": 5377, "state operations": 11439}
+[08-22|12:03:34.911] INFO chain/block.go:330 skipping verification, already processed {"height": 69, "blkID": "2jEnstZTmsow23UrNQVRJuRj2PDaBhUbMXSaou7cFNhXHdsEM9"}
+[08-22|12:03:34.922] INFO vm/resolutions.go:116 verified block {"blkID": "2jEnstZTmsow23UrNQVRJuRj2PDaBhUbMXSaou7cFNhXHdsEM9", "height": 69, "txs": 3813, "state ready": true}
+[08-22|12:03:35.176] INFO vm/resolutions.go:262 accepted block {"blkID": "2jEnstZTmsow23UrNQVRJuRj2PDaBhUbMXSaou7cFNhXHdsEM9", "height": 69, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:35.354] INFO vm/resolutions.go:203 block processed {"blkID": "2jEnstZTmsow23UrNQVRJuRj2PDaBhUbMXSaou7cFNhXHdsEM9", "height": 69}
+[08-22|12:03:37.839] INFO chain/builder.go:277 built block {"hght": 70, "attempted": 3814, "added": 3813, "mempool size": 244529, "mempool lock wait": "207.513µs", "context": false, "state changes": 5368, "state operations": 11439}
+[08-22|12:03:37.843] INFO chain/block.go:330 skipping verification, already processed {"height": 70, "blkID": "bUY5HVUSdJALk1wn7Agtg7vmTYGZqTvEcUjjhdH57oYdchPGE"}
+[08-22|12:03:37.855] INFO vm/resolutions.go:116 verified block {"blkID": "bUY5HVUSdJALk1wn7Agtg7vmTYGZqTvEcUjjhdH57oYdchPGE", "height": 70, "txs": 3813, "state ready": true}
+[08-22|12:03:37.961] INFO vm/resolutions.go:262 accepted block {"blkID": "bUY5HVUSdJALk1wn7Agtg7vmTYGZqTvEcUjjhdH57oYdchPGE", "height": 70, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:03:37.995] INFO vm/resolutions.go:203 block processed {"blkID": "bUY5HVUSdJALk1wn7Agtg7vmTYGZqTvEcUjjhdH57oYdchPGE", "height": 70}
+[08-22|12:03:41.342] INFO chain/builder.go:277 built block {"hght": 71, "attempted": 3814, "added": 3813, "mempool size": 240716, "mempool lock wait": "22.153µs", "context": false, "state changes": 5368, "state operations": 11439}
+[08-22|12:06:04.906] INFO chain/block.go:330 skipping verification, already processed {"height": 71, "blkID": "5behFSBFhX49zfhYiaYHmQFu2atfWCvqP4rxyc2C86boPHDU9"}
+[08-22|12:08:17.625] INFO vm/resolutions.go:116 verified block {"blkID": "5behFSBFhX49zfhYiaYHmQFu2atfWCvqP4rxyc2C86boPHDU9", "height": 71, "txs": 3813, "state ready": true}
+[08-22|12:08:18.059] INFO vm/resolutions.go:262 accepted block {"blkID": "5behFSBFhX49zfhYiaYHmQFu2atfWCvqP4rxyc2C86boPHDU9", "height": 71, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:08:18.165] INFO vm/resolutions.go:203 block processed {"blkID": "5behFSBFhX49zfhYiaYHmQFu2atfWCvqP4rxyc2C86boPHDU9", "height": 71}
+[08-22|12:08:20.605] INFO chain/builder.go:277 built block {"hght": 72, "attempted": 3814, "added": 3813, "mempool size": 236903, "mempool lock wait": "633.886µs", "context": false, "state changes": 5313, "state operations": 11439}
+[08-22|12:08:20.625] INFO chain/block.go:330 skipping verification, already processed {"height": 72, "blkID": "2HVERoncLW5BKbJpMVr15Wny9t6o9PFmY16C8rQebLUvDwB82R"}
+[08-22|12:08:20.638] INFO vm/resolutions.go:116 verified block {"blkID": "2HVERoncLW5BKbJpMVr15Wny9t6o9PFmY16C8rQebLUvDwB82R", "height": 72, "txs": 3813, "state ready": true}
+[08-22|12:08:21.029] INFO vm/resolutions.go:262 accepted block {"blkID": "2HVERoncLW5BKbJpMVr15Wny9t6o9PFmY16C8rQebLUvDwB82R", "height": 72, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-22|12:08:21.178] INFO vm/resolutions.go:203 block processed {"blkID": "2HVERoncLW5BKbJpMVr15Wny9t6o9PFmY16C8rQebLUvDwB82R", "height": 72}
+[08-23|17:02:00.117] INFO controller/controller.go:91 loaded config {"contents": {"preferredBlocksPerSecond":2,"gossipInterval":1000000000,"gossipMaxSize":2044723,"gossipProposerDiff":3,"gossipProposerDepth":2,"buildProposerDiff":2,"verifyTimeout":10,"traceEnabled":false,"traceSampleRate":0,"continuousProfilerDir":"","streamingBacklogSize":1024,"mempoolSize":500000,"mempoolPayerSize":500000,"mempoolExemptPayers":null,"mempoolVerifyBalances":true,"trackedPairs":null,"testMode":true,"logLevel":"INFO","parallelism":4,"stateSyncServerDelay":0}}
+[08-23|17:02:00.118] INFO controller/controller.go:100 loaded genesis {"genesis": {"hrp":"token","maxBlockTxs":20000,"maxBlockUnits":1800000,"baseUnits":48,"validityWindow":100000,"minUnitPrice":1,"unitPriceChangeDenominator":48,"windowTargetUnits":1000000000,"minBlockCost":0,"blockCostChangeDenominator":48,"windowTargetBlocks":1000000000,"warpBaseFee":1024,"warpFeePerSigner":128,"customAllocation":[{"address":"token1hnl6j5lcl0wsumxtk5txn5u0rtvu6975nskzlr9ek2hre3y6wkqqg5jdxg","balance":18446744073709551615}]}}
+[08-23|17:02:00.117] INFO vm/warp_manager.go:70 starting warp manager
+[08-23|17:02:00.159] INFO controller/controller.go:151 running build and gossip in test mode
+[08-23|17:02:00.159] INFO vm/vm.go:288 initialized vm from genesis {"block": "29rPG63aHGw7SBAccuhCZMEwXQbdh3ryoEaHHNUXFJ78BqP4L4"}
+[08-23|17:02:00.161] INFO vm/vm.go:337 state sync client ready
+[08-23|17:02:00.161] INFO vm/vm.go:343 validity window ready
+[08-23|17:02:00.161] INFO vm/vm.go:349 node is now ready {"synced": false}
+[08-23|17:02:04.461] INFO chain/builder.go:277 built block {"hght": 1, "attempted": 3814, "added": 3813, "mempool size": 6187, "mempool lock wait": "4.488µs", "context": false, "state changes": 3814, "state operations": 11439}
+[08-23|17:02:04.461] INFO chain/block.go:330 skipping verification, already processed {"height": 1, "blkID": "29mnKax9W4kV89TFDmFfAuECYm23dWu6qVyh1G9sXMqasrdFjd"}
+[08-23|17:02:04.462] INFO vm/resolutions.go:116 verified block {"blkID": "29mnKax9W4kV89TFDmFfAuECYm23dWu6qVyh1G9sXMqasrdFjd", "height": 1, "txs": 3813, "state ready": true}
+[08-23|17:02:04.500] INFO vm/resolutions.go:262 accepted block {"blkID": "29mnKax9W4kV89TFDmFfAuECYm23dWu6qVyh1G9sXMqasrdFjd", "height": 1, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:02:04.541] INFO vm/resolutions.go:203 block processed {"blkID": "29mnKax9W4kV89TFDmFfAuECYm23dWu6qVyh1G9sXMqasrdFjd", "height": 1}
+[08-23|17:02:05.579] INFO chain/builder.go:277 built block {"hght": 2, "attempted": 3814, "added": 3813, "mempool size": 2374, "mempool lock wait": "9.887µs", "context": false, "state changes": 3814, "state operations": 11439}
+[08-23|17:02:05.579] INFO chain/block.go:330 skipping verification, already processed {"height": 2, "blkID": "2nWNxUD4okyzthv97ciKMhJa2K8WhYv9t7QCoJyqjNqtfGSAdw"}
+[08-23|17:02:05.580] INFO vm/resolutions.go:116 verified block {"blkID": "2nWNxUD4okyzthv97ciKMhJa2K8WhYv9t7QCoJyqjNqtfGSAdw", "height": 2, "txs": 3813, "state ready": true}
+[08-23|17:02:05.608] INFO vm/resolutions.go:262 accepted block {"blkID": "2nWNxUD4okyzthv97ciKMhJa2K8WhYv9t7QCoJyqjNqtfGSAdw", "height": 2, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:02:05.620] INFO vm/resolutions.go:203 block processed {"blkID": "2nWNxUD4okyzthv97ciKMhJa2K8WhYv9t7QCoJyqjNqtfGSAdw", "height": 2}
+[08-23|17:02:06.725] INFO chain/builder.go:277 built block {"hght": 3, "attempted": 2374, "added": 2374, "mempool size": 0, "mempool lock wait": "10.533µs", "context": false, "state changes": 2375, "state operations": 7122}
+[08-23|17:02:06.725] INFO chain/block.go:330 skipping verification, already processed {"height": 3, "blkID": "uPaLbUgTAvCj9hdFt8Nz7bkY3NBxKLFoqKtwiEZx1XmrcD9HV"}
+[08-23|17:02:06.725] INFO vm/resolutions.go:116 verified block {"blkID": "uPaLbUgTAvCj9hdFt8Nz7bkY3NBxKLFoqKtwiEZx1XmrcD9HV", "height": 3, "txs": 2374, "state ready": true}
+[08-23|17:02:06.733] INFO vm/resolutions.go:262 accepted block {"blkID": "uPaLbUgTAvCj9hdFt8Nz7bkY3NBxKLFoqKtwiEZx1XmrcD9HV", "height": 3, "txs": 2374, "size": 527312, "units": 1120528, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:02:06.736] INFO vm/resolutions.go:203 block processed {"blkID": "uPaLbUgTAvCj9hdFt8Nz7bkY3NBxKLFoqKtwiEZx1XmrcD9HV", "height": 3}
+[08-23|17:03:46.862] INFO chain/builder.go:277 built block {"hght": 4, "attempted": 3814, "added": 3813, "mempool size": 496187, "mempool lock wait": "43.671µs", "context": false, "state changes": 5347, "state operations": 11439}
+[08-23|17:03:46.863] INFO chain/block.go:330 skipping verification, already processed {"height": 4, "blkID": "2hoXxKdGWzGxeVpj9hGcNJxdcTMk98stTxZhCTzGFpChMjzRaK"}
+[08-23|17:03:46.867] INFO vm/resolutions.go:116 verified block {"blkID": "2hoXxKdGWzGxeVpj9hGcNJxdcTMk98stTxZhCTzGFpChMjzRaK", "height": 4, "txs": 3813, "state ready": true}
+[08-23|17:03:47.095] INFO vm/resolutions.go:262 accepted block {"blkID": "2hoXxKdGWzGxeVpj9hGcNJxdcTMk98stTxZhCTzGFpChMjzRaK", "height": 4, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:47.175] INFO vm/resolutions.go:203 block processed {"blkID": "2hoXxKdGWzGxeVpj9hGcNJxdcTMk98stTxZhCTzGFpChMjzRaK", "height": 4}
+[08-23|17:03:47.289] INFO chain/builder.go:277 built block {"hght": 5, "attempted": 3814, "added": 3813, "mempool size": 492374, "mempool lock wait": "7.47µs", "context": false, "state changes": 5359, "state operations": 11439}
+[08-23|17:03:47.289] INFO chain/block.go:330 skipping verification, already processed {"height": 5, "blkID": "ahXWVmFDg4q4g5Kx5TG1vTudsPhecNBv9ekEXnB47VWrRRraP"}
+[08-23|17:03:47.293] INFO vm/resolutions.go:116 verified block {"blkID": "ahXWVmFDg4q4g5Kx5TG1vTudsPhecNBv9ekEXnB47VWrRRraP", "height": 5, "txs": 3813, "state ready": true}
+[08-23|17:03:47.413] INFO vm/resolutions.go:262 accepted block {"blkID": "ahXWVmFDg4q4g5Kx5TG1vTudsPhecNBv9ekEXnB47VWrRRraP", "height": 5, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:47.512] INFO vm/resolutions.go:203 block processed {"blkID": "ahXWVmFDg4q4g5Kx5TG1vTudsPhecNBv9ekEXnB47VWrRRraP", "height": 5}
+[08-23|17:03:48.664] INFO chain/builder.go:277 built block {"hght": 6, "attempted": 3814, "added": 3813, "mempool size": 488561, "mempool lock wait": "6.924µs", "context": false, "state changes": 5358, "state operations": 11439}
+[08-23|17:03:48.665] INFO chain/block.go:330 skipping verification, already processed {"height": 6, "blkID": "8mHUKLyJDaQWhYiD19Y3u3aU4pqssVTGh4Av4adsH7uRSiJgQ"}
+[08-23|17:03:48.674] INFO vm/resolutions.go:116 verified block {"blkID": "8mHUKLyJDaQWhYiD19Y3u3aU4pqssVTGh4Av4adsH7uRSiJgQ", "height": 6, "txs": 3813, "state ready": true}
+[08-23|17:03:48.803] INFO vm/resolutions.go:262 accepted block {"blkID": "8mHUKLyJDaQWhYiD19Y3u3aU4pqssVTGh4Av4adsH7uRSiJgQ", "height": 6, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:48.879] INFO vm/resolutions.go:203 block processed {"blkID": "8mHUKLyJDaQWhYiD19Y3u3aU4pqssVTGh4Av4adsH7uRSiJgQ", "height": 6}
+[08-23|17:03:49.780] INFO chain/builder.go:277 built block {"hght": 7, "attempted": 3814, "added": 3813, "mempool size": 484748, "mempool lock wait": "80.891µs", "context": false, "state changes": 5321, "state operations": 11439}
+[08-23|17:03:49.780] INFO chain/block.go:330 skipping verification, already processed {"height": 7, "blkID": "2EjFFURNvdN3sfVgpbAWMvHoC5XEwLPtZpynNVdNrHjDPqAVTV"}
+[08-23|17:03:49.792] INFO vm/resolutions.go:116 verified block {"blkID": "2EjFFURNvdN3sfVgpbAWMvHoC5XEwLPtZpynNVdNrHjDPqAVTV", "height": 7, "txs": 3813, "state ready": true}
+[08-23|17:03:49.988] INFO vm/resolutions.go:262 accepted block {"blkID": "2EjFFURNvdN3sfVgpbAWMvHoC5XEwLPtZpynNVdNrHjDPqAVTV", "height": 7, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:50.111] INFO vm/resolutions.go:203 block processed {"blkID": "2EjFFURNvdN3sfVgpbAWMvHoC5XEwLPtZpynNVdNrHjDPqAVTV", "height": 7}
+[08-23|17:03:51.251] INFO chain/builder.go:277 built block {"hght": 8, "attempted": 3814, "added": 3813, "mempool size": 480935, "mempool lock wait": "15.86µs", "context": false, "state changes": 5320, "state operations": 11439}
+[08-23|17:03:51.251] INFO chain/block.go:330 skipping verification, already processed {"height": 8, "blkID": "8tXsAvuVaErvBHBGAjiphn4urGHWsNsTdvzgQqSf8x5VP4p44"}
+[08-23|17:03:51.262] INFO vm/resolutions.go:116 verified block {"blkID": "8tXsAvuVaErvBHBGAjiphn4urGHWsNsTdvzgQqSf8x5VP4p44", "height": 8, "txs": 3813, "state ready": true}
+[08-23|17:03:51.411] INFO vm/resolutions.go:262 accepted block {"blkID": "8tXsAvuVaErvBHBGAjiphn4urGHWsNsTdvzgQqSf8x5VP4p44", "height": 8, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:51.469] INFO vm/resolutions.go:203 block processed {"blkID": "8tXsAvuVaErvBHBGAjiphn4urGHWsNsTdvzgQqSf8x5VP4p44", "height": 8}
+[08-23|17:03:52.022] INFO chain/builder.go:277 built block {"hght": 9, "attempted": 3814, "added": 3813, "mempool size": 477122, "mempool lock wait": "14.621µs", "context": false, "state changes": 5299, "state operations": 11439}
+[08-23|17:03:52.022] INFO chain/block.go:330 skipping verification, already processed {"height": 9, "blkID": "2bHtn2ouUYWwMm4FKLVbacSroUSbPbrVJBuKKZFYZw4NyEECr6"}
+[08-23|17:03:52.027] INFO vm/resolutions.go:116 verified block {"blkID": "2bHtn2ouUYWwMm4FKLVbacSroUSbPbrVJBuKKZFYZw4NyEECr6", "height": 9, "txs": 3813, "state ready": true}
+[08-23|17:03:52.139] INFO vm/resolutions.go:262 accepted block {"blkID": "2bHtn2ouUYWwMm4FKLVbacSroUSbPbrVJBuKKZFYZw4NyEECr6", "height": 9, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:52.184] INFO vm/resolutions.go:203 block processed {"blkID": "2bHtn2ouUYWwMm4FKLVbacSroUSbPbrVJBuKKZFYZw4NyEECr6", "height": 9}
+[08-23|17:03:53.158] INFO chain/builder.go:277 built block {"hght": 10, "attempted": 3814, "added": 3813, "mempool size": 473309, "mempool lock wait": "14.64µs", "context": false, "state changes": 5322, "state operations": 11439}
+[08-23|17:03:53.159] INFO chain/block.go:330 skipping verification, already processed {"height": 10, "blkID": "af5tnsaQXgSNALPrZFWuSjQuPoBjNsyR9MMbrHAvbvXoVtZX4"}
+[08-23|17:03:53.192] INFO vm/resolutions.go:116 verified block {"blkID": "af5tnsaQXgSNALPrZFWuSjQuPoBjNsyR9MMbrHAvbvXoVtZX4", "height": 10, "txs": 3813, "state ready": true}
+[08-23|17:03:53.603] INFO vm/resolutions.go:262 accepted block {"blkID": "af5tnsaQXgSNALPrZFWuSjQuPoBjNsyR9MMbrHAvbvXoVtZX4", "height": 10, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:53.792] INFO vm/resolutions.go:203 block processed {"blkID": "af5tnsaQXgSNALPrZFWuSjQuPoBjNsyR9MMbrHAvbvXoVtZX4", "height": 10}
+[08-23|17:03:54.380] INFO chain/builder.go:277 built block {"hght": 11, "attempted": 3814, "added": 3813, "mempool size": 469496, "mempool lock wait": "16.385µs", "context": false, "state changes": 5362, "state operations": 11439}
+[08-23|17:03:54.380] INFO chain/block.go:330 skipping verification, already processed {"height": 11, "blkID": "2X5qPFxFJmctDJX86XzGqcMjvjuAtxDyzsb1e2W8KzXFEAdgDx"}
+[08-23|17:03:54.384] INFO vm/resolutions.go:116 verified block {"blkID": "2X5qPFxFJmctDJX86XzGqcMjvjuAtxDyzsb1e2W8KzXFEAdgDx", "height": 11, "txs": 3813, "state ready": true}
+[08-23|17:03:54.439] INFO vm/resolutions.go:262 accepted block {"blkID": "2X5qPFxFJmctDJX86XzGqcMjvjuAtxDyzsb1e2W8KzXFEAdgDx", "height": 11, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:54.448] INFO vm/resolutions.go:203 block processed {"blkID": "2X5qPFxFJmctDJX86XzGqcMjvjuAtxDyzsb1e2W8KzXFEAdgDx", "height": 11}
+[08-23|17:03:54.597] INFO chain/builder.go:277 built block {"hght": 12, "attempted": 3814, "added": 3813, "mempool size": 465683, "mempool lock wait": "9.833µs", "context": false, "state changes": 5368, "state operations": 11439}
+[08-23|17:03:54.597] INFO chain/block.go:330 skipping verification, already processed {"height": 12, "blkID": "2tbFBUwaQqrjCPyDxYVjPGgVKggRYvSCngRyRBVyUyyQdbaHvd"}
+[08-23|17:03:54.601] INFO vm/resolutions.go:116 verified block {"blkID": "2tbFBUwaQqrjCPyDxYVjPGgVKggRYvSCngRyRBVyUyyQdbaHvd", "height": 12, "txs": 3813, "state ready": true}
+[08-23|17:03:54.641] INFO vm/resolutions.go:262 accepted block {"blkID": "2tbFBUwaQqrjCPyDxYVjPGgVKggRYvSCngRyRBVyUyyQdbaHvd", "height": 12, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:54.652] INFO vm/resolutions.go:203 block processed {"blkID": "2tbFBUwaQqrjCPyDxYVjPGgVKggRYvSCngRyRBVyUyyQdbaHvd", "height": 12}
+[08-23|17:03:54.800] INFO chain/builder.go:277 built block {"hght": 13, "attempted": 3814, "added": 3813, "mempool size": 461870, "mempool lock wait": "12.013µs", "context": false, "state changes": 5331, "state operations": 11439}
+[08-23|17:03:54.800] INFO chain/block.go:330 skipping verification, already processed {"height": 13, "blkID": "2BohP4vJE41uKKmRXRUTfk1K4mJJ7P28e6R9SSeQqZLQct8Dhs"}
+[08-23|17:03:54.804] INFO vm/resolutions.go:116 verified block {"blkID": "2BohP4vJE41uKKmRXRUTfk1K4mJJ7P28e6R9SSeQqZLQct8Dhs", "height": 13, "txs": 3813, "state ready": true}
+[08-23|17:03:54.866] INFO vm/resolutions.go:262 accepted block {"blkID": "2BohP4vJE41uKKmRXRUTfk1K4mJJ7P28e6R9SSeQqZLQct8Dhs", "height": 13, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:54.879] INFO vm/resolutions.go:203 block processed {"blkID": "2BohP4vJE41uKKmRXRUTfk1K4mJJ7P28e6R9SSeQqZLQct8Dhs", "height": 13}
+[08-23|17:03:55.031] INFO chain/builder.go:277 built block {"hght": 14, "attempted": 3814, "added": 3813, "mempool size": 458057, "mempool lock wait": "10.842µs", "context": false, "state changes": 5265, "state operations": 11439}
+[08-23|17:03:55.031] INFO chain/block.go:330 skipping verification, already processed {"height": 14, "blkID": "2FrS649kGoGDQjK7rnfUZvHn5beh9JS7vdYaFGiexfG7LC4de4"}
+[08-23|17:03:55.034] INFO vm/resolutions.go:116 verified block {"blkID": "2FrS649kGoGDQjK7rnfUZvHn5beh9JS7vdYaFGiexfG7LC4de4", "height": 14, "txs": 3813, "state ready": true}
+[08-23|17:03:55.085] INFO vm/resolutions.go:262 accepted block {"blkID": "2FrS649kGoGDQjK7rnfUZvHn5beh9JS7vdYaFGiexfG7LC4de4", "height": 14, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:55.101] INFO vm/resolutions.go:203 block processed {"blkID": "2FrS649kGoGDQjK7rnfUZvHn5beh9JS7vdYaFGiexfG7LC4de4", "height": 14}
+[08-23|17:03:55.228] INFO chain/builder.go:277 built block {"hght": 15, "attempted": 3814, "added": 3813, "mempool size": 454244, "mempool lock wait": "38.729µs", "context": false, "state changes": 5339, "state operations": 11439}
+[08-23|17:03:55.228] INFO chain/block.go:330 skipping verification, already processed {"height": 15, "blkID": "276YKWTsWyNyg1tcptq1Zru3dwR86PFgS7oyWqpktm7e55JeWr"}
+[08-23|17:03:55.232] INFO vm/resolutions.go:116 verified block {"blkID": "276YKWTsWyNyg1tcptq1Zru3dwR86PFgS7oyWqpktm7e55JeWr", "height": 15, "txs": 3813, "state ready": true}
+[08-23|17:03:55.275] INFO vm/resolutions.go:262 accepted block {"blkID": "276YKWTsWyNyg1tcptq1Zru3dwR86PFgS7oyWqpktm7e55JeWr", "height": 15, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:55.281] INFO vm/resolutions.go:203 block processed {"blkID": "276YKWTsWyNyg1tcptq1Zru3dwR86PFgS7oyWqpktm7e55JeWr", "height": 15}
+[08-23|17:03:55.417] INFO chain/builder.go:277 built block {"hght": 16, "attempted": 3814, "added": 3813, "mempool size": 450431, "mempool lock wait": "8.419µs", "context": false, "state changes": 5383, "state operations": 11439}
+[08-23|17:03:55.417] INFO chain/block.go:330 skipping verification, already processed {"height": 16, "blkID": "2hiEaALRoHyTbfWDMRsbn21oBm5n8SzahvCpGu252oWW6UwLTk"}
+[08-23|17:03:55.421] INFO vm/resolutions.go:116 verified block {"blkID": "2hiEaALRoHyTbfWDMRsbn21oBm5n8SzahvCpGu252oWW6UwLTk", "height": 16, "txs": 3813, "state ready": true}
+[08-23|17:03:55.459] INFO vm/resolutions.go:262 accepted block {"blkID": "2hiEaALRoHyTbfWDMRsbn21oBm5n8SzahvCpGu252oWW6UwLTk", "height": 16, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:55.473] INFO vm/resolutions.go:203 block processed {"blkID": "2hiEaALRoHyTbfWDMRsbn21oBm5n8SzahvCpGu252oWW6UwLTk", "height": 16}
+[08-23|17:03:55.614] INFO chain/builder.go:277 built block {"hght": 17, "attempted": 3814, "added": 3813, "mempool size": 446618, "mempool lock wait": "12.817µs", "context": false, "state changes": 5366, "state operations": 11439}
+[08-23|17:03:55.614] INFO chain/block.go:330 skipping verification, already processed {"height": 17, "blkID": "nhyB8iFQZPNeCRrpxKwkPj9mwkQFvraR4o5s3uYqfB26fE1vX"}
+[08-23|17:03:55.617] INFO vm/resolutions.go:116 verified block {"blkID": "nhyB8iFQZPNeCRrpxKwkPj9mwkQFvraR4o5s3uYqfB26fE1vX", "height": 17, "txs": 3813, "state ready": true}
+[08-23|17:03:55.661] INFO vm/resolutions.go:262 accepted block {"blkID": "nhyB8iFQZPNeCRrpxKwkPj9mwkQFvraR4o5s3uYqfB26fE1vX", "height": 17, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:55.668] INFO vm/resolutions.go:203 block processed {"blkID": "nhyB8iFQZPNeCRrpxKwkPj9mwkQFvraR4o5s3uYqfB26fE1vX", "height": 17}
+[08-23|17:03:55.856] INFO chain/builder.go:277 built block {"hght": 18, "attempted": 3814, "added": 3813, "mempool size": 442805, "mempool lock wait": "9.588µs", "context": false, "state changes": 5315, "state operations": 11439}
+[08-23|17:03:55.856] INFO chain/block.go:330 skipping verification, already processed {"height": 18, "blkID": "vKSnEZJ8rp3zoJrGKEAwJZTWvgHkkrtriD3DMz7djPkmv2ce"}
+[08-23|17:03:55.859] INFO vm/resolutions.go:116 verified block {"blkID": "vKSnEZJ8rp3zoJrGKEAwJZTWvgHkkrtriD3DMz7djPkmv2ce", "height": 18, "txs": 3813, "state ready": true}
+[08-23|17:03:55.905] INFO vm/resolutions.go:262 accepted block {"blkID": "vKSnEZJ8rp3zoJrGKEAwJZTWvgHkkrtriD3DMz7djPkmv2ce", "height": 18, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:55.916] INFO vm/resolutions.go:203 block processed {"blkID": "vKSnEZJ8rp3zoJrGKEAwJZTWvgHkkrtriD3DMz7djPkmv2ce", "height": 18}
+[08-23|17:03:56.141] INFO chain/builder.go:277 built block {"hght": 19, "attempted": 3814, "added": 3813, "mempool size": 438992, "mempool lock wait": "10.499µs", "context": false, "state changes": 5348, "state operations": 11439}
+[08-23|17:03:56.141] INFO chain/block.go:330 skipping verification, already processed {"height": 19, "blkID": "28HygowfdzNtJc7975GMVsyfaXBxKdamCvPufBPRa8qjv8HAAz"}
+[08-23|17:03:56.145] INFO vm/resolutions.go:116 verified block {"blkID": "28HygowfdzNtJc7975GMVsyfaXBxKdamCvPufBPRa8qjv8HAAz", "height": 19, "txs": 3813, "state ready": true}
+[08-23|17:03:56.197] INFO vm/resolutions.go:262 accepted block {"blkID": "28HygowfdzNtJc7975GMVsyfaXBxKdamCvPufBPRa8qjv8HAAz", "height": 19, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:56.209] INFO vm/resolutions.go:203 block processed {"blkID": "28HygowfdzNtJc7975GMVsyfaXBxKdamCvPufBPRa8qjv8HAAz", "height": 19}
+[08-23|17:03:56.400] INFO chain/builder.go:277 built block {"hght": 20, "attempted": 3814, "added": 3813, "mempool size": 435179, "mempool lock wait": "10.666µs", "context": false, "state changes": 5315, "state operations": 11439}
+[08-23|17:03:56.400] INFO chain/block.go:330 skipping verification, already processed {"height": 20, "blkID": "ZG3nLZcmmQ4t4gA8tQ1hGfbTHon6U75Qh1isPHQfa8sPPSTgv"}
+[08-23|17:03:56.404] INFO vm/resolutions.go:116 verified block {"blkID": "ZG3nLZcmmQ4t4gA8tQ1hGfbTHon6U75Qh1isPHQfa8sPPSTgv", "height": 20, "txs": 3813, "state ready": true}
+[08-23|17:03:56.459] INFO vm/resolutions.go:262 accepted block {"blkID": "ZG3nLZcmmQ4t4gA8tQ1hGfbTHon6U75Qh1isPHQfa8sPPSTgv", "height": 20, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:56.474] INFO vm/resolutions.go:203 block processed {"blkID": "ZG3nLZcmmQ4t4gA8tQ1hGfbTHon6U75Qh1isPHQfa8sPPSTgv", "height": 20}
+[08-23|17:03:56.608] INFO chain/builder.go:277 built block {"hght": 21, "attempted": 3814, "added": 3813, "mempool size": 431366, "mempool lock wait": "10.945µs", "context": false, "state changes": 5299, "state operations": 11439}
+[08-23|17:03:56.608] INFO chain/block.go:330 skipping verification, already processed {"height": 21, "blkID": "PHMDKtpxbJrTVvYyqu98Gop28fav6XGPwnyYtHs9LME4eEMrC"}
+[08-23|17:03:56.613] INFO vm/resolutions.go:116 verified block {"blkID": "PHMDKtpxbJrTVvYyqu98Gop28fav6XGPwnyYtHs9LME4eEMrC", "height": 21, "txs": 3813, "state ready": true}
+[08-23|17:03:56.667] INFO vm/resolutions.go:262 accepted block {"blkID": "PHMDKtpxbJrTVvYyqu98Gop28fav6XGPwnyYtHs9LME4eEMrC", "height": 21, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:56.685] INFO vm/resolutions.go:203 block processed {"blkID": "PHMDKtpxbJrTVvYyqu98Gop28fav6XGPwnyYtHs9LME4eEMrC", "height": 21}
+[08-23|17:03:56.834] INFO chain/builder.go:277 built block {"hght": 22, "attempted": 3814, "added": 3813, "mempool size": 427553, "mempool lock wait": "10.744µs", "context": false, "state changes": 5319, "state operations": 11439}
+[08-23|17:03:56.834] INFO chain/block.go:330 skipping verification, already processed {"height": 22, "blkID": "22dtGEr1Avwh36ZVJXAjvvcRpctcaa579VZGAEsktkNpUwXrHM"}
+[08-23|17:03:56.838] INFO vm/resolutions.go:116 verified block {"blkID": "22dtGEr1Avwh36ZVJXAjvvcRpctcaa579VZGAEsktkNpUwXrHM", "height": 22, "txs": 3813, "state ready": true}
+[08-23|17:03:56.904] INFO vm/resolutions.go:262 accepted block {"blkID": "22dtGEr1Avwh36ZVJXAjvvcRpctcaa579VZGAEsktkNpUwXrHM", "height": 22, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:56.915] INFO vm/resolutions.go:203 block processed {"blkID": "22dtGEr1Avwh36ZVJXAjvvcRpctcaa579VZGAEsktkNpUwXrHM", "height": 22}
+[08-23|17:03:57.059] INFO chain/builder.go:277 built block {"hght": 23, "attempted": 3814, "added": 3813, "mempool size": 423740, "mempool lock wait": "11.218µs", "context": false, "state changes": 5328, "state operations": 11439}
+[08-23|17:03:57.059] INFO chain/block.go:330 skipping verification, already processed {"height": 23, "blkID": "FGeWGtk8RDxPLsqD8E97kUo4qxXVPiVDkvXQEs2avBKNSp535"}
+[08-23|17:03:57.062] INFO vm/resolutions.go:116 verified block {"blkID": "FGeWGtk8RDxPLsqD8E97kUo4qxXVPiVDkvXQEs2avBKNSp535", "height": 23, "txs": 3813, "state ready": true}
+[08-23|17:03:57.129] INFO vm/resolutions.go:262 accepted block {"blkID": "FGeWGtk8RDxPLsqD8E97kUo4qxXVPiVDkvXQEs2avBKNSp535", "height": 23, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:57.142] INFO vm/resolutions.go:203 block processed {"blkID": "FGeWGtk8RDxPLsqD8E97kUo4qxXVPiVDkvXQEs2avBKNSp535", "height": 23}
+[08-23|17:03:57.322] INFO chain/builder.go:277 built block {"hght": 24, "attempted": 3814, "added": 3813, "mempool size": 419927, "mempool lock wait": "14.151µs", "context": false, "state changes": 5367, "state operations": 11439}
+[08-23|17:03:57.322] INFO chain/block.go:330 skipping verification, already processed {"height": 24, "blkID": "Qg5zzJ9pVZi4ogNXt8AKL4UmW5N6y4oqiDXzpwaZHbryCDFig"}
+[08-23|17:03:57.326] INFO vm/resolutions.go:116 verified block {"blkID": "Qg5zzJ9pVZi4ogNXt8AKL4UmW5N6y4oqiDXzpwaZHbryCDFig", "height": 24, "txs": 3813, "state ready": true}
+[08-23|17:03:57.393] INFO vm/resolutions.go:262 accepted block {"blkID": "Qg5zzJ9pVZi4ogNXt8AKL4UmW5N6y4oqiDXzpwaZHbryCDFig", "height": 24, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:57.428] INFO vm/resolutions.go:203 block processed {"blkID": "Qg5zzJ9pVZi4ogNXt8AKL4UmW5N6y4oqiDXzpwaZHbryCDFig", "height": 24}
+[08-23|17:03:57.676] INFO chain/builder.go:277 built block {"hght": 25, "attempted": 3814, "added": 3813, "mempool size": 416114, "mempool lock wait": "10.879µs", "context": false, "state changes": 5331, "state operations": 11439}
+[08-23|17:03:57.676] INFO chain/block.go:330 skipping verification, already processed {"height": 25, "blkID": "2jVduwF5WH6RBe9WdDgXPPZaDGpKnvvNZkyAusDSSBKZYxobbS"}
+[08-23|17:03:57.680] INFO vm/resolutions.go:116 verified block {"blkID": "2jVduwF5WH6RBe9WdDgXPPZaDGpKnvvNZkyAusDSSBKZYxobbS", "height": 25, "txs": 3813, "state ready": true}
+[08-23|17:03:57.744] INFO vm/resolutions.go:262 accepted block {"blkID": "2jVduwF5WH6RBe9WdDgXPPZaDGpKnvvNZkyAusDSSBKZYxobbS", "height": 25, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:57.768] INFO vm/resolutions.go:203 block processed {"blkID": "2jVduwF5WH6RBe9WdDgXPPZaDGpKnvvNZkyAusDSSBKZYxobbS", "height": 25}
+[08-23|17:03:57.958] INFO chain/builder.go:277 built block {"hght": 26, "attempted": 3814, "added": 3813, "mempool size": 412301, "mempool lock wait": "7.258µs", "context": false, "state changes": 5364, "state operations": 11439}
+[08-23|17:03:57.958] INFO chain/block.go:330 skipping verification, already processed {"height": 26, "blkID": "BVcisS2pBRMBxPMfQENcz34CFgR3A8kFJwbea516BhqtdBVoE"}
+[08-23|17:03:57.961] INFO vm/resolutions.go:116 verified block {"blkID": "BVcisS2pBRMBxPMfQENcz34CFgR3A8kFJwbea516BhqtdBVoE", "height": 26, "txs": 3813, "state ready": true}
+[08-23|17:03:57.997] INFO vm/resolutions.go:262 accepted block {"blkID": "BVcisS2pBRMBxPMfQENcz34CFgR3A8kFJwbea516BhqtdBVoE", "height": 26, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:58.024] INFO vm/resolutions.go:203 block processed {"blkID": "BVcisS2pBRMBxPMfQENcz34CFgR3A8kFJwbea516BhqtdBVoE", "height": 26}
+[08-23|17:03:58.220] INFO chain/builder.go:277 built block {"hght": 27, "attempted": 3814, "added": 3813, "mempool size": 408488, "mempool lock wait": "7.9µs", "context": false, "state changes": 5360, "state operations": 11439}
+[08-23|17:03:58.220] INFO chain/block.go:330 skipping verification, already processed {"height": 27, "blkID": "2Sd6bjjy1QTF4tp84KHXqVWWCDutFgzySt475bx3o1jouJHNeE"}
+[08-23|17:03:58.224] INFO vm/resolutions.go:116 verified block {"blkID": "2Sd6bjjy1QTF4tp84KHXqVWWCDutFgzySt475bx3o1jouJHNeE", "height": 27, "txs": 3813, "state ready": true}
+[08-23|17:03:58.290] INFO vm/resolutions.go:262 accepted block {"blkID": "2Sd6bjjy1QTF4tp84KHXqVWWCDutFgzySt475bx3o1jouJHNeE", "height": 27, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:58.326] INFO vm/resolutions.go:203 block processed {"blkID": "2Sd6bjjy1QTF4tp84KHXqVWWCDutFgzySt475bx3o1jouJHNeE", "height": 27}
+[08-23|17:03:58.934] INFO chain/builder.go:277 built block {"hght": 28, "attempted": 3814, "added": 3813, "mempool size": 404675, "mempool lock wait": "10.235µs", "context": false, "state changes": 5346, "state operations": 11439}
+[08-23|17:03:58.934] INFO chain/block.go:330 skipping verification, already processed {"height": 28, "blkID": "4xq5WETwoHCp1rrbdT6y8H3E63NedFVBWNzWhuPJ2Gwj3AsLP"}
+[08-23|17:03:58.940] INFO vm/resolutions.go:116 verified block {"blkID": "4xq5WETwoHCp1rrbdT6y8H3E63NedFVBWNzWhuPJ2Gwj3AsLP", "height": 28, "txs": 3813, "state ready": true}
+[08-23|17:03:59.075] INFO vm/resolutions.go:262 accepted block {"blkID": "4xq5WETwoHCp1rrbdT6y8H3E63NedFVBWNzWhuPJ2Gwj3AsLP", "height": 28, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:59.155] INFO vm/resolutions.go:203 block processed {"blkID": "4xq5WETwoHCp1rrbdT6y8H3E63NedFVBWNzWhuPJ2Gwj3AsLP", "height": 28}
+[08-23|17:03:59.508] INFO chain/builder.go:277 built block {"hght": 29, "attempted": 3814, "added": 3813, "mempool size": 400862, "mempool lock wait": "11.273µs", "context": false, "state changes": 5332, "state operations": 11439}
+[08-23|17:03:59.508] INFO chain/block.go:330 skipping verification, already processed {"height": 29, "blkID": "29DbCFcdQfQQ6exD1Q8wQP9KM47744hkCx7rHYdu5opFgYW88r"}
+[08-23|17:03:59.516] INFO vm/resolutions.go:116 verified block {"blkID": "29DbCFcdQfQQ6exD1Q8wQP9KM47744hkCx7rHYdu5opFgYW88r", "height": 29, "txs": 3813, "state ready": true}
+[08-23|17:03:59.709] INFO vm/resolutions.go:262 accepted block {"blkID": "29DbCFcdQfQQ6exD1Q8wQP9KM47744hkCx7rHYdu5opFgYW88r", "height": 29, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:59.723] INFO vm/resolutions.go:203 block processed {"blkID": "29DbCFcdQfQQ6exD1Q8wQP9KM47744hkCx7rHYdu5opFgYW88r", "height": 29}
+[08-23|17:03:59.847] INFO chain/builder.go:277 built block {"hght": 30, "attempted": 3814, "added": 3813, "mempool size": 397049, "mempool lock wait": "11.208µs", "context": false, "state changes": 5384, "state operations": 11439}
+[08-23|17:03:59.847] INFO chain/block.go:330 skipping verification, already processed {"height": 30, "blkID": "2CZfvQWfDJUerqqr9Sxdsp8AtYSb62PzzQjCRnt5FtceAShDt1"}
+[08-23|17:03:59.850] INFO vm/resolutions.go:116 verified block {"blkID": "2CZfvQWfDJUerqqr9Sxdsp8AtYSb62PzzQjCRnt5FtceAShDt1", "height": 30, "txs": 3813, "state ready": true}
+[08-23|17:03:59.926] INFO vm/resolutions.go:262 accepted block {"blkID": "2CZfvQWfDJUerqqr9Sxdsp8AtYSb62PzzQjCRnt5FtceAShDt1", "height": 30, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:03:59.940] INFO vm/resolutions.go:203 block processed {"blkID": "2CZfvQWfDJUerqqr9Sxdsp8AtYSb62PzzQjCRnt5FtceAShDt1", "height": 30}
+[08-23|17:04:00.053] INFO chain/builder.go:277 built block {"hght": 31, "attempted": 3814, "added": 3813, "mempool size": 393236, "mempool lock wait": "14.624µs", "context": false, "state changes": 5311, "state operations": 11439}
+[08-23|17:04:00.054] INFO chain/block.go:330 skipping verification, already processed {"height": 31, "blkID": "2UDuRiZchkEC7f8caZa3iughwQkHJetdu58qbjEeGBcGiheApg"}
+[08-23|17:04:00.057] INFO vm/resolutions.go:116 verified block {"blkID": "2UDuRiZchkEC7f8caZa3iughwQkHJetdu58qbjEeGBcGiheApg", "height": 31, "txs": 3813, "state ready": true}
+[08-23|17:04:00.147] INFO vm/resolutions.go:262 accepted block {"blkID": "2UDuRiZchkEC7f8caZa3iughwQkHJetdu58qbjEeGBcGiheApg", "height": 31, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:00.164] INFO vm/resolutions.go:203 block processed {"blkID": "2UDuRiZchkEC7f8caZa3iughwQkHJetdu58qbjEeGBcGiheApg", "height": 31}
+[08-23|17:04:00.307] INFO chain/builder.go:277 built block {"hght": 32, "attempted": 3814, "added": 3813, "mempool size": 389423, "mempool lock wait": "13.726µs", "context": false, "state changes": 5353, "state operations": 11439}
+[08-23|17:04:00.307] INFO chain/block.go:330 skipping verification, already processed {"height": 32, "blkID": "Wg4qxqA9dryTWgbgi3HAEKMJEKyzrgRdGuWLWWtDwxBpwy7zV"}
+[08-23|17:04:00.311] INFO vm/resolutions.go:116 verified block {"blkID": "Wg4qxqA9dryTWgbgi3HAEKMJEKyzrgRdGuWLWWtDwxBpwy7zV", "height": 32, "txs": 3813, "state ready": true}
+[08-23|17:04:00.367] INFO vm/resolutions.go:262 accepted block {"blkID": "Wg4qxqA9dryTWgbgi3HAEKMJEKyzrgRdGuWLWWtDwxBpwy7zV", "height": 32, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:00.378] INFO vm/resolutions.go:203 block processed {"blkID": "Wg4qxqA9dryTWgbgi3HAEKMJEKyzrgRdGuWLWWtDwxBpwy7zV", "height": 32}
+[08-23|17:04:00.490] INFO chain/builder.go:277 built block {"hght": 33, "attempted": 3814, "added": 3813, "mempool size": 385610, "mempool lock wait": "13.972µs", "context": false, "state changes": 5329, "state operations": 11439}
+[08-23|17:04:00.490] INFO chain/block.go:330 skipping verification, already processed {"height": 33, "blkID": "rNcDFpxMiuQLiFupjUawazAFSDEy8VkX3DP53ebXU3Z8FrUjg"}
+[08-23|17:04:00.494] INFO vm/resolutions.go:116 verified block {"blkID": "rNcDFpxMiuQLiFupjUawazAFSDEy8VkX3DP53ebXU3Z8FrUjg", "height": 33, "txs": 3813, "state ready": true}
+[08-23|17:04:00.686] INFO vm/resolutions.go:262 accepted block {"blkID": "rNcDFpxMiuQLiFupjUawazAFSDEy8VkX3DP53ebXU3Z8FrUjg", "height": 33, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:00.712] INFO vm/resolutions.go:203 block processed {"blkID": "rNcDFpxMiuQLiFupjUawazAFSDEy8VkX3DP53ebXU3Z8FrUjg", "height": 33}
+[08-23|17:04:00.824] INFO chain/builder.go:277 built block {"hght": 34, "attempted": 3814, "added": 3813, "mempool size": 381797, "mempool lock wait": "13.689µs", "context": false, "state changes": 5311, "state operations": 11439}
+[08-23|17:04:00.824] INFO chain/block.go:330 skipping verification, already processed {"height": 34, "blkID": "21fBSxaNWMEESaB8WuU1Ww7LnaUsHvQuqb7hsDWbQXyK5hSX1M"}
+[08-23|17:04:00.828] INFO vm/resolutions.go:116 verified block {"blkID": "21fBSxaNWMEESaB8WuU1Ww7LnaUsHvQuqb7hsDWbQXyK5hSX1M", "height": 34, "txs": 3813, "state ready": true}
+[08-23|17:04:01.037] INFO vm/resolutions.go:262 accepted block {"blkID": "21fBSxaNWMEESaB8WuU1Ww7LnaUsHvQuqb7hsDWbQXyK5hSX1M", "height": 34, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:01.071] INFO vm/resolutions.go:203 block processed {"blkID": "21fBSxaNWMEESaB8WuU1Ww7LnaUsHvQuqb7hsDWbQXyK5hSX1M", "height": 34}
+[08-23|17:04:01.231] INFO chain/builder.go:277 built block {"hght": 35, "attempted": 3814, "added": 3813, "mempool size": 377984, "mempool lock wait": "12.798µs", "context": false, "state changes": 5296, "state operations": 11439}
+[08-23|17:04:01.231] INFO chain/block.go:330 skipping verification, already processed {"height": 35, "blkID": "fKvVJHkWNfetzk1UXZHZhLwKAea3pLofJwpFU8eRQcxoHQEf3"}
+[08-23|17:04:01.238] INFO vm/resolutions.go:116 verified block {"blkID": "fKvVJHkWNfetzk1UXZHZhLwKAea3pLofJwpFU8eRQcxoHQEf3", "height": 35, "txs": 3813, "state ready": true}
+[08-23|17:04:01.349] INFO vm/resolutions.go:262 accepted block {"blkID": "fKvVJHkWNfetzk1UXZHZhLwKAea3pLofJwpFU8eRQcxoHQEf3", "height": 35, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:01.368] INFO vm/resolutions.go:203 block processed {"blkID": "fKvVJHkWNfetzk1UXZHZhLwKAea3pLofJwpFU8eRQcxoHQEf3", "height": 35}
+[08-23|17:04:01.516] INFO chain/builder.go:277 built block {"hght": 36, "attempted": 3814, "added": 3813, "mempool size": 374171, "mempool lock wait": "11.271µs", "context": false, "state changes": 5296, "state operations": 11439}
+[08-23|17:04:01.516] INFO chain/block.go:330 skipping verification, already processed {"height": 36, "blkID": "2eR2Uqxxpr2jhDKVFVcPcW3KQP1LMMmU1F9oeKamFrNjP9Evhq"}
+[08-23|17:04:01.520] INFO vm/resolutions.go:116 verified block {"blkID": "2eR2Uqxxpr2jhDKVFVcPcW3KQP1LMMmU1F9oeKamFrNjP9Evhq", "height": 36, "txs": 3813, "state ready": true}
+[08-23|17:04:01.638] INFO vm/resolutions.go:262 accepted block {"blkID": "2eR2Uqxxpr2jhDKVFVcPcW3KQP1LMMmU1F9oeKamFrNjP9Evhq", "height": 36, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:01.670] INFO vm/resolutions.go:203 block processed {"blkID": "2eR2Uqxxpr2jhDKVFVcPcW3KQP1LMMmU1F9oeKamFrNjP9Evhq", "height": 36}
+[08-23|17:04:01.832] INFO chain/builder.go:277 built block {"hght": 37, "attempted": 3814, "added": 3813, "mempool size": 370358, "mempool lock wait": "10.747µs", "context": false, "state changes": 5346, "state operations": 11439}
+[08-23|17:04:01.833] INFO chain/block.go:330 skipping verification, already processed {"height": 37, "blkID": "rrEKmvHkmapVL49MCjEsW89xhx13sgDkXCd9mKQzdvJuVuQoH"}
+[08-23|17:04:01.838] INFO vm/resolutions.go:116 verified block {"blkID": "rrEKmvHkmapVL49MCjEsW89xhx13sgDkXCd9mKQzdvJuVuQoH", "height": 37, "txs": 3813, "state ready": true}
+[08-23|17:04:02.115] INFO vm/resolutions.go:262 accepted block {"blkID": "rrEKmvHkmapVL49MCjEsW89xhx13sgDkXCd9mKQzdvJuVuQoH", "height": 37, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:02.159] INFO vm/resolutions.go:203 block processed {"blkID": "rrEKmvHkmapVL49MCjEsW89xhx13sgDkXCd9mKQzdvJuVuQoH", "height": 37}
+[08-23|17:04:02.338] INFO chain/builder.go:277 built block {"hght": 38, "attempted": 3814, "added": 3813, "mempool size": 366545, "mempool lock wait": "12.707µs", "context": false, "state changes": 5381, "state operations": 11439}
+[08-23|17:04:02.338] INFO chain/block.go:330 skipping verification, already processed {"height": 38, "blkID": "EzMhAFNUDTMGUYtthw9wofJSdUkv9nJFSnX8Pw1Xjmaq9yNh3"}
+[08-23|17:04:02.342] INFO vm/resolutions.go:116 verified block {"blkID": "EzMhAFNUDTMGUYtthw9wofJSdUkv9nJFSnX8Pw1Xjmaq9yNh3", "height": 38, "txs": 3813, "state ready": true}
+[08-23|17:04:02.429] INFO vm/resolutions.go:262 accepted block {"blkID": "EzMhAFNUDTMGUYtthw9wofJSdUkv9nJFSnX8Pw1Xjmaq9yNh3", "height": 38, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:02.442] INFO vm/resolutions.go:203 block processed {"blkID": "EzMhAFNUDTMGUYtthw9wofJSdUkv9nJFSnX8Pw1Xjmaq9yNh3", "height": 38}
+[08-23|17:04:02.620] INFO chain/builder.go:277 built block {"hght": 39, "attempted": 3814, "added": 3813, "mempool size": 362732, "mempool lock wait": "15.049µs", "context": false, "state changes": 5308, "state operations": 11439}
+[08-23|17:04:02.620] INFO chain/block.go:330 skipping verification, already processed {"height": 39, "blkID": "2g53TdJokhKBTwxuf7NgNaGvNeXMz4Q3dGgMdR1Y4sPkhv3TtG"}
+[08-23|17:04:02.626] INFO vm/resolutions.go:116 verified block {"blkID": "2g53TdJokhKBTwxuf7NgNaGvNeXMz4Q3dGgMdR1Y4sPkhv3TtG", "height": 39, "txs": 3813, "state ready": true}
+[08-23|17:04:02.745] INFO vm/resolutions.go:262 accepted block {"blkID": "2g53TdJokhKBTwxuf7NgNaGvNeXMz4Q3dGgMdR1Y4sPkhv3TtG", "height": 39, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:02.756] INFO vm/resolutions.go:203 block processed {"blkID": "2g53TdJokhKBTwxuf7NgNaGvNeXMz4Q3dGgMdR1Y4sPkhv3TtG", "height": 39}
+[08-23|17:04:02.906] INFO chain/builder.go:277 built block {"hght": 40, "attempted": 3814, "added": 3813, "mempool size": 358919, "mempool lock wait": "13.113µs", "context": false, "state changes": 5373, "state operations": 11439}
+[08-23|17:04:02.906] INFO chain/block.go:330 skipping verification, already processed {"height": 40, "blkID": "2CGLcVzd72PKizjuXi3v6KKqUp1z6TBkBzLGpTCnGVXP1bU1LK"}
+[08-23|17:04:02.910] INFO vm/resolutions.go:116 verified block {"blkID": "2CGLcVzd72PKizjuXi3v6KKqUp1z6TBkBzLGpTCnGVXP1bU1LK", "height": 40, "txs": 3813, "state ready": true}
+[08-23|17:04:02.947] INFO vm/resolutions.go:262 accepted block {"blkID": "2CGLcVzd72PKizjuXi3v6KKqUp1z6TBkBzLGpTCnGVXP1bU1LK", "height": 40, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:02.954] INFO vm/resolutions.go:203 block processed {"blkID": "2CGLcVzd72PKizjuXi3v6KKqUp1z6TBkBzLGpTCnGVXP1bU1LK", "height": 40}
+[08-23|17:04:03.113] INFO chain/builder.go:277 built block {"hght": 41, "attempted": 3814, "added": 3813, "mempool size": 355106, "mempool lock wait": "11.378µs", "context": false, "state changes": 5292, "state operations": 11439}
+[08-23|17:04:03.113] INFO chain/block.go:330 skipping verification, already processed {"height": 41, "blkID": "sYabZDznVKeCEdP8BRxoKsrHPqRYqUvf8B5XWm2HsrnZvWW3"}
+[08-23|17:04:03.116] INFO vm/resolutions.go:116 verified block {"blkID": "sYabZDznVKeCEdP8BRxoKsrHPqRYqUvf8B5XWm2HsrnZvWW3", "height": 41, "txs": 3813, "state ready": true}
+[08-23|17:04:03.163] INFO vm/resolutions.go:262 accepted block {"blkID": "sYabZDznVKeCEdP8BRxoKsrHPqRYqUvf8B5XWm2HsrnZvWW3", "height": 41, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:03.176] INFO vm/resolutions.go:203 block processed {"blkID": "sYabZDznVKeCEdP8BRxoKsrHPqRYqUvf8B5XWm2HsrnZvWW3", "height": 41}
+[08-23|17:04:03.487] INFO chain/builder.go:277 built block {"hght": 42, "attempted": 3814, "added": 3813, "mempool size": 351293, "mempool lock wait": "7.862µs", "context": false, "state changes": 5332, "state operations": 11439}
+[08-23|17:04:03.487] INFO chain/block.go:330 skipping verification, already processed {"height": 42, "blkID": "2uqJ38X8Z2wpP6vFtHEEPkRXKZSXA7C43cW5tbnR3K3iR2EMQp"}
+[08-23|17:04:03.492] INFO vm/resolutions.go:116 verified block {"blkID": "2uqJ38X8Z2wpP6vFtHEEPkRXKZSXA7C43cW5tbnR3K3iR2EMQp", "height": 42, "txs": 3813, "state ready": true}
+[08-23|17:04:03.557] INFO vm/resolutions.go:262 accepted block {"blkID": "2uqJ38X8Z2wpP6vFtHEEPkRXKZSXA7C43cW5tbnR3K3iR2EMQp", "height": 42, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:03.575] INFO vm/resolutions.go:203 block processed {"blkID": "2uqJ38X8Z2wpP6vFtHEEPkRXKZSXA7C43cW5tbnR3K3iR2EMQp", "height": 42}
+[08-23|17:04:03.980] INFO chain/builder.go:277 built block {"hght": 43, "attempted": 3814, "added": 3813, "mempool size": 347480, "mempool lock wait": "7.059µs", "context": false, "state changes": 5356, "state operations": 11439}
+[08-23|17:04:03.980] INFO chain/block.go:330 skipping verification, already processed {"height": 43, "blkID": "N2ByduNM3KW5ck6SX96uo8RgtPDv4q3RX5sMxEVrgz48ZUB3v"}
+[08-23|17:04:03.984] INFO vm/resolutions.go:116 verified block {"blkID": "N2ByduNM3KW5ck6SX96uo8RgtPDv4q3RX5sMxEVrgz48ZUB3v", "height": 43, "txs": 3813, "state ready": true}
+[08-23|17:04:04.070] INFO vm/resolutions.go:262 accepted block {"blkID": "N2ByduNM3KW5ck6SX96uo8RgtPDv4q3RX5sMxEVrgz48ZUB3v", "height": 43, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:04.100] INFO vm/resolutions.go:203 block processed {"blkID": "N2ByduNM3KW5ck6SX96uo8RgtPDv4q3RX5sMxEVrgz48ZUB3v", "height": 43}
+[08-23|17:04:04.494] INFO chain/builder.go:277 built block {"hght": 44, "attempted": 3814, "added": 3813, "mempool size": 343667, "mempool lock wait": "56.745µs", "context": false, "state changes": 5338, "state operations": 11439}
+[08-23|17:04:04.494] INFO chain/block.go:330 skipping verification, already processed {"height": 44, "blkID": "Ko9VLYmXnrd5ADLuFJh9TDYQpSc53RUyT4g2hcMXhRxnUp98A"}
+[08-23|17:04:04.498] INFO vm/resolutions.go:116 verified block {"blkID": "Ko9VLYmXnrd5ADLuFJh9TDYQpSc53RUyT4g2hcMXhRxnUp98A", "height": 44, "txs": 3813, "state ready": true}
+[08-23|17:04:04.566] INFO vm/resolutions.go:262 accepted block {"blkID": "Ko9VLYmXnrd5ADLuFJh9TDYQpSc53RUyT4g2hcMXhRxnUp98A", "height": 44, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:04.625] INFO vm/resolutions.go:203 block processed {"blkID": "Ko9VLYmXnrd5ADLuFJh9TDYQpSc53RUyT4g2hcMXhRxnUp98A", "height": 44}
+[08-23|17:04:04.906] INFO chain/builder.go:277 built block {"hght": 45, "attempted": 3814, "added": 3813, "mempool size": 339854, "mempool lock wait": "8.457µs", "context": false, "state changes": 5353, "state operations": 11439}
+[08-23|17:04:04.906] INFO chain/block.go:330 skipping verification, already processed {"height": 45, "blkID": "2udaecdiLZXnvbkE9KAqv2GdNXaUiud8yKVtR9jqpGfNudkMgN"}
+[08-23|17:04:04.911] INFO vm/resolutions.go:116 verified block {"blkID": "2udaecdiLZXnvbkE9KAqv2GdNXaUiud8yKVtR9jqpGfNudkMgN", "height": 45, "txs": 3813, "state ready": true}
+[08-23|17:04:05.024] INFO vm/resolutions.go:262 accepted block {"blkID": "2udaecdiLZXnvbkE9KAqv2GdNXaUiud8yKVtR9jqpGfNudkMgN", "height": 45, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:05.060] INFO vm/resolutions.go:203 block processed {"blkID": "2udaecdiLZXnvbkE9KAqv2GdNXaUiud8yKVtR9jqpGfNudkMgN", "height": 45}
+[08-23|17:04:05.322] INFO chain/builder.go:277 built block {"hght": 46, "attempted": 3814, "added": 3813, "mempool size": 336041, "mempool lock wait": "10.589µs", "context": false, "state changes": 5358, "state operations": 11439}
+[08-23|17:04:05.322] INFO chain/block.go:330 skipping verification, already processed {"height": 46, "blkID": "GhSd3hTUEn6tYrRoKrF5A4H75DxZDDJdsA2EaVspDpZw3of5L"}
+[08-23|17:04:05.326] INFO vm/resolutions.go:116 verified block {"blkID": "GhSd3hTUEn6tYrRoKrF5A4H75DxZDDJdsA2EaVspDpZw3of5L", "height": 46, "txs": 3813, "state ready": true}
+[08-23|17:04:05.399] INFO vm/resolutions.go:262 accepted block {"blkID": "GhSd3hTUEn6tYrRoKrF5A4H75DxZDDJdsA2EaVspDpZw3of5L", "height": 46, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:05.436] INFO vm/resolutions.go:203 block processed {"blkID": "GhSd3hTUEn6tYrRoKrF5A4H75DxZDDJdsA2EaVspDpZw3of5L", "height": 46}
+[08-23|17:04:05.928] INFO chain/builder.go:277 built block {"hght": 47, "attempted": 3814, "added": 3813, "mempool size": 332228, "mempool lock wait": "7.54µs", "context": false, "state changes": 5363, "state operations": 11439}
+[08-23|17:04:05.928] INFO chain/block.go:330 skipping verification, already processed {"height": 47, "blkID": "2smASi6Xzt538FNkX2C1odXorbsPy2hTFfG6YrGN1YPMtgWZsr"}
+[08-23|17:04:05.934] INFO vm/resolutions.go:116 verified block {"blkID": "2smASi6Xzt538FNkX2C1odXorbsPy2hTFfG6YrGN1YPMtgWZsr", "height": 47, "txs": 3813, "state ready": true}
+[08-23|17:04:06.112] INFO vm/resolutions.go:262 accepted block {"blkID": "2smASi6Xzt538FNkX2C1odXorbsPy2hTFfG6YrGN1YPMtgWZsr", "height": 47, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:06.171] INFO vm/resolutions.go:203 block processed {"blkID": "2smASi6Xzt538FNkX2C1odXorbsPy2hTFfG6YrGN1YPMtgWZsr", "height": 47}
+[08-23|17:04:06.815] INFO chain/builder.go:277 built block {"hght": 48, "attempted": 3814, "added": 3813, "mempool size": 328415, "mempool lock wait": "9.553µs", "context": false, "state changes": 5352, "state operations": 11439}
+[08-23|17:04:06.815] INFO chain/block.go:330 skipping verification, already processed {"height": 48, "blkID": "2HCLKPthxoy42QgEJVBMZpxDwrzZBV62wEeNEkHwGBFif3X62v"}
+[08-23|17:04:06.828] INFO vm/resolutions.go:116 verified block {"blkID": "2HCLKPthxoy42QgEJVBMZpxDwrzZBV62wEeNEkHwGBFif3X62v", "height": 48, "txs": 3813, "state ready": true}
+[08-23|17:04:07.127] INFO vm/resolutions.go:262 accepted block {"blkID": "2HCLKPthxoy42QgEJVBMZpxDwrzZBV62wEeNEkHwGBFif3X62v", "height": 48, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:07.190] INFO vm/resolutions.go:203 block processed {"blkID": "2HCLKPthxoy42QgEJVBMZpxDwrzZBV62wEeNEkHwGBFif3X62v", "height": 48}
+[08-23|17:04:08.203] INFO chain/builder.go:277 built block {"hght": 49, "attempted": 3814, "added": 3813, "mempool size": 324602, "mempool lock wait": "10.393µs", "context": false, "state changes": 5330, "state operations": 11439}
+[08-23|17:04:08.203] INFO chain/block.go:330 skipping verification, already processed {"height": 49, "blkID": "2F7miQ3jzws8cP7994fAWvwDsg85MyMx5nYy1CnDXbuLzbsSau"}
+[08-23|17:04:08.208] INFO vm/resolutions.go:116 verified block {"blkID": "2F7miQ3jzws8cP7994fAWvwDsg85MyMx5nYy1CnDXbuLzbsSau", "height": 49, "txs": 3813, "state ready": true}
+[08-23|17:04:08.420] INFO vm/resolutions.go:262 accepted block {"blkID": "2F7miQ3jzws8cP7994fAWvwDsg85MyMx5nYy1CnDXbuLzbsSau", "height": 49, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:08.515] INFO vm/resolutions.go:203 block processed {"blkID": "2F7miQ3jzws8cP7994fAWvwDsg85MyMx5nYy1CnDXbuLzbsSau", "height": 49}
+[08-23|17:04:11.819] INFO chain/builder.go:277 built block {"hght": 50, "attempted": 3814, "added": 3813, "mempool size": 320789, "mempool lock wait": "11.156µs", "context": false, "state changes": 5364, "state operations": 11439}
+[08-23|17:04:11.819] INFO chain/block.go:330 skipping verification, already processed {"height": 50, "blkID": "2Si96GiT63eD7ZCBeBke9Dnf1d2Kaemg4vSwCrZPFHVL2Y9Zv7"}
+[08-23|17:04:11.828] INFO vm/resolutions.go:116 verified block {"blkID": "2Si96GiT63eD7ZCBeBke9Dnf1d2Kaemg4vSwCrZPFHVL2Y9Zv7", "height": 50, "txs": 3813, "state ready": true}
+[08-23|17:04:12.072] INFO vm/resolutions.go:262 accepted block {"blkID": "2Si96GiT63eD7ZCBeBke9Dnf1d2Kaemg4vSwCrZPFHVL2Y9Zv7", "height": 50, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:12.136] INFO vm/resolutions.go:203 block processed {"blkID": "2Si96GiT63eD7ZCBeBke9Dnf1d2Kaemg4vSwCrZPFHVL2Y9Zv7", "height": 50}
+[08-23|17:04:12.541] INFO chain/builder.go:277 built block {"hght": 51, "attempted": 3814, "added": 3813, "mempool size": 316976, "mempool lock wait": "35.722µs", "context": false, "state changes": 5372, "state operations": 11439}
+[08-23|17:04:12.542] INFO chain/block.go:330 skipping verification, already processed {"height": 51, "blkID": "bHjJDkuTSQNrx8SoRDf1yz2nAeCjkTzj8bpdmYMNddkmQnALX"}
+[08-23|17:04:12.546] INFO vm/resolutions.go:116 verified block {"blkID": "bHjJDkuTSQNrx8SoRDf1yz2nAeCjkTzj8bpdmYMNddkmQnALX", "height": 51, "txs": 3813, "state ready": true}
+[08-23|17:04:12.613] INFO vm/resolutions.go:262 accepted block {"blkID": "bHjJDkuTSQNrx8SoRDf1yz2nAeCjkTzj8bpdmYMNddkmQnALX", "height": 51, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:12.628] INFO vm/resolutions.go:203 block processed {"blkID": "bHjJDkuTSQNrx8SoRDf1yz2nAeCjkTzj8bpdmYMNddkmQnALX", "height": 51}
+[08-23|17:04:12.870] INFO chain/builder.go:277 built block {"hght": 52, "attempted": 3814, "added": 3813, "mempool size": 313163, "mempool lock wait": "17.697µs", "context": false, "state changes": 5301, "state operations": 11439}
+[08-23|17:04:12.870] INFO chain/block.go:330 skipping verification, already processed {"height": 52, "blkID": "ie2ueeDnRFHxnAGoTqwuoghApVnosekHP4B3MyBLYc7PPuUfg"}
+[08-23|17:04:12.873] INFO vm/resolutions.go:116 verified block {"blkID": "ie2ueeDnRFHxnAGoTqwuoghApVnosekHP4B3MyBLYc7PPuUfg", "height": 52, "txs": 3813, "state ready": true}
+[08-23|17:04:12.915] INFO vm/resolutions.go:262 accepted block {"blkID": "ie2ueeDnRFHxnAGoTqwuoghApVnosekHP4B3MyBLYc7PPuUfg", "height": 52, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:12.928] INFO vm/resolutions.go:203 block processed {"blkID": "ie2ueeDnRFHxnAGoTqwuoghApVnosekHP4B3MyBLYc7PPuUfg", "height": 52}
+[08-23|17:04:13.106] INFO chain/builder.go:277 built block {"hght": 53, "attempted": 3814, "added": 3813, "mempool size": 309350, "mempool lock wait": "13.948µs", "context": false, "state changes": 5313, "state operations": 11439}
+[08-23|17:04:13.106] INFO chain/block.go:330 skipping verification, already processed {"height": 53, "blkID": "26KgnaicHvDUAs85dxuraV6V8UUzygrzjH2b48deaTMAVE2QAz"}
+[08-23|17:04:13.112] INFO vm/resolutions.go:116 verified block {"blkID": "26KgnaicHvDUAs85dxuraV6V8UUzygrzjH2b48deaTMAVE2QAz", "height": 53, "txs": 3813, "state ready": true}
+[08-23|17:04:13.169] INFO vm/resolutions.go:262 accepted block {"blkID": "26KgnaicHvDUAs85dxuraV6V8UUzygrzjH2b48deaTMAVE2QAz", "height": 53, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:13.188] INFO vm/resolutions.go:203 block processed {"blkID": "26KgnaicHvDUAs85dxuraV6V8UUzygrzjH2b48deaTMAVE2QAz", "height": 53}
+[08-23|17:04:13.386] INFO chain/builder.go:277 built block {"hght": 54, "attempted": 3814, "added": 3813, "mempool size": 305537, "mempool lock wait": "12.919µs", "context": false, "state changes": 5347, "state operations": 11439}
+[08-23|17:04:13.386] INFO chain/block.go:330 skipping verification, already processed {"height": 54, "blkID": "2Da8HSzrK99r415e3jZcGgX8GRVdgRkDi7X3ZxiaszWCodjscz"}
+[08-23|17:04:13.390] INFO vm/resolutions.go:116 verified block {"blkID": "2Da8HSzrK99r415e3jZcGgX8GRVdgRkDi7X3ZxiaszWCodjscz", "height": 54, "txs": 3813, "state ready": true}
+[08-23|17:04:13.426] INFO vm/resolutions.go:262 accepted block {"blkID": "2Da8HSzrK99r415e3jZcGgX8GRVdgRkDi7X3ZxiaszWCodjscz", "height": 54, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:13.441] INFO vm/resolutions.go:203 block processed {"blkID": "2Da8HSzrK99r415e3jZcGgX8GRVdgRkDi7X3ZxiaszWCodjscz", "height": 54}
+[08-23|17:04:13.609] INFO chain/builder.go:277 built block {"hght": 55, "attempted": 3814, "added": 3813, "mempool size": 301724, "mempool lock wait": "12.968µs", "context": false, "state changes": 5349, "state operations": 11439}
+[08-23|17:04:13.609] INFO chain/block.go:330 skipping verification, already processed {"height": 55, "blkID": "jKKiYtVkN1chyGY3sGmxgWRWM4qQmBQvWG8Uwj5gsntT3YjQL"}
+[08-23|17:04:13.612] INFO vm/resolutions.go:116 verified block {"blkID": "jKKiYtVkN1chyGY3sGmxgWRWM4qQmBQvWG8Uwj5gsntT3YjQL", "height": 55, "txs": 3813, "state ready": true}
+[08-23|17:04:13.662] INFO vm/resolutions.go:262 accepted block {"blkID": "jKKiYtVkN1chyGY3sGmxgWRWM4qQmBQvWG8Uwj5gsntT3YjQL", "height": 55, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:13.678] INFO vm/resolutions.go:203 block processed {"blkID": "jKKiYtVkN1chyGY3sGmxgWRWM4qQmBQvWG8Uwj5gsntT3YjQL", "height": 55}
+[08-23|17:04:13.891] INFO chain/builder.go:277 built block {"hght": 56, "attempted": 3814, "added": 3813, "mempool size": 297911, "mempool lock wait": "11.449µs", "context": false, "state changes": 5307, "state operations": 11439}
+[08-23|17:04:13.891] INFO chain/block.go:330 skipping verification, already processed {"height": 56, "blkID": "2jwFwWEwZuDmcCCZVLLB4U8HHEXHj83KKoLqALo1GN4FcwroPZ"}
+[08-23|17:04:13.898] INFO vm/resolutions.go:116 verified block {"blkID": "2jwFwWEwZuDmcCCZVLLB4U8HHEXHj83KKoLqALo1GN4FcwroPZ", "height": 56, "txs": 3813, "state ready": true}
+[08-23|17:04:13.953] INFO vm/resolutions.go:262 accepted block {"blkID": "2jwFwWEwZuDmcCCZVLLB4U8HHEXHj83KKoLqALo1GN4FcwroPZ", "height": 56, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:14.000] INFO vm/resolutions.go:203 block processed {"blkID": "2jwFwWEwZuDmcCCZVLLB4U8HHEXHj83KKoLqALo1GN4FcwroPZ", "height": 56}
+[08-23|17:04:14.151] INFO chain/builder.go:277 built block {"hght": 57, "attempted": 3814, "added": 3813, "mempool size": 294098, "mempool lock wait": "13.882µs", "context": false, "state changes": 5317, "state operations": 11439}
+[08-23|17:04:14.151] INFO chain/block.go:330 skipping verification, already processed {"height": 57, "blkID": "2nSc7A3UxnQi8Y8SCqqZEvUJUgzLiqTmqtt3cVvLDqhkRvpNFx"}
+[08-23|17:04:14.155] INFO vm/resolutions.go:116 verified block {"blkID": "2nSc7A3UxnQi8Y8SCqqZEvUJUgzLiqTmqtt3cVvLDqhkRvpNFx", "height": 57, "txs": 3813, "state ready": true}
+[08-23|17:04:14.519] INFO vm/resolutions.go:262 accepted block {"blkID": "2nSc7A3UxnQi8Y8SCqqZEvUJUgzLiqTmqtt3cVvLDqhkRvpNFx", "height": 57, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:14.528] INFO vm/resolutions.go:203 block processed {"blkID": "2nSc7A3UxnQi8Y8SCqqZEvUJUgzLiqTmqtt3cVvLDqhkRvpNFx", "height": 57}
+[08-23|17:04:14.700] INFO chain/builder.go:277 built block {"hght": 58, "attempted": 3814, "added": 3813, "mempool size": 290285, "mempool lock wait": "9.487µs", "context": false, "state changes": 5329, "state operations": 11439}
+[08-23|17:04:14.700] INFO chain/block.go:330 skipping verification, already processed {"height": 58, "blkID": "G5DVfumuDWtQap4oLKEFrPgbW97SQQXXWC7W8KjP2pkH9mJ5r"}
+[08-23|17:04:14.704] INFO vm/resolutions.go:116 verified block {"blkID": "G5DVfumuDWtQap4oLKEFrPgbW97SQQXXWC7W8KjP2pkH9mJ5r", "height": 58, "txs": 3813, "state ready": true}
+[08-23|17:04:14.820] INFO vm/resolutions.go:262 accepted block {"blkID": "G5DVfumuDWtQap4oLKEFrPgbW97SQQXXWC7W8KjP2pkH9mJ5r", "height": 58, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:14.829] INFO vm/resolutions.go:203 block processed {"blkID": "G5DVfumuDWtQap4oLKEFrPgbW97SQQXXWC7W8KjP2pkH9mJ5r", "height": 58}
+[08-23|17:04:14.989] INFO chain/builder.go:277 built block {"hght": 59, "attempted": 3814, "added": 3813, "mempool size": 286472, "mempool lock wait": "11.456µs", "context": false, "state changes": 5348, "state operations": 11439}
+[08-23|17:04:14.990] INFO chain/block.go:330 skipping verification, already processed {"height": 59, "blkID": "fKBpxgWJpqjGKRAikN2xZkyytJagQeeNv9A2aqQALkN5rbdXv"}
+[08-23|17:04:14.994] INFO vm/resolutions.go:116 verified block {"blkID": "fKBpxgWJpqjGKRAikN2xZkyytJagQeeNv9A2aqQALkN5rbdXv", "height": 59, "txs": 3813, "state ready": true}
+[08-23|17:04:15.049] INFO vm/resolutions.go:262 accepted block {"blkID": "fKBpxgWJpqjGKRAikN2xZkyytJagQeeNv9A2aqQALkN5rbdXv", "height": 59, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:15.057] INFO vm/resolutions.go:203 block processed {"blkID": "fKBpxgWJpqjGKRAikN2xZkyytJagQeeNv9A2aqQALkN5rbdXv", "height": 59}
+[08-23|17:04:15.267] INFO chain/builder.go:277 built block {"hght": 60, "attempted": 3814, "added": 3813, "mempool size": 282659, "mempool lock wait": "14.576µs", "context": false, "state changes": 5327, "state operations": 11439}
+[08-23|17:04:15.267] INFO chain/block.go:330 skipping verification, already processed {"height": 60, "blkID": "2CWw5Gwq8GNCpunckqimEgLvC6NScrMNBJCvi5YqGmsQPFjua4"}
+[08-23|17:04:15.270] INFO vm/resolutions.go:116 verified block {"blkID": "2CWw5Gwq8GNCpunckqimEgLvC6NScrMNBJCvi5YqGmsQPFjua4", "height": 60, "txs": 3813, "state ready": true}
+[08-23|17:04:15.325] INFO vm/resolutions.go:262 accepted block {"blkID": "2CWw5Gwq8GNCpunckqimEgLvC6NScrMNBJCvi5YqGmsQPFjua4", "height": 60, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:15.334] INFO vm/resolutions.go:203 block processed {"blkID": "2CWw5Gwq8GNCpunckqimEgLvC6NScrMNBJCvi5YqGmsQPFjua4", "height": 60}
+[08-23|17:04:15.589] INFO chain/builder.go:277 built block {"hght": 61, "attempted": 3814, "added": 3813, "mempool size": 278846, "mempool lock wait": "14.962µs", "context": false, "state changes": 5392, "state operations": 11439}
+[08-23|17:04:15.589] INFO chain/block.go:330 skipping verification, already processed {"height": 61, "blkID": "YpXJPYbamEThgy9mjpuihmyXzEcZHzff3WQu3GF7jnFfB2aop"}
+[08-23|17:04:15.592] INFO vm/resolutions.go:116 verified block {"blkID": "YpXJPYbamEThgy9mjpuihmyXzEcZHzff3WQu3GF7jnFfB2aop", "height": 61, "txs": 3813, "state ready": true}
+[08-23|17:04:15.678] INFO vm/resolutions.go:262 accepted block {"blkID": "YpXJPYbamEThgy9mjpuihmyXzEcZHzff3WQu3GF7jnFfB2aop", "height": 61, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:15.694] INFO vm/resolutions.go:203 block processed {"blkID": "YpXJPYbamEThgy9mjpuihmyXzEcZHzff3WQu3GF7jnFfB2aop", "height": 61}
+[08-23|17:04:15.946] INFO chain/builder.go:277 built block {"hght": 62, "attempted": 3814, "added": 3813, "mempool size": 275033, "mempool lock wait": "14.136µs", "context": false, "state changes": 5344, "state operations": 11439}
+[08-23|17:04:15.946] INFO chain/block.go:330 skipping verification, already processed {"height": 62, "blkID": "2iZxz8z2BxxHziwwRP1CHyEVFXnTkxShciC17XrDftsX3hLPV2"}
+[08-23|17:04:15.953] INFO vm/resolutions.go:116 verified block {"blkID": "2iZxz8z2BxxHziwwRP1CHyEVFXnTkxShciC17XrDftsX3hLPV2", "height": 62, "txs": 3813, "state ready": true}
+[08-23|17:04:16.079] INFO vm/resolutions.go:262 accepted block {"blkID": "2iZxz8z2BxxHziwwRP1CHyEVFXnTkxShciC17XrDftsX3hLPV2", "height": 62, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:16.097] INFO vm/resolutions.go:203 block processed {"blkID": "2iZxz8z2BxxHziwwRP1CHyEVFXnTkxShciC17XrDftsX3hLPV2", "height": 62}
+[08-23|17:04:16.268] INFO chain/builder.go:277 built block {"hght": 63, "attempted": 3814, "added": 3813, "mempool size": 271220, "mempool lock wait": "13.802µs", "context": false, "state changes": 5405, "state operations": 11439}
+[08-23|17:04:16.268] INFO chain/block.go:330 skipping verification, already processed {"height": 63, "blkID": "Esx24qC2VgUu8mzFkDsYTZFGchzAyUFwM7majDQ2psFvUzxYR"}
+[08-23|17:04:16.273] INFO vm/resolutions.go:116 verified block {"blkID": "Esx24qC2VgUu8mzFkDsYTZFGchzAyUFwM7majDQ2psFvUzxYR", "height": 63, "txs": 3813, "state ready": true}
+[08-23|17:04:16.338] INFO vm/resolutions.go:262 accepted block {"blkID": "Esx24qC2VgUu8mzFkDsYTZFGchzAyUFwM7majDQ2psFvUzxYR", "height": 63, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:16.393] INFO vm/resolutions.go:203 block processed {"blkID": "Esx24qC2VgUu8mzFkDsYTZFGchzAyUFwM7majDQ2psFvUzxYR", "height": 63}
+[08-23|17:04:16.628] INFO chain/builder.go:277 built block {"hght": 64, "attempted": 3814, "added": 3813, "mempool size": 267407, "mempool lock wait": "15.03µs", "context": false, "state changes": 5326, "state operations": 11439}
+[08-23|17:04:16.628] INFO chain/block.go:330 skipping verification, already processed {"height": 64, "blkID": "WZ8RWhMYX1pUtepYbTCgmr67w87kxHTVjGB3Si41LzpqPTtoc"}
+[08-23|17:04:16.636] INFO vm/resolutions.go:116 verified block {"blkID": "WZ8RWhMYX1pUtepYbTCgmr67w87kxHTVjGB3Si41LzpqPTtoc", "height": 64, "txs": 3813, "state ready": true}
+[08-23|17:04:16.723] INFO vm/resolutions.go:262 accepted block {"blkID": "WZ8RWhMYX1pUtepYbTCgmr67w87kxHTVjGB3Si41LzpqPTtoc", "height": 64, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:16.782] INFO vm/resolutions.go:203 block processed {"blkID": "WZ8RWhMYX1pUtepYbTCgmr67w87kxHTVjGB3Si41LzpqPTtoc", "height": 64}
+[08-23|17:04:17.018] INFO chain/builder.go:277 built block {"hght": 65, "attempted": 3814, "added": 3813, "mempool size": 263594, "mempool lock wait": "19.429µs", "context": false, "state changes": 5320, "state operations": 11439}
+[08-23|17:04:17.018] INFO chain/block.go:330 skipping verification, already processed {"height": 65, "blkID": "2BQpU4CY2wFTHLXF2bXYx8cxwbBswDubkBvZWuUNFkNgBe8wbC"}
+[08-23|17:04:17.021] INFO vm/resolutions.go:116 verified block {"blkID": "2BQpU4CY2wFTHLXF2bXYx8cxwbBswDubkBvZWuUNFkNgBe8wbC", "height": 65, "txs": 3813, "state ready": true}
+[08-23|17:04:17.071] INFO vm/resolutions.go:262 accepted block {"blkID": "2BQpU4CY2wFTHLXF2bXYx8cxwbBswDubkBvZWuUNFkNgBe8wbC", "height": 65, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:17.099] INFO vm/resolutions.go:203 block processed {"blkID": "2BQpU4CY2wFTHLXF2bXYx8cxwbBswDubkBvZWuUNFkNgBe8wbC", "height": 65}
+[08-23|17:04:17.491] INFO chain/builder.go:277 built block {"hght": 66, "attempted": 3814, "added": 3813, "mempool size": 259781, "mempool lock wait": "15.327µs", "context": false, "state changes": 5333, "state operations": 11439}
+[08-23|17:04:17.491] INFO chain/block.go:330 skipping verification, already processed {"height": 66, "blkID": "21e6GH2dvuvRYADKZRxKcLbV9N5YnBqFHrNS87LeCsLEDf73zE"}
+[08-23|17:04:17.501] INFO vm/resolutions.go:116 verified block {"blkID": "21e6GH2dvuvRYADKZRxKcLbV9N5YnBqFHrNS87LeCsLEDf73zE", "height": 66, "txs": 3813, "state ready": true}
+[08-23|17:04:17.637] INFO vm/resolutions.go:262 accepted block {"blkID": "21e6GH2dvuvRYADKZRxKcLbV9N5YnBqFHrNS87LeCsLEDf73zE", "height": 66, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:17.710] INFO vm/resolutions.go:203 block processed {"blkID": "21e6GH2dvuvRYADKZRxKcLbV9N5YnBqFHrNS87LeCsLEDf73zE", "height": 66}
+[08-23|17:04:18.065] INFO chain/builder.go:277 built block {"hght": 67, "attempted": 3814, "added": 3813, "mempool size": 255968, "mempool lock wait": "20.53µs", "context": false, "state changes": 5317, "state operations": 11439}
+[08-23|17:04:18.065] INFO chain/block.go:330 skipping verification, already processed {"height": 67, "blkID": "2E1PMJWXmQZu16wH3c4WSSay5BYw2wRTTCAaKcbsfifyuL7FLY"}
+[08-23|17:04:18.070] INFO vm/resolutions.go:116 verified block {"blkID": "2E1PMJWXmQZu16wH3c4WSSay5BYw2wRTTCAaKcbsfifyuL7FLY", "height": 67, "txs": 3813, "state ready": true}
+[08-23|17:04:18.374] INFO vm/resolutions.go:262 accepted block {"blkID": "2E1PMJWXmQZu16wH3c4WSSay5BYw2wRTTCAaKcbsfifyuL7FLY", "height": 67, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:18.521] INFO vm/resolutions.go:203 block processed {"blkID": "2E1PMJWXmQZu16wH3c4WSSay5BYw2wRTTCAaKcbsfifyuL7FLY", "height": 67}
+[08-23|17:04:19.095] INFO chain/builder.go:277 built block {"hght": 68, "attempted": 3814, "added": 3813, "mempool size": 252155, "mempool lock wait": "13.703µs", "context": false, "state changes": 5349, "state operations": 11439}
+[08-23|17:04:19.095] INFO chain/block.go:330 skipping verification, already processed {"height": 68, "blkID": "YCRNENhfzH2Dd1sU2kRMdh5JZJAodABtZDEBBGUwR7PZ774pq"}
+[08-23|17:04:19.100] INFO vm/resolutions.go:116 verified block {"blkID": "YCRNENhfzH2Dd1sU2kRMdh5JZJAodABtZDEBBGUwR7PZ774pq", "height": 68, "txs": 3813, "state ready": true}
+[08-23|17:04:19.193] INFO vm/resolutions.go:262 accepted block {"blkID": "YCRNENhfzH2Dd1sU2kRMdh5JZJAodABtZDEBBGUwR7PZ774pq", "height": 68, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:19.264] INFO vm/resolutions.go:203 block processed {"blkID": "YCRNENhfzH2Dd1sU2kRMdh5JZJAodABtZDEBBGUwR7PZ774pq", "height": 68}
+[08-23|17:04:19.757] INFO chain/builder.go:277 built block {"hght": 69, "attempted": 3814, "added": 3813, "mempool size": 248342, "mempool lock wait": "11.523µs", "context": false, "state changes": 5362, "state operations": 11439}
+[08-23|17:04:19.757] INFO chain/block.go:330 skipping verification, already processed {"height": 69, "blkID": "2271vkNBGx1HQFHWiVQyjvfpUH11kCnfpK2tNtTQTxb12HAiXW"}
+[08-23|17:04:19.762] INFO vm/resolutions.go:116 verified block {"blkID": "2271vkNBGx1HQFHWiVQyjvfpUH11kCnfpK2tNtTQTxb12HAiXW", "height": 69, "txs": 3813, "state ready": true}
+[08-23|17:04:19.913] INFO vm/resolutions.go:262 accepted block {"blkID": "2271vkNBGx1HQFHWiVQyjvfpUH11kCnfpK2tNtTQTxb12HAiXW", "height": 69, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:20.073] INFO vm/resolutions.go:203 block processed {"blkID": "2271vkNBGx1HQFHWiVQyjvfpUH11kCnfpK2tNtTQTxb12HAiXW", "height": 69}
+[08-23|17:04:20.895] INFO chain/builder.go:277 built block {"hght": 70, "attempted": 3814, "added": 3813, "mempool size": 244529, "mempool lock wait": "9.371µs", "context": false, "state changes": 5313, "state operations": 11439}
+[08-23|17:04:20.895] INFO chain/block.go:330 skipping verification, already processed {"height": 70, "blkID": "b5mp1Rwuj45YKF5xDwz3YPS8Td1uZCodeGTaWt4ZvuGGQRueL"}
+[08-23|17:04:20.905] INFO vm/resolutions.go:116 verified block {"blkID": "b5mp1Rwuj45YKF5xDwz3YPS8Td1uZCodeGTaWt4ZvuGGQRueL", "height": 70, "txs": 3813, "state ready": true}
+[08-23|17:04:21.373] INFO vm/resolutions.go:262 accepted block {"blkID": "b5mp1Rwuj45YKF5xDwz3YPS8Td1uZCodeGTaWt4ZvuGGQRueL", "height": 70, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:21.569] INFO vm/resolutions.go:203 block processed {"blkID": "b5mp1Rwuj45YKF5xDwz3YPS8Td1uZCodeGTaWt4ZvuGGQRueL", "height": 70}
+[08-23|17:04:22.869] INFO chain/builder.go:277 built block {"hght": 71, "attempted": 3814, "added": 3813, "mempool size": 240716, "mempool lock wait": "38.296µs", "context": false, "state changes": 5309, "state operations": 11439}
+[08-23|17:04:22.869] INFO chain/block.go:330 skipping verification, already processed {"height": 71, "blkID": "2ShmEgERMJULV73zfRLJSJbjH3XJEYeTXZjQtdCcr1JspuqzKM"}
+[08-23|17:04:22.873] INFO vm/resolutions.go:116 verified block {"blkID": "2ShmEgERMJULV73zfRLJSJbjH3XJEYeTXZjQtdCcr1JspuqzKM", "height": 71, "txs": 3813, "state ready": true}
+[08-23|17:04:22.991] INFO vm/resolutions.go:262 accepted block {"blkID": "2ShmEgERMJULV73zfRLJSJbjH3XJEYeTXZjQtdCcr1JspuqzKM", "height": 71, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:23.036] INFO vm/resolutions.go:203 block processed {"blkID": "2ShmEgERMJULV73zfRLJSJbjH3XJEYeTXZjQtdCcr1JspuqzKM", "height": 71}
+[08-23|17:04:23.653] INFO chain/builder.go:277 built block {"hght": 72, "attempted": 3814, "added": 3813, "mempool size": 236903, "mempool lock wait": "10.887µs", "context": false, "state changes": 5309, "state operations": 11439}
+[08-23|17:04:23.654] INFO chain/block.go:330 skipping verification, already processed {"height": 72, "blkID": "2vgfyV4pxbdoiTapPRGJmJsKVXQnw5bfGqQ8fCyAcz9sabq3un"}
+[08-23|17:04:23.658] INFO vm/resolutions.go:116 verified block {"blkID": "2vgfyV4pxbdoiTapPRGJmJsKVXQnw5bfGqQ8fCyAcz9sabq3un", "height": 72, "txs": 3813, "state ready": true}
+[08-23|17:04:23.776] INFO vm/resolutions.go:262 accepted block {"blkID": "2vgfyV4pxbdoiTapPRGJmJsKVXQnw5bfGqQ8fCyAcz9sabq3un", "height": 72, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:23.812] INFO vm/resolutions.go:203 block processed {"blkID": "2vgfyV4pxbdoiTapPRGJmJsKVXQnw5bfGqQ8fCyAcz9sabq3un", "height": 72}
+[08-23|17:04:24.832] INFO chain/builder.go:277 built block {"hght": 73, "attempted": 3814, "added": 3813, "mempool size": 233090, "mempool lock wait": "12.015µs", "context": false, "state changes": 5331, "state operations": 11439}
+[08-23|17:04:24.832] INFO chain/block.go:330 skipping verification, already processed {"height": 73, "blkID": "WkyjeVnzjrDQWNxSedQu1JoFTMayRnsneAuTaMndLiBBBvt1b"}
+[08-23|17:04:24.844] INFO vm/resolutions.go:116 verified block {"blkID": "WkyjeVnzjrDQWNxSedQu1JoFTMayRnsneAuTaMndLiBBBvt1b", "height": 73, "txs": 3813, "state ready": true}
+[08-23|17:04:25.065] INFO vm/resolutions.go:262 accepted block {"blkID": "WkyjeVnzjrDQWNxSedQu1JoFTMayRnsneAuTaMndLiBBBvt1b", "height": 73, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:25.232] INFO vm/resolutions.go:203 block processed {"blkID": "WkyjeVnzjrDQWNxSedQu1JoFTMayRnsneAuTaMndLiBBBvt1b", "height": 73}
+[08-23|17:04:27.403] INFO chain/builder.go:277 built block {"hght": 74, "attempted": 3814, "added": 3813, "mempool size": 229277, "mempool lock wait": "17.006µs", "context": false, "state changes": 5377, "state operations": 11439}
+[08-23|17:04:27.403] INFO chain/block.go:330 skipping verification, already processed {"height": 74, "blkID": "23DoJppk9TrpdMQ73zan7CtXit2HU2EU9Ur891eNUAHFfQ1mhy"}
+[08-23|17:04:27.415] INFO vm/resolutions.go:116 verified block {"blkID": "23DoJppk9TrpdMQ73zan7CtXit2HU2EU9Ur891eNUAHFfQ1mhy", "height": 74, "txs": 3813, "state ready": true}
+[08-23|17:04:27.945] INFO vm/resolutions.go:262 accepted block {"blkID": "23DoJppk9TrpdMQ73zan7CtXit2HU2EU9Ur891eNUAHFfQ1mhy", "height": 74, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:28.160] INFO vm/resolutions.go:203 block processed {"blkID": "23DoJppk9TrpdMQ73zan7CtXit2HU2EU9Ur891eNUAHFfQ1mhy", "height": 74}
+[08-23|17:04:29.610] INFO chain/builder.go:277 built block {"hght": 75, "attempted": 3814, "added": 3813, "mempool size": 225464, "mempool lock wait": "36.713µs", "context": false, "state changes": 5311, "state operations": 11439}
+[08-23|17:04:29.611] INFO chain/block.go:330 skipping verification, already processed {"height": 75, "blkID": "41Dh8a3GExV9AkjerYx7JwzVdprEKMncJc1ajC4wch5kg9apk"}
+[08-23|17:04:29.622] INFO vm/resolutions.go:116 verified block {"blkID": "41Dh8a3GExV9AkjerYx7JwzVdprEKMncJc1ajC4wch5kg9apk", "height": 75, "txs": 3813, "state ready": true}
+[08-23|17:04:31.589] INFO vm/resolutions.go:262 accepted block {"blkID": "41Dh8a3GExV9AkjerYx7JwzVdprEKMncJc1ajC4wch5kg9apk", "height": 75, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:31.739] INFO vm/resolutions.go:203 block processed {"blkID": "41Dh8a3GExV9AkjerYx7JwzVdprEKMncJc1ajC4wch5kg9apk", "height": 75}
+[08-23|17:04:34.435] INFO chain/builder.go:277 built block {"hght": 76, "attempted": 3814, "added": 3813, "mempool size": 221651, "mempool lock wait": "16.277µs", "context": false, "state changes": 5370, "state operations": 11439}
+[08-23|17:04:34.437] INFO chain/block.go:330 skipping verification, already processed {"height": 76, "blkID": "qUuo9sPdqy811uVDWpbE2x2zDup5SusgrKUCUozPBTjZpMTsG"}
+[08-23|17:04:34.479] INFO vm/resolutions.go:116 verified block {"blkID": "qUuo9sPdqy811uVDWpbE2x2zDup5SusgrKUCUozPBTjZpMTsG", "height": 76, "txs": 3813, "state ready": true}
+[08-23|17:04:34.802] INFO vm/resolutions.go:262 accepted block {"blkID": "qUuo9sPdqy811uVDWpbE2x2zDup5SusgrKUCUozPBTjZpMTsG", "height": 76, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:35.087] INFO vm/resolutions.go:203 block processed {"blkID": "qUuo9sPdqy811uVDWpbE2x2zDup5SusgrKUCUozPBTjZpMTsG", "height": 76}
+[08-23|17:04:39.110] INFO chain/builder.go:277 built block {"hght": 77, "attempted": 3814, "added": 3813, "mempool size": 217838, "mempool lock wait": "28.966µs", "context": false, "state changes": 5377, "state operations": 11439}
+[08-23|17:04:39.110] INFO chain/block.go:330 skipping verification, already processed {"height": 77, "blkID": "2LkewKX1a6pdTqJoKHwNBEykyjc7rxLfYF1wCsBtFi5DdjXw8H"}
+[08-23|17:04:39.172] INFO vm/resolutions.go:116 verified block {"blkID": "2LkewKX1a6pdTqJoKHwNBEykyjc7rxLfYF1wCsBtFi5DdjXw8H", "height": 77, "txs": 3813, "state ready": true}
+[08-23|17:04:39.668] INFO vm/resolutions.go:262 accepted block {"blkID": "2LkewKX1a6pdTqJoKHwNBEykyjc7rxLfYF1wCsBtFi5DdjXw8H", "height": 77, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:39.828] INFO vm/resolutions.go:203 block processed {"blkID": "2LkewKX1a6pdTqJoKHwNBEykyjc7rxLfYF1wCsBtFi5DdjXw8H", "height": 77}
+[08-23|17:04:43.146] INFO chain/builder.go:277 built block {"hght": 78, "attempted": 3814, "added": 3813, "mempool size": 214025, "mempool lock wait": "183.689µs", "context": false, "state changes": 5364, "state operations": 11439}
+[08-23|17:04:43.178] INFO chain/block.go:330 skipping verification, already processed {"height": 78, "blkID": "2GuK22fQXoNH2TMcRm8sUZKw1dibiDGoy9cqcS6biN3dqu8sEU"}
+[08-23|17:04:43.479] INFO vm/resolutions.go:116 verified block {"blkID": "2GuK22fQXoNH2TMcRm8sUZKw1dibiDGoy9cqcS6biN3dqu8sEU", "height": 78, "txs": 3813, "state ready": true}
+[08-23|17:04:45.984] INFO vm/resolutions.go:262 accepted block {"blkID": "2GuK22fQXoNH2TMcRm8sUZKw1dibiDGoy9cqcS6biN3dqu8sEU", "height": 78, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:47.320] INFO vm/resolutions.go:203 block processed {"blkID": "2GuK22fQXoNH2TMcRm8sUZKw1dibiDGoy9cqcS6biN3dqu8sEU", "height": 78}
+[08-23|17:04:51.450] INFO chain/builder.go:277 built block {"hght": 79, "attempted": 3814, "added": 3813, "mempool size": 210212, "mempool lock wait": "608.176µs", "context": false, "state changes": 5320, "state operations": 11439}
+[08-23|17:04:51.450] INFO chain/block.go:330 skipping verification, already processed {"height": 79, "blkID": "28Z4SjBZPay9bR3AXhkxN2jhkJBz73qNws4zwDyQFxrAX9JJeQ"}
+[08-23|17:04:51.458] INFO vm/resolutions.go:116 verified block {"blkID": "28Z4SjBZPay9bR3AXhkxN2jhkJBz73qNws4zwDyQFxrAX9JJeQ", "height": 79, "txs": 3813, "state ready": true}
+[08-23|17:04:51.748] INFO vm/resolutions.go:262 accepted block {"blkID": "28Z4SjBZPay9bR3AXhkxN2jhkJBz73qNws4zwDyQFxrAX9JJeQ", "height": 79, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:51.834] INFO vm/resolutions.go:203 block processed {"blkID": "28Z4SjBZPay9bR3AXhkxN2jhkJBz73qNws4zwDyQFxrAX9JJeQ", "height": 79}
+[08-23|17:04:53.599] INFO chain/builder.go:277 built block {"hght": 80, "attempted": 3814, "added": 3813, "mempool size": 206399, "mempool lock wait": "217.357µs", "context": false, "state changes": 5347, "state operations": 11439}
+[08-23|17:04:53.599] INFO chain/block.go:330 skipping verification, already processed {"height": 80, "blkID": "uyszJT1ptSShBfyjvsqTPvtDAH3VP7goct4TdtxXCgeeZXqe2"}
+[08-23|17:04:53.611] INFO vm/resolutions.go:116 verified block {"blkID": "uyszJT1ptSShBfyjvsqTPvtDAH3VP7goct4TdtxXCgeeZXqe2", "height": 80, "txs": 3813, "state ready": true}
+[08-23|17:04:53.836] INFO vm/resolutions.go:262 accepted block {"blkID": "uyszJT1ptSShBfyjvsqTPvtDAH3VP7goct4TdtxXCgeeZXqe2", "height": 80, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:54.397] INFO vm/resolutions.go:203 block processed {"blkID": "uyszJT1ptSShBfyjvsqTPvtDAH3VP7goct4TdtxXCgeeZXqe2", "height": 80}
+[08-23|17:04:58.233] INFO chain/builder.go:277 built block {"hght": 81, "attempted": 3814, "added": 3813, "mempool size": 202586, "mempool lock wait": "193.233µs", "context": false, "state changes": 5355, "state operations": 11439}
+[08-23|17:04:58.234] INFO chain/block.go:330 skipping verification, already processed {"height": 81, "blkID": "2FLNEWogVgUGhs8Sn5LxW2tBtMBn4xjQ49i4oXeBZaYTDGbxRi"}
+[08-23|17:04:58.242] INFO vm/resolutions.go:116 verified block {"blkID": "2FLNEWogVgUGhs8Sn5LxW2tBtMBn4xjQ49i4oXeBZaYTDGbxRi", "height": 81, "txs": 3813, "state ready": true}
+[08-23|17:04:58.920] INFO vm/resolutions.go:262 accepted block {"blkID": "2FLNEWogVgUGhs8Sn5LxW2tBtMBn4xjQ49i4oXeBZaYTDGbxRi", "height": 81, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:04:59.027] INFO vm/resolutions.go:203 block processed {"blkID": "2FLNEWogVgUGhs8Sn5LxW2tBtMBn4xjQ49i4oXeBZaYTDGbxRi", "height": 81}
+[08-23|17:05:00.729] INFO chain/builder.go:277 built block {"hght": 82, "attempted": 3814, "added": 3813, "mempool size": 198773, "mempool lock wait": "18.545µs", "context": false, "state changes": 5330, "state operations": 11439}
+[08-23|17:05:00.730] INFO chain/block.go:330 skipping verification, already processed {"height": 82, "blkID": "4StTwpL3SjeLr8AT56jeFApcX6Rrr2pf8eyD1eqifaPvJTbL1"}
+[08-23|17:05:00.748] INFO vm/resolutions.go:116 verified block {"blkID": "4StTwpL3SjeLr8AT56jeFApcX6Rrr2pf8eyD1eqifaPvJTbL1", "height": 82, "txs": 3813, "state ready": true}
+[08-23|17:05:00.925] INFO vm/resolutions.go:262 accepted block {"blkID": "4StTwpL3SjeLr8AT56jeFApcX6Rrr2pf8eyD1eqifaPvJTbL1", "height": 82, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:01.047] INFO vm/resolutions.go:203 block processed {"blkID": "4StTwpL3SjeLr8AT56jeFApcX6Rrr2pf8eyD1eqifaPvJTbL1", "height": 82}
+[08-23|17:05:04.367] INFO chain/builder.go:277 built block {"hght": 83, "attempted": 3814, "added": 3813, "mempool size": 194960, "mempool lock wait": "23.307µs", "context": false, "state changes": 5264, "state operations": 11439}
+[08-23|17:05:04.368] INFO chain/block.go:330 skipping verification, already processed {"height": 83, "blkID": "GGM5BqMjeogSzJg9ybnhQRKRMRXHDhgzV9pTU2GgZ7PYz3ABR"}
+[08-23|17:05:04.386] INFO vm/resolutions.go:116 verified block {"blkID": "GGM5BqMjeogSzJg9ybnhQRKRMRXHDhgzV9pTU2GgZ7PYz3ABR", "height": 83, "txs": 3813, "state ready": true}
+[08-23|17:05:04.615] INFO vm/resolutions.go:262 accepted block {"blkID": "GGM5BqMjeogSzJg9ybnhQRKRMRXHDhgzV9pTU2GgZ7PYz3ABR", "height": 83, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:04.708] INFO vm/resolutions.go:203 block processed {"blkID": "GGM5BqMjeogSzJg9ybnhQRKRMRXHDhgzV9pTU2GgZ7PYz3ABR", "height": 83}
+[08-23|17:05:06.923] INFO chain/builder.go:277 built block {"hght": 84, "attempted": 3814, "added": 3813, "mempool size": 191147, "mempool lock wait": "276.241µs", "context": false, "state changes": 5365, "state operations": 11439}
+[08-23|17:05:06.923] INFO chain/block.go:330 skipping verification, already processed {"height": 84, "blkID": "25H2TYBkJcXGgDLtttsUehGh7ND9Ww2jPnAcTUzrj9mjVyi1vq"}
+[08-23|17:05:06.930] INFO vm/resolutions.go:116 verified block {"blkID": "25H2TYBkJcXGgDLtttsUehGh7ND9Ww2jPnAcTUzrj9mjVyi1vq", "height": 84, "txs": 3813, "state ready": true}
+[08-23|17:05:07.160] INFO vm/resolutions.go:262 accepted block {"blkID": "25H2TYBkJcXGgDLtttsUehGh7ND9Ww2jPnAcTUzrj9mjVyi1vq", "height": 84, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:07.312] INFO vm/resolutions.go:203 block processed {"blkID": "25H2TYBkJcXGgDLtttsUehGh7ND9Ww2jPnAcTUzrj9mjVyi1vq", "height": 84}
+[08-23|17:05:09.316] INFO chain/builder.go:277 built block {"hght": 85, "attempted": 3814, "added": 3813, "mempool size": 187334, "mempool lock wait": "16.571µs", "context": false, "state changes": 5324, "state operations": 11439}
+[08-23|17:05:09.317] INFO chain/block.go:330 skipping verification, already processed {"height": 85, "blkID": "2N1WC2ydC7ge2oEhBdvHP7MCnQXMMCPtWJghXEioxaYkARt74J"}
+[08-23|17:05:09.345] INFO vm/resolutions.go:116 verified block {"blkID": "2N1WC2ydC7ge2oEhBdvHP7MCnQXMMCPtWJghXEioxaYkARt74J", "height": 85, "txs": 3813, "state ready": true}
+[08-23|17:05:09.627] INFO vm/resolutions.go:262 accepted block {"blkID": "2N1WC2ydC7ge2oEhBdvHP7MCnQXMMCPtWJghXEioxaYkARt74J", "height": 85, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:10.217] INFO vm/resolutions.go:203 block processed {"blkID": "2N1WC2ydC7ge2oEhBdvHP7MCnQXMMCPtWJghXEioxaYkARt74J", "height": 85}
+[08-23|17:05:12.953] INFO chain/builder.go:277 built block {"hght": 86, "attempted": 3814, "added": 3813, "mempool size": 183521, "mempool lock wait": "37.765µs", "context": false, "state changes": 5330, "state operations": 11439}
+[08-23|17:05:12.953] INFO chain/block.go:330 skipping verification, already processed {"height": 86, "blkID": "QmgDDvuUAQXiD9pVHWmJ4K6g2gJtFKhKv9DTyqG6p294zEjAQ"}
+[08-23|17:05:12.957] INFO vm/resolutions.go:116 verified block {"blkID": "QmgDDvuUAQXiD9pVHWmJ4K6g2gJtFKhKv9DTyqG6p294zEjAQ", "height": 86, "txs": 3813, "state ready": true}
+[08-23|17:05:13.128] INFO vm/resolutions.go:262 accepted block {"blkID": "QmgDDvuUAQXiD9pVHWmJ4K6g2gJtFKhKv9DTyqG6p294zEjAQ", "height": 86, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:13.262] INFO vm/resolutions.go:203 block processed {"blkID": "QmgDDvuUAQXiD9pVHWmJ4K6g2gJtFKhKv9DTyqG6p294zEjAQ", "height": 86}
+[08-23|17:05:14.806] INFO chain/builder.go:277 built block {"hght": 87, "attempted": 3814, "added": 3813, "mempool size": 179708, "mempool lock wait": "27.457µs", "context": false, "state changes": 5356, "state operations": 11439}
+[08-23|17:05:14.806] INFO chain/block.go:330 skipping verification, already processed {"height": 87, "blkID": "2isZTjTF3cy9GppmoRGEeAnCvEfvNg4VrHTd4c8w4xNwahUr5P"}
+[08-23|17:05:14.809] INFO vm/resolutions.go:116 verified block {"blkID": "2isZTjTF3cy9GppmoRGEeAnCvEfvNg4VrHTd4c8w4xNwahUr5P", "height": 87, "txs": 3813, "state ready": true}
+[08-23|17:05:14.956] INFO vm/resolutions.go:262 accepted block {"blkID": "2isZTjTF3cy9GppmoRGEeAnCvEfvNg4VrHTd4c8w4xNwahUr5P", "height": 87, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:15.025] INFO vm/resolutions.go:203 block processed {"blkID": "2isZTjTF3cy9GppmoRGEeAnCvEfvNg4VrHTd4c8w4xNwahUr5P", "height": 87}
+[08-23|17:05:16.440] INFO chain/builder.go:277 built block {"hght": 88, "attempted": 3814, "added": 3813, "mempool size": 175895, "mempool lock wait": "25.562µs", "context": false, "state changes": 5315, "state operations": 11439}
+[08-23|17:05:16.441] INFO chain/block.go:330 skipping verification, already processed {"height": 88, "blkID": "28oPCVRR7YWsovNF9bq9pq9ESmdJL3VBcc2WG5r8wVQdxn2oMW"}
+[08-23|17:05:16.444] INFO vm/resolutions.go:116 verified block {"blkID": "28oPCVRR7YWsovNF9bq9pq9ESmdJL3VBcc2WG5r8wVQdxn2oMW", "height": 88, "txs": 3813, "state ready": true}
+[08-23|17:05:16.620] INFO vm/resolutions.go:262 accepted block {"blkID": "28oPCVRR7YWsovNF9bq9pq9ESmdJL3VBcc2WG5r8wVQdxn2oMW", "height": 88, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:16.705] INFO vm/resolutions.go:203 block processed {"blkID": "28oPCVRR7YWsovNF9bq9pq9ESmdJL3VBcc2WG5r8wVQdxn2oMW", "height": 88}
+[08-23|17:05:19.895] INFO chain/builder.go:277 built block {"hght": 89, "attempted": 3814, "added": 3813, "mempool size": 172082, "mempool lock wait": "12.379µs", "context": false, "state changes": 5367, "state operations": 11439}
+[08-23|17:05:19.896] INFO chain/block.go:330 skipping verification, already processed {"height": 89, "blkID": "2utfYCPufbqhf9vAVkKs917HqpvEju33QjmmXk1pPtPRnGRRJJ"}
+[08-23|17:05:19.910] INFO vm/resolutions.go:116 verified block {"blkID": "2utfYCPufbqhf9vAVkKs917HqpvEju33QjmmXk1pPtPRnGRRJJ", "height": 89, "txs": 3813, "state ready": true}
+[08-23|17:05:20.223] INFO vm/resolutions.go:262 accepted block {"blkID": "2utfYCPufbqhf9vAVkKs917HqpvEju33QjmmXk1pPtPRnGRRJJ", "height": 89, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:20.283] INFO vm/resolutions.go:203 block processed {"blkID": "2utfYCPufbqhf9vAVkKs917HqpvEju33QjmmXk1pPtPRnGRRJJ", "height": 89}
+[08-23|17:05:21.857] INFO chain/builder.go:277 built block {"hght": 90, "attempted": 3814, "added": 3813, "mempool size": 168269, "mempool lock wait": "105.669µs", "context": false, "state changes": 5369, "state operations": 11439}
+[08-23|17:05:21.857] INFO chain/block.go:330 skipping verification, already processed {"height": 90, "blkID": "2aCdFD6Wtnw3dkFxCSwqZK5ywawfmRKYfJFAwZ3HT6wu2tiQDH"}
+[08-23|17:05:21.863] INFO vm/resolutions.go:116 verified block {"blkID": "2aCdFD6Wtnw3dkFxCSwqZK5ywawfmRKYfJFAwZ3HT6wu2tiQDH", "height": 90, "txs": 3813, "state ready": true}
+[08-23|17:05:21.967] INFO vm/resolutions.go:262 accepted block {"blkID": "2aCdFD6Wtnw3dkFxCSwqZK5ywawfmRKYfJFAwZ3HT6wu2tiQDH", "height": 90, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:22.021] INFO vm/resolutions.go:203 block processed {"blkID": "2aCdFD6Wtnw3dkFxCSwqZK5ywawfmRKYfJFAwZ3HT6wu2tiQDH", "height": 90}
+[08-23|17:05:23.177] INFO chain/builder.go:277 built block {"hght": 91, "attempted": 3814, "added": 3813, "mempool size": 164456, "mempool lock wait": "15.554µs", "context": false, "state changes": 5310, "state operations": 11439}
+[08-23|17:05:23.177] INFO chain/block.go:330 skipping verification, already processed {"height": 91, "blkID": "2594LWwj8cANZtdWKMNY88YmpuFE1JagYLpqrRYWWkFNffbdKX"}
+[08-23|17:05:23.184] INFO vm/resolutions.go:116 verified block {"blkID": "2594LWwj8cANZtdWKMNY88YmpuFE1JagYLpqrRYWWkFNffbdKX", "height": 91, "txs": 3813, "state ready": true}
+[08-23|17:05:23.335] INFO vm/resolutions.go:262 accepted block {"blkID": "2594LWwj8cANZtdWKMNY88YmpuFE1JagYLpqrRYWWkFNffbdKX", "height": 91, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:23.398] INFO vm/resolutions.go:203 block processed {"blkID": "2594LWwj8cANZtdWKMNY88YmpuFE1JagYLpqrRYWWkFNffbdKX", "height": 91}
+[08-23|17:05:24.408] INFO chain/builder.go:277 built block {"hght": 92, "attempted": 3814, "added": 3813, "mempool size": 160643, "mempool lock wait": "63.425µs", "context": false, "state changes": 5353, "state operations": 11439}
+[08-23|17:05:24.408] INFO chain/block.go:330 skipping verification, already processed {"height": 92, "blkID": "2tyTq5X1jyd9asp6Bmq6ZCX7XkGoVXLTAU6rXKu4PAt6C9rdi4"}
+[08-23|17:05:24.414] INFO vm/resolutions.go:116 verified block {"blkID": "2tyTq5X1jyd9asp6Bmq6ZCX7XkGoVXLTAU6rXKu4PAt6C9rdi4", "height": 92, "txs": 3813, "state ready": true}
+[08-23|17:05:24.665] INFO vm/resolutions.go:262 accepted block {"blkID": "2tyTq5X1jyd9asp6Bmq6ZCX7XkGoVXLTAU6rXKu4PAt6C9rdi4", "height": 92, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:24.820] INFO vm/resolutions.go:203 block processed {"blkID": "2tyTq5X1jyd9asp6Bmq6ZCX7XkGoVXLTAU6rXKu4PAt6C9rdi4", "height": 92}
+[08-23|17:05:26.635] INFO chain/builder.go:277 built block {"hght": 93, "attempted": 3814, "added": 3813, "mempool size": 156830, "mempool lock wait": "23.524µs", "context": false, "state changes": 5363, "state operations": 11439}
+[08-23|17:05:26.635] INFO chain/block.go:330 skipping verification, already processed {"height": 93, "blkID": "2t5a3RqZ4UPzPr4q7XSa1TTv5RuVZGXuVQNC6HdDwz5KG45pg"}
+[08-23|17:05:26.645] INFO vm/resolutions.go:116 verified block {"blkID": "2t5a3RqZ4UPzPr4q7XSa1TTv5RuVZGXuVQNC6HdDwz5KG45pg", "height": 93, "txs": 3813, "state ready": true}
+[08-23|17:05:27.056] INFO vm/resolutions.go:262 accepted block {"blkID": "2t5a3RqZ4UPzPr4q7XSa1TTv5RuVZGXuVQNC6HdDwz5KG45pg", "height": 93, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:27.132] INFO vm/resolutions.go:203 block processed {"blkID": "2t5a3RqZ4UPzPr4q7XSa1TTv5RuVZGXuVQNC6HdDwz5KG45pg", "height": 93}
+[08-23|17:05:28.334] INFO chain/builder.go:277 built block {"hght": 94, "attempted": 3814, "added": 3813, "mempool size": 153017, "mempool lock wait": "14.165µs", "context": false, "state changes": 5370, "state operations": 11439}
+[08-23|17:05:28.334] INFO chain/block.go:330 skipping verification, already processed {"height": 94, "blkID": "285PyQtmW9MXFoRQEktpVBMMBLz9vX3GLmNBctBL5LMFmpDZee"}
+[08-23|17:05:28.341] INFO vm/resolutions.go:116 verified block {"blkID": "285PyQtmW9MXFoRQEktpVBMMBLz9vX3GLmNBctBL5LMFmpDZee", "height": 94, "txs": 3813, "state ready": true}
+[08-23|17:05:28.537] INFO vm/resolutions.go:262 accepted block {"blkID": "285PyQtmW9MXFoRQEktpVBMMBLz9vX3GLmNBctBL5LMFmpDZee", "height": 94, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:28.674] INFO vm/resolutions.go:203 block processed {"blkID": "285PyQtmW9MXFoRQEktpVBMMBLz9vX3GLmNBctBL5LMFmpDZee", "height": 94}
+[08-23|17:05:29.600] INFO chain/builder.go:277 built block {"hght": 95, "attempted": 3814, "added": 3813, "mempool size": 149204, "mempool lock wait": "13.288µs", "context": false, "state changes": 5301, "state operations": 11439}
+[08-23|17:05:29.600] INFO chain/block.go:330 skipping verification, already processed {"height": 95, "blkID": "25C57SDvfFvbMfFCx4RShF2q1Qu1McSEsxS4JUmDD9RccBmZTa"}
+[08-23|17:05:29.605] INFO vm/resolutions.go:116 verified block {"blkID": "25C57SDvfFvbMfFCx4RShF2q1Qu1McSEsxS4JUmDD9RccBmZTa", "height": 95, "txs": 3813, "state ready": true}
+[08-23|17:05:29.985] INFO vm/resolutions.go:262 accepted block {"blkID": "25C57SDvfFvbMfFCx4RShF2q1Qu1McSEsxS4JUmDD9RccBmZTa", "height": 95, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:30.056] INFO vm/resolutions.go:203 block processed {"blkID": "25C57SDvfFvbMfFCx4RShF2q1Qu1McSEsxS4JUmDD9RccBmZTa", "height": 95}
+[08-23|17:05:31.249] INFO chain/builder.go:277 built block {"hght": 96, "attempted": 3814, "added": 3813, "mempool size": 145391, "mempool lock wait": "10.907µs", "context": false, "state changes": 5313, "state operations": 11439}
+[08-23|17:05:31.249] INFO chain/block.go:330 skipping verification, already processed {"height": 96, "blkID": "2FB71iKbPkq9oW9b8jpqieGeaT8ZBDvA63oJykYdrfMset8JEM"}
+[08-23|17:05:31.255] INFO vm/resolutions.go:116 verified block {"blkID": "2FB71iKbPkq9oW9b8jpqieGeaT8ZBDvA63oJykYdrfMset8JEM", "height": 96, "txs": 3813, "state ready": true}
+[08-23|17:05:31.349] INFO vm/resolutions.go:262 accepted block {"blkID": "2FB71iKbPkq9oW9b8jpqieGeaT8ZBDvA63oJykYdrfMset8JEM", "height": 96, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:31.387] INFO vm/resolutions.go:203 block processed {"blkID": "2FB71iKbPkq9oW9b8jpqieGeaT8ZBDvA63oJykYdrfMset8JEM", "height": 96}
+[08-23|17:05:31.909] INFO chain/builder.go:277 built block {"hght": 97, "attempted": 3814, "added": 3813, "mempool size": 141578, "mempool lock wait": "11.092µs", "context": false, "state changes": 5344, "state operations": 11439}
+[08-23|17:05:31.909] INFO chain/block.go:330 skipping verification, already processed {"height": 97, "blkID": "2aUASf9YfxQADkgX9tm8jnjNjN9ch6oy2wYVHvkjmBqGfWecTd"}
+[08-23|17:05:31.914] INFO vm/resolutions.go:116 verified block {"blkID": "2aUASf9YfxQADkgX9tm8jnjNjN9ch6oy2wYVHvkjmBqGfWecTd", "height": 97, "txs": 3813, "state ready": true}
+[08-23|17:05:32.021] INFO vm/resolutions.go:262 accepted block {"blkID": "2aUASf9YfxQADkgX9tm8jnjNjN9ch6oy2wYVHvkjmBqGfWecTd", "height": 97, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:32.052] INFO vm/resolutions.go:203 block processed {"blkID": "2aUASf9YfxQADkgX9tm8jnjNjN9ch6oy2wYVHvkjmBqGfWecTd", "height": 97}
+[08-23|17:05:32.559] INFO chain/builder.go:277 built block {"hght": 98, "attempted": 3814, "added": 3813, "mempool size": 137765, "mempool lock wait": "43.758µs", "context": false, "state changes": 5360, "state operations": 11439}
+[08-23|17:05:32.559] INFO chain/block.go:330 skipping verification, already processed {"height": 98, "blkID": "2DXycp4YjPu4zwNWTYkqs6TfgeEh8DQMr1czCcZY1LP6Ub8jd2"}
+[08-23|17:05:32.562] INFO vm/resolutions.go:116 verified block {"blkID": "2DXycp4YjPu4zwNWTYkqs6TfgeEh8DQMr1czCcZY1LP6Ub8jd2", "height": 98, "txs": 3813, "state ready": true}
+[08-23|17:05:32.650] INFO vm/resolutions.go:262 accepted block {"blkID": "2DXycp4YjPu4zwNWTYkqs6TfgeEh8DQMr1czCcZY1LP6Ub8jd2", "height": 98, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:32.678] INFO vm/resolutions.go:203 block processed {"blkID": "2DXycp4YjPu4zwNWTYkqs6TfgeEh8DQMr1czCcZY1LP6Ub8jd2", "height": 98}
+[08-23|17:05:33.133] INFO chain/builder.go:277 built block {"hght": 99, "attempted": 3814, "added": 3813, "mempool size": 133952, "mempool lock wait": "31.973µs", "context": false, "state changes": 5311, "state operations": 11439}
+[08-23|17:05:33.133] INFO chain/block.go:330 skipping verification, already processed {"height": 99, "blkID": "JQMyZ9zhaXmtGQsu2SkwGePdYJ964oCfk1jkKuwXMrEQ8YiFW"}
+[08-23|17:05:33.140] INFO vm/resolutions.go:116 verified block {"blkID": "JQMyZ9zhaXmtGQsu2SkwGePdYJ964oCfk1jkKuwXMrEQ8YiFW", "height": 99, "txs": 3813, "state ready": true}
+[08-23|17:05:33.200] INFO vm/resolutions.go:262 accepted block {"blkID": "JQMyZ9zhaXmtGQsu2SkwGePdYJ964oCfk1jkKuwXMrEQ8YiFW", "height": 99, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:33.250] INFO vm/resolutions.go:203 block processed {"blkID": "JQMyZ9zhaXmtGQsu2SkwGePdYJ964oCfk1jkKuwXMrEQ8YiFW", "height": 99}
+[08-23|17:05:34.969] INFO chain/builder.go:277 built block {"hght": 100, "attempted": 3814, "added": 3813, "mempool size": 130139, "mempool lock wait": "10.666µs", "context": false, "state changes": 5280, "state operations": 11439}
+[08-23|17:05:34.969] INFO chain/block.go:330 skipping verification, already processed {"height": 100, "blkID": "28c6mMCLdHwu1gn9zQred5jhHRqz77yDHU5b3Gr7mPT2tc8Jor"}
+[08-23|17:05:34.976] INFO vm/resolutions.go:116 verified block {"blkID": "28c6mMCLdHwu1gn9zQred5jhHRqz77yDHU5b3Gr7mPT2tc8Jor", "height": 100, "txs": 3813, "state ready": true}
+[08-23|17:05:35.055] INFO vm/resolutions.go:262 accepted block {"blkID": "28c6mMCLdHwu1gn9zQred5jhHRqz77yDHU5b3Gr7mPT2tc8Jor", "height": 100, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:35.076] INFO vm/resolutions.go:203 block processed {"blkID": "28c6mMCLdHwu1gn9zQred5jhHRqz77yDHU5b3Gr7mPT2tc8Jor", "height": 100}
+[08-23|17:05:35.883] INFO chain/builder.go:277 built block {"hght": 101, "attempted": 3814, "added": 3813, "mempool size": 126326, "mempool lock wait": "14.282µs", "context": false, "state changes": 5358, "state operations": 11439}
+[08-23|17:05:35.883] INFO chain/block.go:330 skipping verification, already processed {"height": 101, "blkID": "3Tad5J4qkkaFfigqHsg5AxbGJ6ubsMCgbRWiv4ofzjR7zbUfQ"}
+[08-23|17:05:35.896] INFO vm/resolutions.go:116 verified block {"blkID": "3Tad5J4qkkaFfigqHsg5AxbGJ6ubsMCgbRWiv4ofzjR7zbUfQ", "height": 101, "txs": 3813, "state ready": true}
+[08-23|17:05:36.017] INFO vm/resolutions.go:262 accepted block {"blkID": "3Tad5J4qkkaFfigqHsg5AxbGJ6ubsMCgbRWiv4ofzjR7zbUfQ", "height": 101, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:36.064] INFO vm/resolutions.go:203 block processed {"blkID": "3Tad5J4qkkaFfigqHsg5AxbGJ6ubsMCgbRWiv4ofzjR7zbUfQ", "height": 101}
+[08-23|17:05:36.791] INFO chain/builder.go:277 built block {"hght": 102, "attempted": 3814, "added": 3813, "mempool size": 122513, "mempool lock wait": "9.887µs", "context": false, "state changes": 5341, "state operations": 11439}
+[08-23|17:05:36.791] INFO chain/block.go:330 skipping verification, already processed {"height": 102, "blkID": "2BjiDYcZMjWrkwjnkCh1mRPa32r1aC8KTfDYsHsgxndDYmMrs3"}
+[08-23|17:05:36.797] INFO vm/resolutions.go:116 verified block {"blkID": "2BjiDYcZMjWrkwjnkCh1mRPa32r1aC8KTfDYsHsgxndDYmMrs3", "height": 102, "txs": 3813, "state ready": true}
+[08-23|17:05:36.893] INFO vm/resolutions.go:262 accepted block {"blkID": "2BjiDYcZMjWrkwjnkCh1mRPa32r1aC8KTfDYsHsgxndDYmMrs3", "height": 102, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:36.924] INFO vm/resolutions.go:203 block processed {"blkID": "2BjiDYcZMjWrkwjnkCh1mRPa32r1aC8KTfDYsHsgxndDYmMrs3", "height": 102}
+[08-23|17:05:38.117] INFO chain/builder.go:277 built block {"hght": 103, "attempted": 3814, "added": 3813, "mempool size": 118700, "mempool lock wait": "10.408µs", "context": false, "state changes": 5345, "state operations": 11439}
+[08-23|17:05:38.117] INFO chain/block.go:330 skipping verification, already processed {"height": 103, "blkID": "2iQnvcXz6mufs4UqHwh8EMRpxFhWsRXDiEyMWSpeam7aPUXPSZ"}
+[08-23|17:05:38.121] INFO vm/resolutions.go:116 verified block {"blkID": "2iQnvcXz6mufs4UqHwh8EMRpxFhWsRXDiEyMWSpeam7aPUXPSZ", "height": 103, "txs": 3813, "state ready": true}
+[08-23|17:05:38.258] INFO vm/resolutions.go:262 accepted block {"blkID": "2iQnvcXz6mufs4UqHwh8EMRpxFhWsRXDiEyMWSpeam7aPUXPSZ", "height": 103, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:38.362] INFO vm/resolutions.go:203 block processed {"blkID": "2iQnvcXz6mufs4UqHwh8EMRpxFhWsRXDiEyMWSpeam7aPUXPSZ", "height": 103}
+[08-23|17:05:39.205] INFO chain/builder.go:277 built block {"hght": 104, "attempted": 3814, "added": 3813, "mempool size": 114887, "mempool lock wait": "19.615µs", "context": false, "state changes": 5340, "state operations": 11439}
+[08-23|17:05:39.205] INFO chain/block.go:330 skipping verification, already processed {"height": 104, "blkID": "SbkCnpTgDcFRafuvtsRq2eVVX5p2N65EPJ5K41QdoTFccEYQb"}
+[08-23|17:05:39.211] INFO vm/resolutions.go:116 verified block {"blkID": "SbkCnpTgDcFRafuvtsRq2eVVX5p2N65EPJ5K41QdoTFccEYQb", "height": 104, "txs": 3813, "state ready": true}
+[08-23|17:05:39.321] INFO vm/resolutions.go:262 accepted block {"blkID": "SbkCnpTgDcFRafuvtsRq2eVVX5p2N65EPJ5K41QdoTFccEYQb", "height": 104, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:39.395] INFO vm/resolutions.go:203 block processed {"blkID": "SbkCnpTgDcFRafuvtsRq2eVVX5p2N65EPJ5K41QdoTFccEYQb", "height": 104}
+[08-23|17:05:39.958] INFO chain/builder.go:277 built block {"hght": 105, "attempted": 3814, "added": 3813, "mempool size": 111074, "mempool lock wait": "13.881µs", "context": false, "state changes": 5335, "state operations": 11439}
+[08-23|17:05:39.958] INFO chain/block.go:330 skipping verification, already processed {"height": 105, "blkID": "Bi9HP8it7SET8YCBPrLDEsZ1VXFn5JcCoJMXAu8bqqoPTL5Dn"}
+[08-23|17:05:39.964] INFO vm/resolutions.go:116 verified block {"blkID": "Bi9HP8it7SET8YCBPrLDEsZ1VXFn5JcCoJMXAu8bqqoPTL5Dn", "height": 105, "txs": 3813, "state ready": true}
+[08-23|17:05:40.010] INFO vm/resolutions.go:262 accepted block {"blkID": "Bi9HP8it7SET8YCBPrLDEsZ1VXFn5JcCoJMXAu8bqqoPTL5Dn", "height": 105, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:40.036] INFO vm/resolutions.go:203 block processed {"blkID": "Bi9HP8it7SET8YCBPrLDEsZ1VXFn5JcCoJMXAu8bqqoPTL5Dn", "height": 105}
+[08-23|17:05:41.030] INFO chain/builder.go:277 built block {"hght": 106, "attempted": 3814, "added": 3813, "mempool size": 107261, "mempool lock wait": "9.213µs", "context": false, "state changes": 5292, "state operations": 11439}
+[08-23|17:05:41.030] INFO chain/block.go:330 skipping verification, already processed {"height": 106, "blkID": "aq7i6gSpEdTnvnkRYTGgjJUr22Sqj6HzbHGt5XswLBxsHdqyK"}
+[08-23|17:05:41.034] INFO vm/resolutions.go:116 verified block {"blkID": "aq7i6gSpEdTnvnkRYTGgjJUr22Sqj6HzbHGt5XswLBxsHdqyK", "height": 106, "txs": 3813, "state ready": true}
+[08-23|17:05:41.100] INFO vm/resolutions.go:262 accepted block {"blkID": "aq7i6gSpEdTnvnkRYTGgjJUr22Sqj6HzbHGt5XswLBxsHdqyK", "height": 106, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:41.126] INFO vm/resolutions.go:203 block processed {"blkID": "aq7i6gSpEdTnvnkRYTGgjJUr22Sqj6HzbHGt5XswLBxsHdqyK", "height": 106}
+[08-23|17:05:41.548] INFO chain/builder.go:277 built block {"hght": 107, "attempted": 3814, "added": 3813, "mempool size": 103448, "mempool lock wait": "7.944µs", "context": false, "state changes": 5318, "state operations": 11439}
+[08-23|17:05:41.548] INFO chain/block.go:330 skipping verification, already processed {"height": 107, "blkID": "w5CT6rzGjhhR8uLy5sYy5nh847BsnFUqfSPPw8gJGpZU8Ye6a"}
+[08-23|17:05:41.551] INFO vm/resolutions.go:116 verified block {"blkID": "w5CT6rzGjhhR8uLy5sYy5nh847BsnFUqfSPPw8gJGpZU8Ye6a", "height": 107, "txs": 3813, "state ready": true}
+[08-23|17:05:41.683] INFO vm/resolutions.go:262 accepted block {"blkID": "w5CT6rzGjhhR8uLy5sYy5nh847BsnFUqfSPPw8gJGpZU8Ye6a", "height": 107, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:41.703] INFO vm/resolutions.go:203 block processed {"blkID": "w5CT6rzGjhhR8uLy5sYy5nh847BsnFUqfSPPw8gJGpZU8Ye6a", "height": 107}
+[08-23|17:05:42.004] INFO chain/builder.go:277 built block {"hght": 108, "attempted": 3814, "added": 3813, "mempool size": 99635, "mempool lock wait": "10.894µs", "context": false, "state changes": 5368, "state operations": 11439}
+[08-23|17:05:42.004] INFO chain/block.go:330 skipping verification, already processed {"height": 108, "blkID": "2NnocJLqDocsg9Ts1RnSegTixmAHRC48Wgum1PEDLXc13KPbCA"}
+[08-23|17:05:42.008] INFO vm/resolutions.go:116 verified block {"blkID": "2NnocJLqDocsg9Ts1RnSegTixmAHRC48Wgum1PEDLXc13KPbCA", "height": 108, "txs": 3813, "state ready": true}
+[08-23|17:05:42.129] INFO vm/resolutions.go:262 accepted block {"blkID": "2NnocJLqDocsg9Ts1RnSegTixmAHRC48Wgum1PEDLXc13KPbCA", "height": 108, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:42.149] INFO vm/resolutions.go:203 block processed {"blkID": "2NnocJLqDocsg9Ts1RnSegTixmAHRC48Wgum1PEDLXc13KPbCA", "height": 108}
+[08-23|17:05:43.044] INFO chain/builder.go:277 built block {"hght": 109, "attempted": 3814, "added": 3813, "mempool size": 95822, "mempool lock wait": "7.635µs", "context": false, "state changes": 5346, "state operations": 11439}
+[08-23|17:05:43.044] INFO chain/block.go:330 skipping verification, already processed {"height": 109, "blkID": "2V1BNuXMj2PFCXfm5g1D9yAVUfNpMZRGzD3cF4rLr54xufB5nn"}
+[08-23|17:05:43.048] INFO vm/resolutions.go:116 verified block {"blkID": "2V1BNuXMj2PFCXfm5g1D9yAVUfNpMZRGzD3cF4rLr54xufB5nn", "height": 109, "txs": 3813, "state ready": true}
+[08-23|17:05:43.138] INFO vm/resolutions.go:262 accepted block {"blkID": "2V1BNuXMj2PFCXfm5g1D9yAVUfNpMZRGzD3cF4rLr54xufB5nn", "height": 109, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:43.157] INFO vm/resolutions.go:203 block processed {"blkID": "2V1BNuXMj2PFCXfm5g1D9yAVUfNpMZRGzD3cF4rLr54xufB5nn", "height": 109}
+[08-23|17:05:43.715] INFO chain/builder.go:277 built block {"hght": 110, "attempted": 3814, "added": 3813, "mempool size": 92009, "mempool lock wait": "8.654µs", "context": false, "state changes": 5337, "state operations": 11439}
+[08-23|17:05:43.715] INFO chain/block.go:330 skipping verification, already processed {"height": 110, "blkID": "3mhahnJFYwLqM2R3LUd6AF22cSWgtQBhZvyHYq7YvzTtpUr5d"}
+[08-23|17:05:43.718] INFO vm/resolutions.go:116 verified block {"blkID": "3mhahnJFYwLqM2R3LUd6AF22cSWgtQBhZvyHYq7YvzTtpUr5d", "height": 110, "txs": 3813, "state ready": true}
+[08-23|17:05:43.765] INFO vm/resolutions.go:262 accepted block {"blkID": "3mhahnJFYwLqM2R3LUd6AF22cSWgtQBhZvyHYq7YvzTtpUr5d", "height": 110, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:43.780] INFO vm/resolutions.go:203 block processed {"blkID": "3mhahnJFYwLqM2R3LUd6AF22cSWgtQBhZvyHYq7YvzTtpUr5d", "height": 110}
+[08-23|17:05:44.766] INFO chain/builder.go:277 built block {"hght": 111, "attempted": 3814, "added": 3813, "mempool size": 88196, "mempool lock wait": "7.733µs", "context": false, "state changes": 5354, "state operations": 11439}
+[08-23|17:05:44.767] INFO chain/block.go:330 skipping verification, already processed {"height": 111, "blkID": "2eBZGrs5GxE7LSbnBHx68KAJ6uSCz7F4MAqiKEFdtsSWyEii2S"}
+[08-23|17:05:44.778] INFO vm/resolutions.go:116 verified block {"blkID": "2eBZGrs5GxE7LSbnBHx68KAJ6uSCz7F4MAqiKEFdtsSWyEii2S", "height": 111, "txs": 3813, "state ready": true}
+[08-23|17:05:45.039] INFO vm/resolutions.go:262 accepted block {"blkID": "2eBZGrs5GxE7LSbnBHx68KAJ6uSCz7F4MAqiKEFdtsSWyEii2S", "height": 111, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:45.296] INFO vm/resolutions.go:203 block processed {"blkID": "2eBZGrs5GxE7LSbnBHx68KAJ6uSCz7F4MAqiKEFdtsSWyEii2S", "height": 111}
+[08-23|17:05:47.011] INFO chain/builder.go:277 built block {"hght": 112, "attempted": 3814, "added": 3813, "mempool size": 84383, "mempool lock wait": "519.95µs", "context": false, "state changes": 5309, "state operations": 11439}
+[08-23|17:05:47.011] INFO chain/block.go:330 skipping verification, already processed {"height": 112, "blkID": "2SnFZLzfjC9wGBfsgv4VsEPNkKr2gCFLpQXAZmgphain21Y5JR"}
+[08-23|17:05:47.018] INFO vm/resolutions.go:116 verified block {"blkID": "2SnFZLzfjC9wGBfsgv4VsEPNkKr2gCFLpQXAZmgphain21Y5JR", "height": 112, "txs": 3813, "state ready": true}
+[08-23|17:05:47.388] INFO vm/resolutions.go:262 accepted block {"blkID": "2SnFZLzfjC9wGBfsgv4VsEPNkKr2gCFLpQXAZmgphain21Y5JR", "height": 112, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:47.982] INFO vm/resolutions.go:203 block processed {"blkID": "2SnFZLzfjC9wGBfsgv4VsEPNkKr2gCFLpQXAZmgphain21Y5JR", "height": 112}
+[08-23|17:05:50.693] INFO chain/builder.go:277 built block {"hght": 113, "attempted": 3814, "added": 3813, "mempool size": 80570, "mempool lock wait": "28.573µs", "context": false, "state changes": 5343, "state operations": 11439}
+[08-23|17:05:50.693] INFO chain/block.go:330 skipping verification, already processed {"height": 113, "blkID": "Bk9FXiiKorPZRD8WXdGhqtQtATqypbrobBu3Euo5nDZatRBcD"}
+[08-23|17:05:50.699] INFO vm/resolutions.go:116 verified block {"blkID": "Bk9FXiiKorPZRD8WXdGhqtQtATqypbrobBu3Euo5nDZatRBcD", "height": 113, "txs": 3813, "state ready": true}
+[08-23|17:05:51.117] INFO vm/resolutions.go:262 accepted block {"blkID": "Bk9FXiiKorPZRD8WXdGhqtQtATqypbrobBu3Euo5nDZatRBcD", "height": 113, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:51.157] INFO vm/resolutions.go:203 block processed {"blkID": "Bk9FXiiKorPZRD8WXdGhqtQtATqypbrobBu3Euo5nDZatRBcD", "height": 113}
+[08-23|17:05:56.025] INFO chain/builder.go:277 built block {"hght": 114, "attempted": 3814, "added": 3813, "mempool size": 76757, "mempool lock wait": "14.884µs", "context": false, "state changes": 5352, "state operations": 11439}
+[08-23|17:05:56.026] INFO chain/block.go:330 skipping verification, already processed {"height": 114, "blkID": "2cN2hve4c2663z4BrcQaoBLjFpJmt6fA3jGHQ7zrkpqsfN7pmH"}
+[08-23|17:05:56.035] INFO vm/resolutions.go:116 verified block {"blkID": "2cN2hve4c2663z4BrcQaoBLjFpJmt6fA3jGHQ7zrkpqsfN7pmH", "height": 114, "txs": 3813, "state ready": true}
+[08-23|17:05:56.320] INFO vm/resolutions.go:262 accepted block {"blkID": "2cN2hve4c2663z4BrcQaoBLjFpJmt6fA3jGHQ7zrkpqsfN7pmH", "height": 114, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:56.379] INFO vm/resolutions.go:203 block processed {"blkID": "2cN2hve4c2663z4BrcQaoBLjFpJmt6fA3jGHQ7zrkpqsfN7pmH", "height": 114}
+[08-23|17:05:58.412] INFO chain/builder.go:277 built block {"hght": 115, "attempted": 3814, "added": 3813, "mempool size": 72944, "mempool lock wait": "16.645µs", "context": false, "state changes": 5337, "state operations": 11439}
+[08-23|17:05:58.413] INFO chain/block.go:330 skipping verification, already processed {"height": 115, "blkID": "YrZJyhgX117TnhrrR7x5KadGTLFeRmLQjPHCto3DdRfFkk7Zr"}
+[08-23|17:05:58.418] INFO vm/resolutions.go:116 verified block {"blkID": "YrZJyhgX117TnhrrR7x5KadGTLFeRmLQjPHCto3DdRfFkk7Zr", "height": 115, "txs": 3813, "state ready": true}
+[08-23|17:05:58.652] INFO vm/resolutions.go:262 accepted block {"blkID": "YrZJyhgX117TnhrrR7x5KadGTLFeRmLQjPHCto3DdRfFkk7Zr", "height": 115, "txs": 3813, "size": 846770, "units": 1799736, "dropped mempool txs": 0, "state ready": true}
+[08-23|17:05:58.901] INFO vm/resolutions.go:203 block processed {"blkID": "YrZJyhgX117TnhrrR7x5KadGTLFeRmLQjPHCto3DdRfFkk7Zr", "height": 115}
